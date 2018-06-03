@@ -29,9 +29,7 @@ class BuhidTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1740', $range['hex'][0]);
-		$this->assertEquals('175F', $range['hex'][1]);
-		$this->assertEquals(5952, $range['dec'][0]);
-		$this->assertEquals(5983, $range['dec'][1]);
+		$this->assertEquals('1740', $range[0]);
+		$this->assertEquals('175F', $range[1]);
 	}
 }

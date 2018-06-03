@@ -29,9 +29,7 @@ class ArrowsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2190', $range['hex'][0]);
-		$this->assertEquals('21FF', $range['hex'][1]);
-		$this->assertEquals(8592, $range['dec'][0]);
-		$this->assertEquals(8703, $range['dec'][1]);
+		$this->assertEquals('2190', $range[0]);
+		$this->assertEquals('21FF', $range[1]);
 	}
 }

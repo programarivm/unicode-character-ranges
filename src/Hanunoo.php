@@ -10,14 +10,8 @@ class Hanunoo extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1720',
             '173F',
-        ],
-            'dec' => [
-            5920,
-            5951,
-        ],
         ];
     }
 }

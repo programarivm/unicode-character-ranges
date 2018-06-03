@@ -29,9 +29,7 @@ class GreekAndCopticTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0370', $range['hex'][0]);
-		$this->assertEquals('03FF', $range['hex'][1]);
-		$this->assertEquals(880, $range['dec'][0]);
-		$this->assertEquals(1023, $range['dec'][1]);
+		$this->assertEquals('0370', $range[0]);
+		$this->assertEquals('03FF', $range[1]);
 	}
 }

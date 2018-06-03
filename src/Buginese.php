@@ -10,14 +10,8 @@ class Buginese extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1A00',
             '1A1F',
-        ],
-            'dec' => [
-            6656,
-            6687,
-        ],
         ];
     }
 }

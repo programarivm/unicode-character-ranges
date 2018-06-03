@@ -10,14 +10,8 @@ class HangulJamo extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1100',
             '11FF',
-        ],
-            'dec' => [
-            4352,
-            4607,
-        ],
         ];
     }
 }

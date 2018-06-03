@@ -10,14 +10,8 @@ class NKo extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '07C0',
             '07FF',
-        ],
-            'dec' => [
-            1984,
-            2047,
-        ],
         ];
     }
 }

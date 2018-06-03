@@ -29,9 +29,7 @@ class TaiLeTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1950', $range['hex'][0]);
-		$this->assertEquals('197F', $range['hex'][1]);
-		$this->assertEquals(6480, $range['dec'][0]);
-		$this->assertEquals(6527, $range['dec'][1]);
+		$this->assertEquals('1950', $range[0]);
+		$this->assertEquals('197F', $range[1]);
 	}
 }

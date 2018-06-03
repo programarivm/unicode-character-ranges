@@ -29,9 +29,7 @@ class GeometricShapesTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('25A0', $range['hex'][0]);
-		$this->assertEquals('25FF', $range['hex'][1]);
-		$this->assertEquals(9632, $range['dec'][0]);
-		$this->assertEquals(9727, $range['dec'][1]);
+		$this->assertEquals('25A0', $range[0]);
+		$this->assertEquals('25FF', $range[1]);
 	}
 }

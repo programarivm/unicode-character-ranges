@@ -10,14 +10,8 @@ class GreekAndCoptic extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0370',
             '03FF',
-        ],
-            'dec' => [
-            880,
-            1023,
-        ],
         ];
     }
 }

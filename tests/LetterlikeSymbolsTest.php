@@ -29,9 +29,7 @@ class LetterlikeSymbolsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2100', $range['hex'][0]);
-		$this->assertEquals('214F', $range['hex'][1]);
-		$this->assertEquals(8448, $range['dec'][0]);
-		$this->assertEquals(8527, $range['dec'][1]);
+		$this->assertEquals('2100', $range[0]);
+		$this->assertEquals('214F', $range[1]);
 	}
 }

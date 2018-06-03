@@ -10,14 +10,8 @@ class Thaana extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0780',
             '07BF',
-        ],
-            'dec' => [
-            1920,
-            1983,
-        ],
         ];
     }
 }

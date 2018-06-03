@@ -10,14 +10,8 @@ class Kannada extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0C80',
             '0CFF',
-        ],
-            'dec' => [
-            3200,
-            3327,
-        ],
         ];
     }
 }

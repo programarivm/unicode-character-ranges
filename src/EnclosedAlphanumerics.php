@@ -10,14 +10,8 @@ class EnclosedAlphanumerics extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2460',
             '24FF',
-        ],
-            'dec' => [
-            9312,
-            9471,
-        ],
         ];
     }
 }

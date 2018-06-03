@@ -29,9 +29,7 @@ class AegeanNumbersTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('10100', $range['hex'][0]);
-		$this->assertEquals('1013F', $range['hex'][1]);
-		$this->assertEquals(65792, $range['dec'][0]);
-		$this->assertEquals(65855, $range['dec'][1]);
+		$this->assertEquals('10100', $range[0]);
+		$this->assertEquals('1013F', $range[1]);
 	}
 }

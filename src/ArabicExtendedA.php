@@ -10,14 +10,8 @@ class ArabicExtendedA extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '08A0',
-            '08FF',
-        ],
-            'dec' => [
-            2208,
-            2303,
-        ],
+            '08FF',        
         ];
     }
 }

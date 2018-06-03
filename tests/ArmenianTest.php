@@ -29,9 +29,7 @@ class ArmenianTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0530', $range['hex'][0]);
-		$this->assertEquals('058F', $range['hex'][1]);
-		$this->assertEquals(1328, $range['dec'][0]);
-		$this->assertEquals(1423, $range['dec'][1]);
+		$this->assertEquals('0530', $range[0]);
+		$this->assertEquals('058F', $range[1]);
 	}
 }

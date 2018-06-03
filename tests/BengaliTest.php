@@ -29,9 +29,7 @@ class BengaliTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0980', $range['hex'][0]);
-		$this->assertEquals('09FF', $range['hex'][1]);
-		$this->assertEquals(2432, $range['dec'][0]);
-		$this->assertEquals(2559, $range['dec'][1]);
+		$this->assertEquals('0980', $range[0]);
+		$this->assertEquals('09FF', $range[1]);
 	}
 }

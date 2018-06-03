@@ -29,9 +29,7 @@ class OriyaTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0B00', $range['hex'][0]);
-		$this->assertEquals('0B7F', $range['hex'][1]);
-		$this->assertEquals(2816, $range['dec'][0]);
-		$this->assertEquals(2943, $range['dec'][1]);
+		$this->assertEquals('0B00', $range[0]);
+		$this->assertEquals('0B7F', $range[1]);
 	}
 }

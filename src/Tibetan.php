@@ -10,14 +10,8 @@ class Tibetan extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0F00',
             '0FFF',
-        ],
-            'dec' => [
-            3840,
-            4095,
-        ],
         ];
     }
 }

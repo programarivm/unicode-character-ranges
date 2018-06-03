@@ -10,14 +10,8 @@ class UnifiedCanadianAboriginalSyllabicsExtended extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '18B0',
             '18FF',
-        ],
-            'dec' => [
-            6320,
-            6399,
-        ],
         ];
     }
 }

@@ -10,14 +10,8 @@ class GeorgianSupplement extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2D00',
             '2D2F',
-        ],
-            'dec' => [
-            11520,
-            11567,
-        ],
         ];
     }
 }

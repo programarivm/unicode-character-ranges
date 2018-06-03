@@ -29,9 +29,7 @@ class ThaanaTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0780', $range['hex'][0]);
-		$this->assertEquals('07BF', $range['hex'][1]);
-		$this->assertEquals(1920, $range['dec'][0]);
-		$this->assertEquals(1983, $range['dec'][1]);
+		$this->assertEquals('0780', $range[0]);
+		$this->assertEquals('07BF', $range[1]);
 	}
 }

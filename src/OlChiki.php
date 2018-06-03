@@ -10,14 +10,8 @@ class OlChiki extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1C50',
             '1C7F',
-        ],
-            'dec' => [
-            7248,
-            7295,
-        ],
         ];
     }
 }

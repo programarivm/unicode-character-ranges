@@ -29,9 +29,7 @@ class EnclosedAlphanumericsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2460', $range['hex'][0]);
-		$this->assertEquals('24FF', $range['hex'][1]);
-		$this->assertEquals(9312, $range['dec'][0]);
-		$this->assertEquals(9471, $range['dec'][1]);
+		$this->assertEquals('2460', $range[0]);
+		$this->assertEquals('24FF', $range[1]);
 	}
 }

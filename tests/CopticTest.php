@@ -29,9 +29,7 @@ class CopticTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2C80', $range['hex'][0]);
-		$this->assertEquals('2CFF', $range['hex'][1]);
-		$this->assertEquals(11392, $range['dec'][0]);
-		$this->assertEquals(11519, $range['dec'][1]);
+		$this->assertEquals('2C80', $range[0]);
+		$this->assertEquals('2CFF', $range[1]);
 	}
 }

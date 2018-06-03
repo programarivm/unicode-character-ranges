@@ -29,9 +29,7 @@ class MalayalamTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0D00', $range['hex'][0]);
-		$this->assertEquals('0D7F', $range['hex'][1]);
-		$this->assertEquals(3328, $range['dec'][0]);
-		$this->assertEquals(3455, $range['dec'][1]);
+		$this->assertEquals('0D00', $range[0]);
+		$this->assertEquals('0D7F', $range[1]);
 	}
 }

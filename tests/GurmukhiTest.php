@@ -29,9 +29,7 @@ class GurmukhiTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0A00', $range['hex'][0]);
-		$this->assertEquals('0A7F', $range['hex'][1]);
-		$this->assertEquals(2560, $range['dec'][0]);
-		$this->assertEquals(2687, $range['dec'][1]);
+		$this->assertEquals('0A00', $range[0]);
+		$this->assertEquals('0A7F', $range[1]);
 	}
 }

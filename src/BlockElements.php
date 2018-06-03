@@ -10,14 +10,8 @@ class BlockElements extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2580',
             '259F',
-        ],
-            'dec' => [
-            9600,
-            9631,
-        ],
         ];
     }
 }

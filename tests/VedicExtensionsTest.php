@@ -29,9 +29,7 @@ class VedicExtensionsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1CD0', $range['hex'][0]);
-		$this->assertEquals('1CFF', $range['hex'][1]);
-		$this->assertEquals(7376, $range['dec'][0]);
-		$this->assertEquals(7423, $range['dec'][1]);
+		$this->assertEquals('1CD0', $range[0]);
+		$this->assertEquals('1CFF', $range[1]);
 	}
 }

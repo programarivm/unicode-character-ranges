@@ -10,14 +10,8 @@ class Tagbanwa extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1760',
             '177F',
-        ],
-            'dec' => [
-            5984,
-            6015,
-        ],
         ];
     }
 }

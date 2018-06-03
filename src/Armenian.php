@@ -10,14 +10,8 @@ class Armenian extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0530',
             '058F',
-        ],
-            'dec' => [
-            1328,
-            1423,
-        ],
         ];
     }
 }

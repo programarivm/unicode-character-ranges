@@ -29,9 +29,7 @@ class ThaiTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0E00', $range['hex'][0]);
-		$this->assertEquals('0E7F', $range['hex'][1]);
-		$this->assertEquals(3584, $range['dec'][0]);
-		$this->assertEquals(3711, $range['dec'][1]);
+		$this->assertEquals('0E00', $range[0]);
+		$this->assertEquals('0E7F', $range[1]);
 	}
 }

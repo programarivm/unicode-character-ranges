@@ -10,14 +10,8 @@ class Lao extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0E80',
             '0EFF',
-        ],
-            'dec' => [
-            3712,
-            3839,
-        ],
         ];
     }
 }

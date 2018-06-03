@@ -29,9 +29,7 @@ class BoxDrawingTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2500', $range['hex'][0]);
-		$this->assertEquals('257F', $range['hex'][1]);
-		$this->assertEquals(9472, $range['dec'][0]);
-		$this->assertEquals(9599, $range['dec'][1]);
+		$this->assertEquals('2500', $range[0]);
+		$this->assertEquals('257F', $range[1]);
 	}
 }

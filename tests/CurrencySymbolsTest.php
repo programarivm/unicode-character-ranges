@@ -29,9 +29,7 @@ class CurrencySymbolsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('20A0', $range['hex'][0]);
-		$this->assertEquals('20CF', $range['hex'][1]);
-		$this->assertEquals(8352, $range['dec'][0]);
-		$this->assertEquals(8399, $range['dec'][1]);
+		$this->assertEquals('20A0', $range[0]);
+		$this->assertEquals('20CF', $range[1]);
 	}
 }

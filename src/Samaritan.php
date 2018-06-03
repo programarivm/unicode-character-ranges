@@ -10,14 +10,8 @@ class Samaritan extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0800',
             '083F',
-        ],
-            'dec' => [
-            2048,
-            2111,
-        ],
         ];
     }
 }

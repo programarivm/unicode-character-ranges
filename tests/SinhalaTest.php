@@ -29,9 +29,7 @@ class SinhalaTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0D80', $range['hex'][0]);
-		$this->assertEquals('0DFF', $range['hex'][1]);
-		$this->assertEquals(3456, $range['dec'][0]);
-		$this->assertEquals(3583, $range['dec'][1]);
+		$this->assertEquals('0D80', $range[0]);
+		$this->assertEquals('0DFF', $range[1]);
 	}
 }

@@ -10,14 +10,8 @@ class MathematicalOperators extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2200',
             '22FF',
-        ],
-            'dec' => [
-            8704,
-            8959,
-        ],
         ];
     }
 }

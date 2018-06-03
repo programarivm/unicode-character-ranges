@@ -10,14 +10,8 @@ class Malayalam extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0D00',
             '0D7F',
-        ],
-            'dec' => [
-            3328,
-            3455,
-        ],
         ];
     }
 }

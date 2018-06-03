@@ -29,9 +29,7 @@ class GeneralPunctuationTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2000', $range['hex'][0]);
-		$this->assertEquals('206F', $range['hex'][1]);
-		$this->assertEquals(8192, $range['dec'][0]);
-		$this->assertEquals(8303, $range['dec'][1]);
+		$this->assertEquals('2000', $range[0]);
+		$this->assertEquals('206F', $range[1]);
 	}
 }

@@ -10,14 +10,8 @@ class Myanmar extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1000',
             '109F',
-        ],
-            'dec' => [
-            4096,
-            4255,
-        ],
         ];
     }
 }

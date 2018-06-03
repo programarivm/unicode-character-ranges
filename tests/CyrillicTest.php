@@ -29,9 +29,7 @@ class CyrillicTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0400', $range['hex'][0]);
-		$this->assertEquals('04FF', $range['hex'][1]);
-		$this->assertEquals(1024, $range['dec'][0]);
-		$this->assertEquals(1279, $range['dec'][1]);
+		$this->assertEquals('0400', $range[0]);
+		$this->assertEquals('04FF', $range[1]);
 	}
 }

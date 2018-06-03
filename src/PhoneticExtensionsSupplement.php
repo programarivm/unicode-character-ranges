@@ -10,14 +10,8 @@ class PhoneticExtensionsSupplement extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1D80',
             '1DBF',
-        ],
-            'dec' => [
-            7552,
-            7615,
-        ],
         ];
     }
 }

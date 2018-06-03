@@ -29,9 +29,7 @@ class ControlPicturesTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2400', $range['hex'][0]);
-		$this->assertEquals('243F', $range['hex'][1]);
-		$this->assertEquals(9216, $range['dec'][0]);
-		$this->assertEquals(9279, $range['dec'][1]);
+		$this->assertEquals('2400', $range[0]);
+		$this->assertEquals('243F', $range[1]);
 	}
 }

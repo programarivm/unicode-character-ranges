@@ -10,14 +10,8 @@ class Khmer extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1780',
             '17FF',
-        ],
-            'dec' => [
-            6016,
-            6143,
-        ],
         ];
     }
 }

@@ -10,14 +10,8 @@ class Lepcha extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1C00',
             '1C4F',
-        ],
-            'dec' => [
-            7168,
-            7247,
-        ],
         ];
     }
 }

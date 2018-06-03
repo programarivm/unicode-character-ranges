@@ -29,9 +29,7 @@ class GeorgianTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('10A0', $range['hex'][0]);
-		$this->assertEquals('10FF', $range['hex'][1]);
-		$this->assertEquals(4256, $range['dec'][0]);
-		$this->assertEquals(4351, $range['dec'][1]);
+		$this->assertEquals('10A0', $range[0]);
+		$this->assertEquals('10FF', $range[1]);
 	}
 }

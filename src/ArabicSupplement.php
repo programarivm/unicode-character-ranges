@@ -10,14 +10,8 @@ class ArabicSupplement extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0750',
             '077F',
-        ],
-            'dec' => [
-            1872,
-            1919,
-        ],
         ];
     }
 }

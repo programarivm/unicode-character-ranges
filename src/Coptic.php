@@ -10,14 +10,8 @@ class Coptic extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2C80',
             '2CFF',
-        ],
-            'dec' => [
-            11392,
-            11519,
-        ],
         ];
     }
 }

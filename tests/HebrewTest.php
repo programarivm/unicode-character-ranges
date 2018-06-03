@@ -29,9 +29,7 @@ class HebrewTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0590', $range['hex'][0]);
-		$this->assertEquals('05FF', $range['hex'][1]);
-		$this->assertEquals(1424, $range['dec'][0]);
-		$this->assertEquals(1535, $range['dec'][1]);
+		$this->assertEquals('0590', $range[0]);
+		$this->assertEquals('05FF', $range[1]);
 	}
 }

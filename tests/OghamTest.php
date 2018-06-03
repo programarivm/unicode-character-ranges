@@ -29,9 +29,7 @@ class OghamTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1680', $range['hex'][0]);
-		$this->assertEquals('169F', $range['hex'][1]);
-		$this->assertEquals(5760, $range['dec'][0]);
-		$this->assertEquals(5791, $range['dec'][1]);
+		$this->assertEquals('1680', $range[0]);
+		$this->assertEquals('169F', $range[1]);
 	}
 }

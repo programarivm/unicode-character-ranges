@@ -10,14 +10,8 @@ class TaiTham extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1A20',
             '1AAF',
-        ],
-            'dec' => [
-            6688,
-            6831,
-        ],
         ];
     }
 }

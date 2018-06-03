@@ -29,9 +29,7 @@ class TaiThamTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1A20', $range['hex'][0]);
-		$this->assertEquals('1AAF', $range['hex'][1]);
-		$this->assertEquals(6688, $range['dec'][0]);
-		$this->assertEquals(6831, $range['dec'][1]);
+		$this->assertEquals('1A20', $range[0]);
+		$this->assertEquals('1AAF', $range[1]);
 	}
 }

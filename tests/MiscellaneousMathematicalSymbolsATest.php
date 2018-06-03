@@ -29,9 +29,7 @@ class MiscellaneousMathematicalSymbolsATest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('27C0', $range['hex'][0]);
-		$this->assertEquals('27EF', $range['hex'][1]);
-		$this->assertEquals(10176, $range['dec'][0]);
-		$this->assertEquals(10223, $range['dec'][1]);
+		$this->assertEquals('27C0', $range[0]);
+		$this->assertEquals('27EF', $range[1]);
 	}
 }

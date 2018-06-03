@@ -10,14 +10,8 @@ class Sundanese extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1B80',
             '1BBF',
-        ],
-            'dec' => [
-            7040,
-            7103,
-        ],
         ];
     }
 }

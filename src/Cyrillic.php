@@ -10,14 +10,8 @@ class Cyrillic extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0400',
             '04FF',
-        ],
-            'dec' => [
-            1024,
-            1279,
-        ],
         ];
     }
 }

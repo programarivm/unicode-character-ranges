@@ -29,9 +29,7 @@ class ArabicTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0600', $range['hex'][0]);
-		$this->assertEquals('06FF', $range['hex'][1]);
-		$this->assertEquals(1536, $range['dec'][0]);
-		$this->assertEquals(1791, $range['dec'][1]);
+		$this->assertEquals('0600', $range[0]);
+		$this->assertEquals('06FF', $range[1]);
 	}
 }

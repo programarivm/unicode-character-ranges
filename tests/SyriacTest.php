@@ -29,9 +29,7 @@ class SyriacTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0700', $range['hex'][0]);
-		$this->assertEquals('074F', $range['hex'][1]);
-		$this->assertEquals(1792, $range['dec'][0]);
-		$this->assertEquals(1871, $range['dec'][1]);
+		$this->assertEquals('0700', $range[0]);
+		$this->assertEquals('074F', $range[1]);
 	}
 }

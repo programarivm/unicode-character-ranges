@@ -29,9 +29,7 @@ class TibetanTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0F00', $range['hex'][0]);
-		$this->assertEquals('0FFF', $range['hex'][1]);
-		$this->assertEquals(3840, $range['dec'][0]);
-		$this->assertEquals(4095, $range['dec'][1]);
+		$this->assertEquals('0F00', $range[0]);
+		$this->assertEquals('0FFF', $range[1]);
 	}
 }

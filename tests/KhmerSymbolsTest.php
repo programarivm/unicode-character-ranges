@@ -29,9 +29,7 @@ class KhmerSymbolsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('19E0', $range['hex'][0]);
-		$this->assertEquals('19FF', $range['hex'][1]);
-		$this->assertEquals(6624, $range['dec'][0]);
-		$this->assertEquals(6655, $range['dec'][1]);
+		$this->assertEquals('19E0', $range[0]);
+		$this->assertEquals('19FF', $range[1]);
 	}
 }

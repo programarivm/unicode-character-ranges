@@ -29,9 +29,7 @@ class OpticalCharacterRecognitionTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2440', $range['hex'][0]);
-		$this->assertEquals('245F', $range['hex'][1]);
-		$this->assertEquals(9280, $range['dec'][0]);
-		$this->assertEquals(9311, $range['dec'][1]);
+		$this->assertEquals('2440', $range[0]);
+		$this->assertEquals('245F', $range[1]);
 	}
 }

@@ -10,14 +10,8 @@ class SupplementalArrowsB extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2900',
             '297F',
-        ],
-            'dec' => [
-            10496,
-            10623,
-        ],
         ];
     }
 }

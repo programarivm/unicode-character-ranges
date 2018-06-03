@@ -10,14 +10,8 @@ class KhmerSymbols extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '19E0',
             '19FF',
-        ],
-            'dec' => [
-            6624,
-            6655,
-        ],
         ];
     }
 }

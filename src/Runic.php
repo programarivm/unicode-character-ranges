@@ -10,14 +10,8 @@ class Runic extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '16A0',
             '16FF',
-        ],
-            'dec' => [
-            5792,
-            5887,
-        ],
         ];
     }
 }

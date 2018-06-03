@@ -10,14 +10,8 @@ class Balinese extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1B00',
             '1B7F',
-        ],
-            'dec' => [
-            6912,
-            7039,
-        ],
         ];
     }
 }

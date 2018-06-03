@@ -10,14 +10,8 @@ class Bengali extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0980',
             '09FF',
-        ],
-            'dec' => [
-            2432,
-            2559,
-        ],
         ];
     }
 }

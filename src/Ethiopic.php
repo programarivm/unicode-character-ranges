@@ -10,14 +10,8 @@ class Ethiopic extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1200',
             '137F',
-        ],
-            'dec' => [
-            4608,
-            4991,
-        ],
         ];
     }
 }

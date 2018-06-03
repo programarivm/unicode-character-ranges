@@ -10,14 +10,8 @@ class Syriac extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0700',
             '074F',
-        ],
-            'dec' => [
-            1792,
-            1871,
-        ],
         ];
     }
 }

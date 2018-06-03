@@ -10,14 +10,8 @@ class BoxDrawing extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2500',
             '257F',
-        ],
-            'dec' => [
-            9472,
-            9599,
-        ],
         ];
     }
 }

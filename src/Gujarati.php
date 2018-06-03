@@ -10,14 +10,8 @@ class Gujarati extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0A80',
             '0AFF',
-        ],
-            'dec' => [
-            2688,
-            2815,
-        ],
         ];
     }
 }

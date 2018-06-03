@@ -10,14 +10,8 @@ class NewTaiLue extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1980',
             '19DF',
-        ],
-            'dec' => [
-            6528,
-            6623,
-        ],
         ];
     }
 }

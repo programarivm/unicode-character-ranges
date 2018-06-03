@@ -29,9 +29,7 @@ class DingbatsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2700', $range['hex'][0]);
-		$this->assertEquals('27BF', $range['hex'][1]);
-		$this->assertEquals(9984, $range['dec'][0]);
-		$this->assertEquals(10175, $range['dec'][1]);
+		$this->assertEquals('2700', $range[0]);
+		$this->assertEquals('27BF', $range[1]);
 	}
 }

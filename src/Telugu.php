@@ -10,14 +10,8 @@ class Telugu extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0C00',
             '0C7F',
-        ],
-            'dec' => [
-            3072,
-            3199,
-        ],
         ];
     }
 }

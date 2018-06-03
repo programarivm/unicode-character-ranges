@@ -10,14 +10,8 @@ class MiscellaneousMathematicalSymbolsB extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2980',
             '29FF',
-        ],
-            'dec' => [
-            10624,
-            10751,
-        ],
         ];
     }
 }

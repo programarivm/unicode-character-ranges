@@ -29,9 +29,7 @@ class TagbanwaTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1760', $range['hex'][0]);
-		$this->assertEquals('177F', $range['hex'][1]);
-		$this->assertEquals(5984, $range['dec'][0]);
-		$this->assertEquals(6015, $range['dec'][1]);
+		$this->assertEquals('1760', $range[0]);
+		$this->assertEquals('177F', $range[1]);
 	}
 }

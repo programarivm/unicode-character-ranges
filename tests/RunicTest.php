@@ -29,9 +29,7 @@ class RunicTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('16A0', $range['hex'][0]);
-		$this->assertEquals('16FF', $range['hex'][1]);
-		$this->assertEquals(5792, $range['dec'][0]);
-		$this->assertEquals(5887, $range['dec'][1]);
+		$this->assertEquals('16A0', $range[0]);
+		$this->assertEquals('16FF', $range[1]);
 	}
 }

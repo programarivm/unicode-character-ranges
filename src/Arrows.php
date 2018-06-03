@@ -10,14 +10,8 @@ class Arrows extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2190',
             '21FF',
-        ],
-            'dec' => [
-            8592,
-            8703,
-        ],
         ];
     }
 }

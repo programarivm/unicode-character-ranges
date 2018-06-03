@@ -10,14 +10,8 @@ class GreekExtended extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1F00',
             '1FFF',
-        ],
-            'dec' => [
-            7936,
-            8191,
-        ],
         ];
     }
 }

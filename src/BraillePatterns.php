@@ -10,14 +10,8 @@ class BraillePatterns extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2800',
             '28FF',
-        ],
-            'dec' => [
-            10240,
-            10495,
-        ],
         ];
     }
 }

@@ -10,14 +10,8 @@ class CombiningDiacriticalMarksForSymbols extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '20D0',
             '20FF',
-        ],
-            'dec' => [
-            8400,
-            8447,
-        ],
         ];
     }
 }

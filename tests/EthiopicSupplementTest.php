@@ -29,9 +29,7 @@ class EthiopicSupplementTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1380', $range['hex'][0]);
-		$this->assertEquals('139F', $range['hex'][1]);
-		$this->assertEquals(4992, $range['dec'][0]);
-		$this->assertEquals(5023, $range['dec'][1]);
+		$this->assertEquals('1380', $range[0]);
+		$this->assertEquals('139F', $range[1]);
 	}
 }

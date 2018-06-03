@@ -29,9 +29,7 @@ class TagalogTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1700', $range['hex'][0]);
-		$this->assertEquals('171F', $range['hex'][1]);
-		$this->assertEquals(5888, $range['dec'][0]);
-		$this->assertEquals(5919, $range['dec'][1]);
+		$this->assertEquals('1700', $range[0]);
+		$this->assertEquals('171F', $range[1]);
 	}
 }

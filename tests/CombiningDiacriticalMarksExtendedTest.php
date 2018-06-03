@@ -29,9 +29,7 @@ class CombiningDiacriticalMarksExtendedTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1AB0', $range['hex'][0]);
-		$this->assertEquals('1AFF', $range['hex'][1]);
-		$this->assertEquals(6832, $range['dec'][0]);
-		$this->assertEquals(6911, $range['dec'][1]);
+		$this->assertEquals('1AB0', $range[0]);
+		$this->assertEquals('1AFF', $range[1]);
 	}
 }

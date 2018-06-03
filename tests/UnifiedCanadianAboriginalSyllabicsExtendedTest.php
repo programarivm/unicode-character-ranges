@@ -29,9 +29,7 @@ class UnifiedCanadianAboriginalSyllabicsExtendedTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('18B0', $range['hex'][0]);
-		$this->assertEquals('18FF', $range['hex'][1]);
-		$this->assertEquals(6320, $range['dec'][0]);
-		$this->assertEquals(6399, $range['dec'][1]);
+		$this->assertEquals('18B0', $range[0]);
+		$this->assertEquals('18FF', $range[1]);
 	}
 }

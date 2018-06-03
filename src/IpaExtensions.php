@@ -10,14 +10,8 @@ class IpaExtensions extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0250',
             '02AF',
-        ],
-            'dec' => [
-            592,
-            687,
-        ],
         ];
     }
 }

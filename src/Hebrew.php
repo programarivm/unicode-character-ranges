@@ -10,14 +10,8 @@ class Hebrew extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0590',
             '05FF',
-        ],
-            'dec' => [
-            1424,
-            1535,
-        ],
         ];
     }
 }

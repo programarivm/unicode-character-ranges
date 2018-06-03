@@ -10,14 +10,8 @@ class Limbu extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1900',
             '194F',
-        ],
-            'dec' => [
-            6400,
-            6479,
-        ],
         ];
     }
 }

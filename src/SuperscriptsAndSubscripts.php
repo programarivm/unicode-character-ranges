@@ -10,14 +10,8 @@ class SuperscriptsAndSubscripts extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2070',
             '209F',
-        ],
-            'dec' => [
-            8304,
-            8351,
-        ],
         ];
     }
 }

@@ -29,9 +29,7 @@ class MandaicTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0840', $range['hex'][0]);
-		$this->assertEquals('085F', $range['hex'][1]);
-		$this->assertEquals(2112, $range['dec'][0]);
-		$this->assertEquals(2143, $range['dec'][1]);
+		$this->assertEquals('0840', $range[0]);
+		$this->assertEquals('085F', $range[1]);
 	}
 }

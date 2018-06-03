@@ -10,14 +10,8 @@ class CurrencySymbols extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '20A0',
             '20CF',
-        ],
-            'dec' => [
-            8352,
-            8399,
-        ],
         ];
     }
 }

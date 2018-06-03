@@ -10,14 +10,8 @@ class TaiLe extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1950',
             '197F',
-        ],
-            'dec' => [
-            6480,
-            6527,
-        ],
         ];
     }
 }

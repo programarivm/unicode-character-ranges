@@ -10,14 +10,8 @@ class SupplementalMathematicalOperators extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2A00',
             '2AFF',
-        ],
-            'dec' => [
-            10752,
-            11007,
-        ],
         ];
     }
 }

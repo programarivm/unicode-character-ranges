@@ -10,14 +10,8 @@ class Sinhala extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0D80',
             '0DFF',
-        ],
-            'dec' => [
-            3456,
-            3583,
-        ],
         ];
     }
 }

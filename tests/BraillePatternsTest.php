@@ -29,9 +29,7 @@ class BraillePatternsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2800', $range['hex'][0]);
-		$this->assertEquals('28FF', $range['hex'][1]);
-		$this->assertEquals(10240, $range['dec'][0]);
-		$this->assertEquals(10495, $range['dec'][1]);
+		$this->assertEquals('2800', $range[0]);
+		$this->assertEquals('28FF', $range[1]);
 	}
 }

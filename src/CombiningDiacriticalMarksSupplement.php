@@ -10,14 +10,8 @@ class CombiningDiacriticalMarksSupplement extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1DC0',
             '1DFF',
-        ],
-            'dec' => [
-            7616,
-            7679,
-        ],
         ];
     }
 }

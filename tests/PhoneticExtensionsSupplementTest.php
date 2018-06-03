@@ -29,9 +29,7 @@ class PhoneticExtensionsSupplementTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1D80', $range['hex'][0]);
-		$this->assertEquals('1DBF', $range['hex'][1]);
-		$this->assertEquals(7552, $range['dec'][0]);
-		$this->assertEquals(7615, $range['dec'][1]);
+		$this->assertEquals('1D80', $range[0]);
+		$this->assertEquals('1DBF', $range[1]);
 	}
 }

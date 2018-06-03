@@ -29,9 +29,7 @@ class SundaneseSupplementTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1CC0', $range['hex'][0]);
-		$this->assertEquals('1CCF', $range['hex'][1]);
-		$this->assertEquals(7360, $range['dec'][0]);
-		$this->assertEquals(7375, $range['dec'][1]);
+		$this->assertEquals('1CC0', $range[0]);
+		$this->assertEquals('1CCF', $range[1]);
 	}
 }

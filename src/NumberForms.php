@@ -10,14 +10,8 @@ class NumberForms extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2150',
             '218F',
-        ],
-            'dec' => [
-            8528,
-            8591,
-        ],
         ];
     }
 }

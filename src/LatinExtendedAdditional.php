@@ -10,14 +10,8 @@ class LatinExtendedAdditional extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1E00',
             '1EFF',
-        ],
-            'dec' => [
-            7680,
-            7935,
-        ],
         ];
     }
 }

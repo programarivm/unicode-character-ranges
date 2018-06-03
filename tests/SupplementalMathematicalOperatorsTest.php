@@ -29,9 +29,7 @@ class SupplementalMathematicalOperatorsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2A00', $range['hex'][0]);
-		$this->assertEquals('2AFF', $range['hex'][1]);
-		$this->assertEquals(10752, $range['dec'][0]);
-		$this->assertEquals(11007, $range['dec'][1]);
+		$this->assertEquals('2A00', $range[0]);
+		$this->assertEquals('2AFF', $range[1]);
 	}
 }

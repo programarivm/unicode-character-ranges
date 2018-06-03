@@ -10,14 +10,8 @@ class Devanagari extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0900',
             '097F',
-        ],
-            'dec' => [
-            2304,
-            2431,
-        ],
         ];
     }
 }

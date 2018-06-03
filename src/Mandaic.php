@@ -10,14 +10,8 @@ class Mandaic extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0840',
             '085F',
-        ],
-            'dec' => [
-            2112,
-            2143,
-        ],
         ];
     }
 }

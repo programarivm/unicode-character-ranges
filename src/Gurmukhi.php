@@ -10,14 +10,8 @@ class Gurmukhi extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0A00',
             '0A7F',
-        ],
-            'dec' => [
-            2560,
-            2687,
-        ],
         ];
     }
 }

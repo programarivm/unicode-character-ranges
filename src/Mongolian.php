@@ -10,14 +10,8 @@ class Mongolian extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1800',
             '18AF',
-        ],
-            'dec' => [
-            6144,
-            6319,
-        ],
         ];
     }
 }

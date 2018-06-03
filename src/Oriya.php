@@ -10,14 +10,8 @@ class Oriya extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0B00',
             '0B7F',
-        ],
-            'dec' => [
-            2816,
-            2943,
-        ],
         ];
     }
 }

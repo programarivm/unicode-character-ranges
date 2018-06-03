@@ -29,9 +29,7 @@ class SuperscriptsAndSubscriptsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2070', $range['hex'][0]);
-		$this->assertEquals('209F', $range['hex'][1]);
-		$this->assertEquals(8304, $range['dec'][0]);
-		$this->assertEquals(8351, $range['dec'][1]);
+		$this->assertEquals('2070', $range[0]);
+		$this->assertEquals('209F', $range[1]);
 	}
 }

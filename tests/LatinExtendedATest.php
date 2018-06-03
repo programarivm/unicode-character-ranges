@@ -29,9 +29,7 @@ class LatinExtendedATest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0100', $range['hex'][0]);
-		$this->assertEquals('017F', $range['hex'][1]);
-		$this->assertEquals(256, $range['dec'][0]);
-		$this->assertEquals(383, $range['dec'][1]);
+		$this->assertEquals('0100', $range[0]);
+		$this->assertEquals('017F', $range[1]);
 	}
 }

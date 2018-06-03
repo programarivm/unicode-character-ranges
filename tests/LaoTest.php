@@ -29,9 +29,7 @@ class LaoTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0E80', $range['hex'][0]);
-		$this->assertEquals('0EFF', $range['hex'][1]);
-		$this->assertEquals(3712, $range['dec'][0]);
-		$this->assertEquals(3839, $range['dec'][1]);
+		$this->assertEquals('0E80', $range[0]);
+		$this->assertEquals('0EFF', $range[1]);
 	}
 }

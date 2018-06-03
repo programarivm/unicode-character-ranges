@@ -29,9 +29,7 @@ class BlockElementsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2580', $range['hex'][0]);
-		$this->assertEquals('259F', $range['hex'][1]);
-		$this->assertEquals(9600, $range['dec'][0]);
-		$this->assertEquals(9631, $range['dec'][1]);
+		$this->assertEquals('2580', $range[0]);
+		$this->assertEquals('259F', $range[1]);
 	}
 }

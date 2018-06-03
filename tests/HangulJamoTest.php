@@ -29,9 +29,7 @@ class HangulJamoTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1100', $range['hex'][0]);
-		$this->assertEquals('11FF', $range['hex'][1]);
-		$this->assertEquals(4352, $range['dec'][0]);
-		$this->assertEquals(4607, $range['dec'][1]);
+		$this->assertEquals('1100', $range[0]);
+		$this->assertEquals('11FF', $range[1]);
 	}
 }

@@ -10,14 +10,8 @@ class Cherokee extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '13A0',
             '13FF',
-        ],
-            'dec' => [
-            5024,
-            5119,
-        ],
         ];
     }
 }

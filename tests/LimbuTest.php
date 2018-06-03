@@ -29,9 +29,7 @@ class LimbuTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1900', $range['hex'][0]);
-		$this->assertEquals('194F', $range['hex'][1]);
-		$this->assertEquals(6400, $range['dec'][0]);
-		$this->assertEquals(6479, $range['dec'][1]);
+		$this->assertEquals('1900', $range[0]);
+		$this->assertEquals('194F', $range[1]);
 	}
 }

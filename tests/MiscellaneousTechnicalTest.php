@@ -29,9 +29,7 @@ class MiscellaneousTechnicalTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2300', $range['hex'][0]);
-		$this->assertEquals('23FF', $range['hex'][1]);
-		$this->assertEquals(8960, $range['dec'][0]);
-		$this->assertEquals(9215, $range['dec'][1]);
+		$this->assertEquals('2300', $range[0]);
+		$this->assertEquals('23FF', $range[1]);
 	}
 }

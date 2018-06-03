@@ -29,9 +29,7 @@ class GlagoliticTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2C00', $range['hex'][0]);
-		$this->assertEquals('2C5F', $range['hex'][1]);
-		$this->assertEquals(11264, $range['dec'][0]);
-		$this->assertEquals(11359, $range['dec'][1]);
+		$this->assertEquals('2C00', $range[0]);
+		$this->assertEquals('2C5F', $range[1]);
 	}
 }

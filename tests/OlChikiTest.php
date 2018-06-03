@@ -29,9 +29,7 @@ class OlChikiTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1C50', $range['hex'][0]);
-		$this->assertEquals('1C7F', $range['hex'][1]);
-		$this->assertEquals(7248, $range['dec'][0]);
-		$this->assertEquals(7295, $range['dec'][1]);
+		$this->assertEquals('1C50', $range[0]);
+		$this->assertEquals('1C7F', $range[1]);
 	}
 }

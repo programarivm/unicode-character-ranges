@@ -10,14 +10,8 @@ class AegeanNumbers extends CharacterRange
 	{
 		$this->name = self::RANGE_NAME;
 		$this->range = [
-			'hex' => [
 			'10100',
-			'1013F'
-		],
-			'dec' => [
-			65792,
-			65855
-		]
+			'1013F',
 		];
 	}
 }

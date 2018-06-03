@@ -29,9 +29,7 @@ class NKoTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('07C0', $range['hex'][0]);
-		$this->assertEquals('07FF', $range['hex'][1]);
-		$this->assertEquals(1984, $range['dec'][0]);
-		$this->assertEquals(2047, $range['dec'][1]);
+		$this->assertEquals('07C0', $range[0]);
+		$this->assertEquals('07FF', $range[1]);
 	}
 }

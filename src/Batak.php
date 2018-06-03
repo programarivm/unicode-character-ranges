@@ -10,14 +10,8 @@ class Batak extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1BC0',
             '1BFF',
-        ],
-            'dec' => [
-            7104,
-            7167,
-        ],
         ];
     }
 }

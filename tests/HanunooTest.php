@@ -29,9 +29,7 @@ class HanunooTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1720', $range['hex'][0]);
-		$this->assertEquals('173F', $range['hex'][1]);
-		$this->assertEquals(5920, $range['dec'][0]);
-		$this->assertEquals(5951, $range['dec'][1]);
+		$this->assertEquals('1720', $range[0]);
+		$this->assertEquals('173F', $range[1]);
 	}
 }

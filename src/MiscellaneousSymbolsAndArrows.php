@@ -10,14 +10,8 @@ class MiscellaneousSymbolsAndArrows extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2B00',
             '2BFF',
-        ],
-            'dec' => [
-            11008,
-            11263,
-        ],
         ];
     }
 }

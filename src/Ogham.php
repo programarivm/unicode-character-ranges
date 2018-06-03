@@ -10,14 +10,8 @@ class Ogham extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1680',
             '169F',
-        ],
-            'dec' => [
-            5760,
-            5791,
-        ],
         ];
     }
 }

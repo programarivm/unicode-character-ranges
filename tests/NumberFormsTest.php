@@ -29,9 +29,7 @@ class NumberFormsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2150', $range['hex'][0]);
-		$this->assertEquals('218F', $range['hex'][1]);
-		$this->assertEquals(8528, $range['dec'][0]);
-		$this->assertEquals(8591, $range['dec'][1]);
+		$this->assertEquals('2150', $range[0]);
+		$this->assertEquals('218F', $range[1]);
 	}
 }

@@ -29,9 +29,7 @@ class IpaExtensionsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0250', $range['hex'][0]);
-		$this->assertEquals('02AF', $range['hex'][1]);
-		$this->assertEquals(592, $range['dec'][0]);
-		$this->assertEquals(687, $range['dec'][1]);
+		$this->assertEquals('0250', $range[0]);
+		$this->assertEquals('02AF', $range[1]);
 	}
 }

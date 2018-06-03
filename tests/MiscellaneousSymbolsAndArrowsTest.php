@@ -29,9 +29,7 @@ class MiscellaneousSymbolsAndArrowsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2B00', $range['hex'][0]);
-		$this->assertEquals('2BFF', $range['hex'][1]);
-		$this->assertEquals(11008, $range['dec'][0]);
-		$this->assertEquals(11263, $range['dec'][1]);
+		$this->assertEquals('2B00', $range[0]);
+		$this->assertEquals('2BFF', $range[1]);
 	}
 }

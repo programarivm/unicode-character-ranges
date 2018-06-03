@@ -10,14 +10,8 @@ class SpacingModifierLetters extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '02B0',
             '02FF',
-        ],
-            'dec' => [
-            688,
-            767,
-        ],
         ];
     }
 }

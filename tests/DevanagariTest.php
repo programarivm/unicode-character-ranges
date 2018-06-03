@@ -29,9 +29,7 @@ class DevanagariTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('0900', $range['hex'][0]);
-		$this->assertEquals('097F', $range['hex'][1]);
-		$this->assertEquals(2304, $range['dec'][0]);
-		$this->assertEquals(2431, $range['dec'][1]);
+		$this->assertEquals('0900', $range[0]);
+		$this->assertEquals('097F', $range[1]);
 	}
 }

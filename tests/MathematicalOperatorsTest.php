@@ -29,9 +29,7 @@ class MathematicalOperatorsTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('2200', $range['hex'][0]);
-		$this->assertEquals('22FF', $range['hex'][1]);
-		$this->assertEquals(8704, $range['dec'][0]);
-		$this->assertEquals(8959, $range['dec'][1]);
+		$this->assertEquals('2200', $range[0]);
+		$this->assertEquals('22FF', $range[1]);
 	}
 }

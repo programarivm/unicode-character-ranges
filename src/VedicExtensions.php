@@ -10,14 +10,8 @@ class VedicExtensions extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '1CD0',
             '1CFF',
-        ],
-            'dec' => [
-            7376,
-            7423,
-        ],
         ];
     }
 }

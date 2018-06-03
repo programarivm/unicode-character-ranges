@@ -10,14 +10,8 @@ class Dingbats extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2700',
             '27BF',
-        ],
-            'dec' => [
-            9984,
-            10175,
-        ],
         ];
     }
 }

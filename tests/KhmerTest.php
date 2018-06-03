@@ -29,9 +29,7 @@ class KhmerTest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('1780', $range['hex'][0]);
-		$this->assertEquals('17FF', $range['hex'][1]);
-		$this->assertEquals(6016, $range['dec'][0]);
-		$this->assertEquals(6143, $range['dec'][1]);
+		$this->assertEquals('1780', $range[0]);
+		$this->assertEquals('17FF', $range[1]);
 	}
 }

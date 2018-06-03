@@ -29,9 +29,7 @@ class SupplementalArrowsATest extends TestCase
 	{
 		$range = $this->charRange->getRange();
 
-		$this->assertEquals('27F0', $range['hex'][0]);
-		$this->assertEquals('27FF', $range['hex'][1]);
-		$this->assertEquals(10224, $range['dec'][0]);
-		$this->assertEquals(10239, $range['dec'][1]);
+		$this->assertEquals('27F0', $range[0]);
+		$this->assertEquals('27FF', $range[1]);
 	}
 }

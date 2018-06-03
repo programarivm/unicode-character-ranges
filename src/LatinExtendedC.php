@@ -10,14 +10,8 @@ class LatinExtendedC extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2C60',
             '2C7F',
-        ],
-            'dec' => [
-            11360,
-            11391,
-        ],
         ];
     }
 }

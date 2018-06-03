@@ -10,14 +10,8 @@ class LetterlikeSymbols extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2100',
             '214F',
-        ],
-            'dec' => [
-            8448,
-            8527,
-        ],
         ];
     }
 }

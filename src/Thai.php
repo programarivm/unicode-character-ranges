@@ -10,14 +10,8 @@ class Thai extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0E00',
             '0E7F',
-        ],
-            'dec' => [
-            3584,
-            3711,
-        ],
         ];
     }
 }

@@ -10,14 +10,8 @@ class GeometricShapes extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '25A0',
             '25FF',
-        ],
-            'dec' => [
-            9632,
-            9727,
-        ],
         ];
     }
 }

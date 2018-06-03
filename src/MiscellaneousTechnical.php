@@ -10,14 +10,8 @@ class MiscellaneousTechnical extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2300',
             '23FF',
-        ],
-            'dec' => [
-            8960,
-            9215,
-        ],
         ];
     }
 }

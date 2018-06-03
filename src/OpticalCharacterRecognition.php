@@ -10,14 +10,8 @@ class OpticalCharacterRecognition extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '2440',
             '245F',
-        ],
-            'dec' => [
-            9280,
-            9311,
-        ],
         ];
     }
 }

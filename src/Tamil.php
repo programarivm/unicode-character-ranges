@@ -10,14 +10,8 @@ class Tamil extends CharacterRange
     {
         $this->name = self::RANGE_NAME;
         $this->range = [
-            'hex' => [
             '0B80',
             '0BFF',
-        ],
-            'dec' => [
-            2944,
-            3071,
-        ],
         ];
     }
 }
