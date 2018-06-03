@@ -5,7 +5,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Unicode Character Ranges](/resources/logo.jpg?raw=true)
 
-Unicode character ranges in an object-oriented way for multiple purposes.
+Unicode character ranges (or blocks) in an object-oriented way for multiple purposes.
 
 See [Unicode character ranges](https://github.com/programarivm/unicode-character-ranges/tree/master/src).
 
@@ -18,6 +18,21 @@ Via composer:
 ### 2. Example
 
 See how [Random Unicode](https://github.com/programarivm/random-unicode) uses Unicode Character Ranges.
+
+```php
+use RandomUnicode\Randomizer;
+use UnicodeCharacterRanges\BasicLatin;
+use UnicodeCharacterRanges\Tibetan;
+use UnicodeCharacterRanges\Cherokee;
+
+$char = Randomizer::char([
+    new BasicLatin,
+    new Tibetan,
+    new Cherokee,
+]);
+
+echo "Random Unicode char: $char" . PHP_EOL;
+```
 
 ### 3. TODO
 
