@@ -1,5 +1,5 @@
 {
-  "name": "programarivm/unicode-character-range",
+  "name": "programarivm/unicode-character-ranges",
   "description": "Unicode character ranges in an object-oriented way for multiple purposes.",
   "type": "library",
   "license": "GPL-3.0-only",
