@@ -1,6 +1,6 @@
 {
   "name": "programarivm/unicode-character-ranges",
-  "description": "Unicode character ranges (or blocks) in an object-oriented way for multiple purposes.",
+  "description": "Unicode character ranges (or blocks) in a friendly object-oriented way for multiple purposes.",
   "type": "library",
   "license": "GPL-3.0-only",
   "keywords": [

@@ -5,7 +5,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Unicode Character Ranges](/resources/logo.jpg?raw=true)
 
-Unicode character ranges (or blocks) in an object-oriented way for multiple purposes.
+Unicode character ranges (or blocks) in a friendly object-oriented way for multiple purposes.
 
 See [Unicode character ranges](https://github.com/programarivm/unicode-character-ranges/tree/master/src).
 
@@ -33,6 +33,8 @@ $char = Randomizer::char([
 
 echo "Random Unicode char: $char" . PHP_EOL;
 ```
+
+    Random Unicode char: Ꮉ
 
 ### 3. TODO
 
