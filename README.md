@@ -1,11 +1,13 @@
-## Unicode Character Ranges
+## Unicode Ranges
 
 [![Build Status](https://travis-ci.org/programarivm/unicode-ranges.svg?branch=master)](https://travis-ci.org/programarivm/unicode-ranges)
 [![Packagist](https://img.shields.io/packagist/dt/programarivm/unicode-ranges.svg)](https://packagist.org/packages/programarivm/unicode-ranges)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Unicode Character Ranges](/resources/logo.jpg?raw=true)
 
-Unicode character ranges (or blocks) in a friendly object-oriented way for multiple purposes. See [Unicode ranges](https://github.com/programarivm/unicode-ranges/tree/master/src).
+Unicode character ranges (or blocks) in a friendly object-oriented way for multiple purposes.
+
+See [Unicode ranges](https://github.com/programarivm/unicode-ranges/tree/master/src).
 
 ### 1. Install
 
@@ -41,6 +43,10 @@ $alchemicalSymbols->range();
 
 Returns an array containing the chars of that range.
 
+See [examples](https://github.com/programarivm/unicode-ranges/tree/master/examples/ranges).
+
+- - -
+
 #### The `Converter` class
 
 ##### dec2unicode()
@@ -50,6 +56,10 @@ Converts a decimal number into its Unicode character counterpart.
 ```php
 Converter::dec2unicode(12004);
 ```
+
+See [examples](https://github.com/programarivm/unicode-ranges/tree/master/examples/converter).
+
+- - -
 
 #### The `Randomizer` class
 
@@ -73,6 +83,8 @@ echo "Random Unicode char: $char" . PHP_EOL;
 ```
     Random Unicode char: Ꮉ
 
+See [examples](https://github.com/programarivm/unicode-ranges/tree/master/examples/randomizer).
+
 ### 3. License
 
 The GNU General Public License.
@@ -82,7 +94,7 @@ The GNU General Public License.
 Would you help make this library better? Contributions are welcome.
 
 - Feel free to send a pull request
-- Drop an email at info@programarivm.com with the subject "Unicode Character Ranges"
+- Drop an email at info@programarivm.com with the subject "Unicode Ranges"
 - Leave me a comment on [Twitter](https://twitter.com/programarivm)
 - Say hello on [Google+](https://plus.google.com/+Programarivm)
 
