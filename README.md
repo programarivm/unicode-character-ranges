@@ -56,6 +56,8 @@ See [examples](https://github.com/programarivm/unicode-ranges/tree/master/exampl
 Converts a decimal number into its Unicode character counterpart.
 
 ```php
+use UnicodeRanges\Converter;
+
 Converter::dec2unicode(12004);
 ```
 
