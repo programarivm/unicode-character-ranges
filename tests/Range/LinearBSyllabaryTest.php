@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\LinearBSyllabary;
+use UnicodeRanges\Range\LinearBSyllabary;
 
 class LinearBSyllabaryTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LinearBSyllabaryTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Linear B Syllabary', $this->charRange->getName());
+		$this->assertEquals('Linear B Syllabary', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class LinearBSyllabaryTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10000', $range[0]);
 		$this->assertEquals('1007F', $range[1]);

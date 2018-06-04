@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\LatinExtendedB;
+use UnicodeRanges\Range\LatinExtendedB;
 
 class LatinExtendedBTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LatinExtendedBTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Latin Extended-B', $this->charRange->getName());
+		$this->assertEquals('Latin Extended-B', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class LatinExtendedBTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0180', $range[0]);
 		$this->assertEquals('024F', $range[1]);

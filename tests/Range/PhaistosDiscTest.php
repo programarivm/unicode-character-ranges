@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\PhaistosDisc;
+use UnicodeRanges\Range\PhaistosDisc;
 
 class PhaistosDiscTest extends TestCase
 {
@@ -19,7 +19,7 @@ class PhaistosDiscTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Phaistos Disc', $this->charRange->getName());
+		$this->assertEquals('Phaistos Disc', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class PhaistosDiscTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('101D0', $range[0]);
 		$this->assertEquals('101FF', $range[1]);

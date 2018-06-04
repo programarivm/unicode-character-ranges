@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\KangxiRadicals;
+use UnicodeRanges\Range\KangxiRadicals;
 
 class KangxiRadicalsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class KangxiRadicalsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Kangxi Radicals', $this->charRange->getName());
+		$this->assertEquals('Kangxi Radicals', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class KangxiRadicalsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2F00', $range[0]);
 		$this->assertEquals('2FDF', $range[1]);

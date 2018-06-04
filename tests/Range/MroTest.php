@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Mro;
+use UnicodeRanges\Range\Mro;
 
 class MroTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MroTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Mro', $this->charRange->getName());
+		$this->assertEquals('Mro', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MroTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('16A40', $range[0]);
 		$this->assertEquals('16A6F', $range[1]);

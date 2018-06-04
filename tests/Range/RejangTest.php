@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Rejang;
+use UnicodeRanges\Range\Rejang;
 
 class RejangTest extends TestCase
 {
@@ -19,7 +19,7 @@ class RejangTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Rejang', $this->charRange->getName());
+		$this->assertEquals('Rejang', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class RejangTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('A930', $range[0]);
 		$this->assertEquals('A95F', $range[1]);

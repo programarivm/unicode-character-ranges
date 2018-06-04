@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CJKCompatibility;
+use UnicodeRanges\Range\CJKCompatibility;
 
 class CJKCompatibilityTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CJKCompatibilityTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('CJK Compatibility', $this->charRange->getName());
+		$this->assertEquals('CJK Compatibility', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CJKCompatibilityTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('3300', $range[0]);
 		$this->assertEquals('33FF', $range[1]);

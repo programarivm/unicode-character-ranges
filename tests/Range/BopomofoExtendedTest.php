@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\BopomofoExtended;
+use UnicodeRanges\Range\BopomofoExtended;
 
 class BopomofoExtendedTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BopomofoExtendedTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Bopomofo Extended', $this->charRange->getName());
+		$this->assertEquals('Bopomofo Extended', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BopomofoExtendedTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('31A0', $range[0]);
 		$this->assertEquals('31BF', $range[1]);

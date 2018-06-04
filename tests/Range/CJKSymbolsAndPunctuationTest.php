@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CJKSymbolsAndPunctuation;
+use UnicodeRanges\Range\CJKSymbolsAndPunctuation;
 
 class CJKSymbolsAndPunctuationTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CJKSymbolsAndPunctuationTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('CJK Symbols and Punctuation', $this->charRange->getName());
+		$this->assertEquals('CJK Symbols and Punctuation', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CJKSymbolsAndPunctuationTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('3000', $range[0]);
 		$this->assertEquals('303F', $range[1]);

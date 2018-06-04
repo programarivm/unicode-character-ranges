@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\SupplementalSymbolsAndPictographs;
+use UnicodeRanges\Range\SupplementalSymbolsAndPictographs;
 
 class SupplementalSymbolsAndPictographsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SupplementalSymbolsAndPictographsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Supplemental Symbols and Pictographs', $this->charRange->getName());
+		$this->assertEquals('Supplemental Symbols and Pictographs', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SupplementalSymbolsAndPictographsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1F900', $range[0]);
 		$this->assertEquals('1F9FF', $range[1]);

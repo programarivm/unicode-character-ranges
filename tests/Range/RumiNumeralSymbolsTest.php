@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\RumiNumeralSymbols;
+use UnicodeRanges\Range\RumiNumeralSymbols;
 
 class RumiNumeralSymbolsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class RumiNumeralSymbolsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Rumi Numeral Symbols', $this->charRange->getName());
+		$this->assertEquals('Rumi Numeral Symbols', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class RumiNumeralSymbolsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10E60', $range[0]);
 		$this->assertEquals('10E7F', $range[1]);

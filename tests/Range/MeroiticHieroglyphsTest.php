@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\MeroiticHieroglyphs;
+use UnicodeRanges\Range\MeroiticHieroglyphs;
 
 class MeroiticHieroglyphsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MeroiticHieroglyphsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Meroitic Hieroglyphs', $this->charRange->getName());
+		$this->assertEquals('Meroitic Hieroglyphs', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MeroiticHieroglyphsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10980', $range[0]);
 		$this->assertEquals('1099F', $range[1]);

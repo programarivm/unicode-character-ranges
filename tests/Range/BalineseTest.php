@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Balinese;
+use UnicodeRanges\Range\Balinese;
 
 class BalineseTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BalineseTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Balinese', $this->charRange->getName());
+		$this->assertEquals('Balinese', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BalineseTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1B00', $range[0]);
 		$this->assertEquals('1B7F', $range[1]);

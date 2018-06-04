@@ -2,16 +2,15 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-// echo iconv('UCS-2', 'UTF-8', '10140'); exit;
-
-$unicode = hexdec('10140');
-
-echo code2utf($unicode);
-
-exit;
-
-use UnicodeCharacterRanges\AncientGreekNumbers;
+use UnicodeRanges\Range\AncientGreekNumbers;
 
 $ancientGreekNumbers = new AncientGreekNumbers;
 
-print_r($ancientGreekNumbers->getRange());
+echo "Total: {$ancientGreekNumbers->count()}".PHP_EOL;
+echo "Range: {$ancientGreekNumbers->range()[0]}-{$ancientGreekNumbers->range()[0]}".PHP_EOL;
+echo 'Characters: ';
+$chars = $ancientGreekNumbers->chars();
+foreach ($chars as $char) {
+    echo $char;
+}
+echo PHP_EOL;

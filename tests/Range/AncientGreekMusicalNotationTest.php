@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\AncientGreekMusicalNotation;
+use UnicodeRanges\Range\AncientGreekMusicalNotation;
 
 class AncientGreekMusicalNotationTest extends TestCase
 {
@@ -19,7 +19,7 @@ class AncientGreekMusicalNotationTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Ancient Greek Musical Notation', $this->charRange->getName());
+		$this->assertEquals('Ancient Greek Musical Notation', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class AncientGreekMusicalNotationTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1D200', $range[0]);
 		$this->assertEquals('1D24F', $range[1]);

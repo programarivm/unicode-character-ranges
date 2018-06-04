@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Lydian;
+use UnicodeRanges\Range\Lydian;
 
 class LydianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LydianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Lydian', $this->charRange->getName());
+		$this->assertEquals('Lydian', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class LydianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10920', $range[0]);
 		$this->assertEquals('1093F', $range[1]);

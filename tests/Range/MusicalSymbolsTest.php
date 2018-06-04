@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\MusicalSymbols;
+use UnicodeRanges\Range\MusicalSymbols;
 
 class MusicalSymbolsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MusicalSymbolsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Musical Symbols', $this->charRange->getName());
+		$this->assertEquals('Musical Symbols', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MusicalSymbolsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1D100', $range[0]);
 		$this->assertEquals('1D1FF', $range[1]);

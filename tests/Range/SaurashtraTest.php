@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Saurashtra;
+use UnicodeRanges\Range\Saurashtra;
 
 class SaurashtraTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SaurashtraTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Saurashtra', $this->charRange->getName());
+		$this->assertEquals('Saurashtra', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SaurashtraTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('A880', $range[0]);
 		$this->assertEquals('A8DF', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Coptic;
+use UnicodeRanges\Range\Coptic;
 
 class CopticTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CopticTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Coptic', $this->charRange->getName());
+		$this->assertEquals('Coptic', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CopticTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2C80', $range[0]);
 		$this->assertEquals('2CFF', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Cham;
+use UnicodeRanges\Range\Cham;
 
 class ChamTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ChamTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Cham', $this->charRange->getName());
+		$this->assertEquals('Cham', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ChamTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('AA00', $range[0]);
 		$this->assertEquals('AA5F', $range[1]);

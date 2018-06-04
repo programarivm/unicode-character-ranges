@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\BraillePatterns;
+use UnicodeRanges\Range\BraillePatterns;
 
 class BraillePatternsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BraillePatternsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Braille Patterns', $this->charRange->getName());
+		$this->assertEquals('Braille Patterns', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BraillePatternsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2800', $range[0]);
 		$this->assertEquals('28FF', $range[1]);

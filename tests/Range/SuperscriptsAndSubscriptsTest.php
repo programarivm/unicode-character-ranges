@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\SuperscriptsAndSubscripts;
+use UnicodeRanges\Range\SuperscriptsAndSubscripts;
 
 class SuperscriptsAndSubscriptsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SuperscriptsAndSubscriptsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Superscripts and Subscripts', $this->charRange->getName());
+		$this->assertEquals('Superscripts and Subscripts', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SuperscriptsAndSubscriptsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2070', $range[0]);
 		$this->assertEquals('209F', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Kharoshthi;
+use UnicodeRanges\Range\Kharoshthi;
 
 class KharoshthiTest extends TestCase
 {
@@ -19,7 +19,7 @@ class KharoshthiTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Kharoshthi', $this->charRange->getName());
+		$this->assertEquals('Kharoshthi', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class KharoshthiTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10A00', $range[0]);
 		$this->assertEquals('10A5F', $range[1]);

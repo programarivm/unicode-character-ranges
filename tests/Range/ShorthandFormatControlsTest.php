@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\ShorthandFormatControls;
+use UnicodeRanges\Range\ShorthandFormatControls;
 
 class ShorthandFormatControlsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ShorthandFormatControlsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Shorthand Format Controls', $this->charRange->getName());
+		$this->assertEquals('Shorthand Format Controls', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ShorthandFormatControlsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1BCA0', $range[0]);
 		$this->assertEquals('1BCAF', $range[1]);

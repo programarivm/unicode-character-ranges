@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\NKo;
+use UnicodeRanges\Range\NKo;
 
 class NKoTest extends TestCase
 {
@@ -19,7 +19,7 @@ class NKoTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('NKo', $this->charRange->getName());
+		$this->assertEquals('NKo', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class NKoTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('07C0', $range[0]);
 		$this->assertEquals('07FF', $range[1]);

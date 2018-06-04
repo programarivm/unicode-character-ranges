@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\SoraSompeng;
+use UnicodeRanges\Range\SoraSompeng;
 
 class SoraSompengTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SoraSompengTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Sora Sompeng', $this->charRange->getName());
+		$this->assertEquals('Sora Sompeng', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SoraSompengTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('110D0', $range[0]);
 		$this->assertEquals('110FF', $range[1]);

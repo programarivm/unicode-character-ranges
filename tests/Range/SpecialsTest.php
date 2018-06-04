@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Specials;
+use UnicodeRanges\Range\Specials;
 
 class SpecialsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SpecialsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Specials', $this->charRange->getName());
+		$this->assertEquals('Specials', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SpecialsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('FFF0', $range[0]);
 		$this->assertEquals('FFFF', $range[1]);

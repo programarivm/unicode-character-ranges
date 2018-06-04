@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\BlockElements;
+use UnicodeRanges\Range\BlockElements;
 
 class BlockElementsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BlockElementsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Block Elements', $this->charRange->getName());
+		$this->assertEquals('Block Elements', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BlockElementsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2580', $range[0]);
 		$this->assertEquals('259F', $range[1]);

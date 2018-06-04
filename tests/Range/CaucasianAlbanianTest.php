@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CaucasianAlbanian;
+use UnicodeRanges\Range\CaucasianAlbanian;
 
 class CaucasianAlbanianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CaucasianAlbanianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Caucasian Albanian', $this->charRange->getName());
+		$this->assertEquals('Caucasian Albanian', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CaucasianAlbanianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10530', $range[0]);
 		$this->assertEquals('1056F', $range[1]);

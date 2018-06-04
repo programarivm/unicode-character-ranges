@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Katakana;
+use UnicodeRanges\Range\Katakana;
 
 class KatakanaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class KatakanaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Katakana', $this->charRange->getName());
+		$this->assertEquals('Katakana', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class KatakanaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('30A0', $range[0]);
 		$this->assertEquals('30FF', $range[1]);

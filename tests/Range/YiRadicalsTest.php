@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\YiRadicals;
+use UnicodeRanges\Range\YiRadicals;
 
 class YiRadicalsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class YiRadicalsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Yi Radicals', $this->charRange->getName());
+		$this->assertEquals('Yi Radicals', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class YiRadicalsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('A490', $range[0]);
 		$this->assertEquals('A4CF', $range[1]);

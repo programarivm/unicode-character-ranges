@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Multani;
+use UnicodeRanges\Range\Multani;
 
 class MultaniTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MultaniTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Multani', $this->charRange->getName());
+		$this->assertEquals('Multani', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MultaniTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('11280', $range[0]);
 		$this->assertEquals('112AF', $range[1]);

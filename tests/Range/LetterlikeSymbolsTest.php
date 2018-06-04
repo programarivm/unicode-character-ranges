@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\LetterlikeSymbols;
+use UnicodeRanges\Range\LetterlikeSymbols;
 
 class LetterlikeSymbolsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LetterlikeSymbolsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Letterlike Symbols', $this->charRange->getName());
+		$this->assertEquals('Letterlike Symbols', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class LetterlikeSymbolsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2100', $range[0]);
 		$this->assertEquals('214F', $range[1]);

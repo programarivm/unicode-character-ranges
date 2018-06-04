@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Latin1Supplement;
+use UnicodeRanges\Range\Latin1Supplement;
 
 class Latin1SupplementTest extends TestCase
 {
@@ -19,7 +19,7 @@ class Latin1SupplementTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Latin-1 Supplement', $this->charRange->getName());
+		$this->assertEquals('Latin-1 Supplement', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class Latin1SupplementTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0080', $range[0]);
 		$this->assertEquals('00FF', $range[1]);

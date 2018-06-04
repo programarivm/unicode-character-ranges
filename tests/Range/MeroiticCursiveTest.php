@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\MeroiticCursive;
+use UnicodeRanges\Range\MeroiticCursive;
 
 class MeroiticCursiveTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MeroiticCursiveTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Meroitic Cursive', $this->charRange->getName());
+		$this->assertEquals('Meroitic Cursive', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MeroiticCursiveTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('109A0', $range[0]);
 		$this->assertEquals('109FF', $range[1]);

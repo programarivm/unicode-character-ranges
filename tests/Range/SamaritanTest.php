@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Samaritan;
+use UnicodeRanges\Range\Samaritan;
 
 class SamaritanTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SamaritanTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Samaritan', $this->charRange->getName());
+		$this->assertEquals('Samaritan', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SamaritanTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0800', $range[0]);
 		$this->assertEquals('083F', $range[1]);

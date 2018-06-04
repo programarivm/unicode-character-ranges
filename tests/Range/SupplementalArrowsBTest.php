@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\SupplementalArrowsB;
+use UnicodeRanges\Range\SupplementalArrowsB;
 
 class SupplementalArrowsBTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SupplementalArrowsBTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Supplemental Arrows-B', $this->charRange->getName());
+		$this->assertEquals('Supplemental Arrows-B', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SupplementalArrowsBTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2900', $range[0]);
 		$this->assertEquals('297F', $range[1]);

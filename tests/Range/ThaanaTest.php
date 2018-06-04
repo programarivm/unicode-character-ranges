@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Thaana;
+use UnicodeRanges\Range\Thaana;
 
 class ThaanaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ThaanaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Thaana', $this->charRange->getName());
+		$this->assertEquals('Thaana', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ThaanaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0780', $range[0]);
 		$this->assertEquals('07BF', $range[1]);

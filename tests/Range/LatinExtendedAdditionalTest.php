@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\LatinExtendedAdditional;
+use UnicodeRanges\Range\LatinExtendedAdditional;
 
 class LatinExtendedAdditionalTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LatinExtendedAdditionalTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Latin Extended Additional', $this->charRange->getName());
+		$this->assertEquals('Latin Extended Additional', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class LatinExtendedAdditionalTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1E00', $range[0]);
 		$this->assertEquals('1EFF', $range[1]);

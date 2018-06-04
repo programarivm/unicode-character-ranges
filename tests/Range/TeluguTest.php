@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Telugu;
+use UnicodeRanges\Range\Telugu;
 
 class TeluguTest extends TestCase
 {
@@ -19,7 +19,7 @@ class TeluguTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Telugu', $this->charRange->getName());
+		$this->assertEquals('Telugu', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class TeluguTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0C00', $range[0]);
 		$this->assertEquals('0C7F', $range[1]);

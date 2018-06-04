@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Sinhala;
+use UnicodeRanges\Range\Sinhala;
 
 class SinhalaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SinhalaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Sinhala', $this->charRange->getName());
+		$this->assertEquals('Sinhala', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SinhalaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0D80', $range[0]);
 		$this->assertEquals('0DFF', $range[1]);

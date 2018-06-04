@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Mongolian;
+use UnicodeRanges\Range\Mongolian;
 
 class MongolianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MongolianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Mongolian', $this->charRange->getName());
+		$this->assertEquals('Mongolian', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MongolianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1800', $range[0]);
 		$this->assertEquals('18AF', $range[1]);

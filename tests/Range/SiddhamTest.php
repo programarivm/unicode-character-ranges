@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Siddham;
+use UnicodeRanges\Range\Siddham;
 
 class SiddhamTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SiddhamTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Siddham', $this->charRange->getName());
+		$this->assertEquals('Siddham', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SiddhamTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('11580', $range[0]);
 		$this->assertEquals('115FF', $range[1]);

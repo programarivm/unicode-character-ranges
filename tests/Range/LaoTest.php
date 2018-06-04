@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Lao;
+use UnicodeRanges\Range\Lao;
 
 class LaoTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LaoTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Lao', $this->charRange->getName());
+		$this->assertEquals('Lao', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class LaoTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0E80', $range[0]);
 		$this->assertEquals('0EFF', $range[1]);

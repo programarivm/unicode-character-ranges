@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CJKUnifiedIdeographsExtensionA;
+use UnicodeRanges\Range\CJKUnifiedIdeographsExtensionA;
 
 class CJKUnifiedIdeographsExtensionATest extends TestCase
 {
@@ -19,7 +19,7 @@ class CJKUnifiedIdeographsExtensionATest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('CJK Unified Ideographs Extension A', $this->charRange->getName());
+		$this->assertEquals('CJK Unified Ideographs Extension A', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CJKUnifiedIdeographsExtensionATest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('3400', $range[0]);
 		$this->assertEquals('4DBF', $range[1]);

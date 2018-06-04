@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Brahmi;
+use UnicodeRanges\Range\Brahmi;
 
 class BrahmiTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BrahmiTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Brahmi', $this->charRange->getName());
+		$this->assertEquals('Brahmi', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BrahmiTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('11000', $range[0]);
 		$this->assertEquals('1107F', $range[1]);

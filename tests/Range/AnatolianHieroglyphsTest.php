@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\AnatolianHieroglyphs;
+use UnicodeRanges\Range\AnatolianHieroglyphs;
 
 class AnatolianHieroglyphsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class AnatolianHieroglyphsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Anatolian Hieroglyphs', $this->charRange->getName());
+		$this->assertEquals('Anatolian Hieroglyphs', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class AnatolianHieroglyphsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('14400', $range[0]);
 		$this->assertEquals('1467F', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Tifinagh;
+use UnicodeRanges\Range\Tifinagh;
 
 class TifinaghTest extends TestCase
 {
@@ -19,7 +19,7 @@ class TifinaghTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Tifinagh', $this->charRange->getName());
+		$this->assertEquals('Tifinagh', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class TifinaghTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2D30', $range[0]);
 		$this->assertEquals('2D7F', $range[1]);

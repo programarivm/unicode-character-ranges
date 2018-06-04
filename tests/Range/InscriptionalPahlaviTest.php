@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\InscriptionalPahlavi;
+use UnicodeRanges\Range\InscriptionalPahlavi;
 
 class InscriptionalPahlaviTest extends TestCase
 {
@@ -19,7 +19,7 @@ class InscriptionalPahlaviTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Inscriptional Pahlavi', $this->charRange->getName());
+		$this->assertEquals('Inscriptional Pahlavi', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class InscriptionalPahlaviTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10B60', $range[0]);
 		$this->assertEquals('10B7F', $range[1]);

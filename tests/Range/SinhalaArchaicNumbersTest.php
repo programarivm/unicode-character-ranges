@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\SinhalaArchaicNumbers;
+use UnicodeRanges\Range\SinhalaArchaicNumbers;
 
 class SinhalaArchaicNumbersTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SinhalaArchaicNumbersTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Sinhala Archaic Numbers', $this->charRange->getName());
+		$this->assertEquals('Sinhala Archaic Numbers', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SinhalaArchaicNumbersTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('111E0', $range[0]);
 		$this->assertEquals('111FF', $range[1]);

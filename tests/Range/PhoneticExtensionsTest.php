@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\PhoneticExtensions;
+use UnicodeRanges\Range\PhoneticExtensions;
 
 class PhoneticExtensionsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class PhoneticExtensionsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Phonetic Extensions', $this->charRange->getName());
+		$this->assertEquals('Phonetic Extensions', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class PhoneticExtensionsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1D00', $range[0]);
 		$this->assertEquals('1D7F', $range[1]);

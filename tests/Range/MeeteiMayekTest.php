@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\MeeteiMayek;
+use UnicodeRanges\Range\MeeteiMayek;
 
 class MeeteiMayekTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MeeteiMayekTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Meetei Mayek', $this->charRange->getName());
+		$this->assertEquals('Meetei Mayek', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MeeteiMayekTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('ABC0', $range[0]);
 		$this->assertEquals('ABFF', $range[1]);

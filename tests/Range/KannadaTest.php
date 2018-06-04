@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Kannada;
+use UnicodeRanges\Range\Kannada;
 
 class KannadaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class KannadaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Kannada', $this->charRange->getName());
+		$this->assertEquals('Kannada', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class KannadaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0C80', $range[0]);
 		$this->assertEquals('0CFF', $range[1]);

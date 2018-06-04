@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\EnclosedCJKLettersAndMonths;
+use UnicodeRanges\Range\EnclosedCJKLettersAndMonths;
 
 class EnclosedCJKLettersAndMonthsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class EnclosedCJKLettersAndMonthsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Enclosed CJK Letters and Months', $this->charRange->getName());
+		$this->assertEquals('Enclosed CJK Letters and Months', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class EnclosedCJKLettersAndMonthsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('3200', $range[0]);
 		$this->assertEquals('32FF', $range[1]);

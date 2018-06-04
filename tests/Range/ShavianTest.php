@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Shavian;
+use UnicodeRanges\Range\Shavian;
 
 class ShavianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ShavianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Shavian', $this->charRange->getName());
+		$this->assertEquals('Shavian', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ShavianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10450', $range[0]);
 		$this->assertEquals('1047F', $range[1]);

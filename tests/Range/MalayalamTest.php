@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Malayalam;
+use UnicodeRanges\Range\Malayalam;
 
 class MalayalamTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MalayalamTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Malayalam', $this->charRange->getName());
+		$this->assertEquals('Malayalam', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MalayalamTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0D00', $range[0]);
 		$this->assertEquals('0D7F', $range[1]);

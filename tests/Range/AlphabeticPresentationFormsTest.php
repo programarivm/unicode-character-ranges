@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\AlphabeticPresentationForms;
+use UnicodeRanges\Range\AlphabeticPresentationForms;
 
 class AlphabeticPresentationFormsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class AlphabeticPresentationFormsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Alphabetic Presentation Forms', $this->charRange->getName());
+		$this->assertEquals('Alphabetic Presentation Forms', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class AlphabeticPresentationFormsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('FB00', $range[0]);
 		$this->assertEquals('FB4F', $range[1]);

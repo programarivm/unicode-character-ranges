@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Hebrew;
+use UnicodeRanges\Range\Hebrew;
 
 class HebrewTest extends TestCase
 {
@@ -19,7 +19,7 @@ class HebrewTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Hebrew', $this->charRange->getName());
+		$this->assertEquals('Hebrew', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class HebrewTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0590', $range[0]);
 		$this->assertEquals('05FF', $range[1]);

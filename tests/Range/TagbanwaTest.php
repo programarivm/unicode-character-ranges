@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Tagbanwa;
+use UnicodeRanges\Range\Tagbanwa;
 
 class TagbanwaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class TagbanwaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Tagbanwa', $this->charRange->getName());
+		$this->assertEquals('Tagbanwa', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class TagbanwaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1760', $range[0]);
 		$this->assertEquals('177F', $range[1]);

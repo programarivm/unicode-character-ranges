@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\KanaSupplement;
+use UnicodeRanges\Range\KanaSupplement;
 
 class KanaSupplementTest extends TestCase
 {
@@ -19,7 +19,7 @@ class KanaSupplementTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Kana Supplement', $this->charRange->getName());
+		$this->assertEquals('Kana Supplement', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class KanaSupplementTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1B000', $range[0]);
 		$this->assertEquals('1B0FF', $range[1]);

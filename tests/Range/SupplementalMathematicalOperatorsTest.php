@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\SupplementalMathematicalOperators;
+use UnicodeRanges\Range\SupplementalMathematicalOperators;
 
 class SupplementalMathematicalOperatorsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SupplementalMathematicalOperatorsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Supplemental Mathematical Operators', $this->charRange->getName());
+		$this->assertEquals('Supplemental Mathematical Operators', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SupplementalMathematicalOperatorsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2A00', $range[0]);
 		$this->assertEquals('2AFF', $range[1]);

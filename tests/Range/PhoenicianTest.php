@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Phoenician;
+use UnicodeRanges\Range\Phoenician;
 
 class PhoenicianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class PhoenicianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Phoenician', $this->charRange->getName());
+		$this->assertEquals('Phoenician', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class PhoenicianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10900', $range[0]);
 		$this->assertEquals('1091F', $range[1]);

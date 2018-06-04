@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\KhmerSymbols;
+use UnicodeRanges\Range\KhmerSymbols;
 
 class KhmerSymbolsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class KhmerSymbolsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Khmer Symbols', $this->charRange->getName());
+		$this->assertEquals('Khmer Symbols', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class KhmerSymbolsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('19E0', $range[0]);
 		$this->assertEquals('19FF', $range[1]);

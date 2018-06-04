@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\AegeanNumbers;
+use UnicodeRanges\Range\AegeanNumbers;
 
 class AegeanNumbersTest extends TestCase
 {
@@ -19,7 +19,7 @@ class AegeanNumbersTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Aegean Numbers', $this->charRange->getName());
+		$this->assertEquals('Aegean Numbers', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class AegeanNumbersTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10100', $range[0]);
 		$this->assertEquals('1013F', $range[1]);

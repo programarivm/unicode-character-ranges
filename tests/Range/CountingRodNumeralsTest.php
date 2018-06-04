@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CountingRodNumerals;
+use UnicodeRanges\Range\CountingRodNumerals;
 
 class CountingRodNumeralsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CountingRodNumeralsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Counting Rod Numerals', $this->charRange->getName());
+		$this->assertEquals('Counting Rod Numerals', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CountingRodNumeralsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1D360', $range[0]);
 		$this->assertEquals('1D37F', $range[1]);

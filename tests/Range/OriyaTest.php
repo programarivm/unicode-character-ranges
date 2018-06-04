@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Oriya;
+use UnicodeRanges\Range\Oriya;
 
 class OriyaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class OriyaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Oriya', $this->charRange->getName());
+		$this->assertEquals('Oriya', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class OriyaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0B00', $range[0]);
 		$this->assertEquals('0B7F', $range[1]);

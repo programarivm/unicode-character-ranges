@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\InscriptionalParthian;
+use UnicodeRanges\Range\InscriptionalParthian;
 
 class InscriptionalParthianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class InscriptionalParthianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Inscriptional Parthian', $this->charRange->getName());
+		$this->assertEquals('Inscriptional Parthian', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class InscriptionalParthianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10B40', $range[0]);
 		$this->assertEquals('10B5F', $range[1]);

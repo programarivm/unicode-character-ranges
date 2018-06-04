@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\EthiopicExtendedA;
+use UnicodeRanges\Range\EthiopicExtendedA;
 
 class EthiopicExtendedATest extends TestCase
 {
@@ -19,7 +19,7 @@ class EthiopicExtendedATest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Ethiopic Extended-A', $this->charRange->getName());
+		$this->assertEquals('Ethiopic Extended-A', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class EthiopicExtendedATest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('AB00', $range[0]);
 		$this->assertEquals('AB2F', $range[1]);

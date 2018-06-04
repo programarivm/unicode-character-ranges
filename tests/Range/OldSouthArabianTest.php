@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\OldSouthArabian;
+use UnicodeRanges\Range\OldSouthArabian;
 
 class OldSouthArabianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class OldSouthArabianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Old South Arabian', $this->charRange->getName());
+		$this->assertEquals('Old South Arabian', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class OldSouthArabianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10A60', $range[0]);
 		$this->assertEquals('10A7F', $range[1]);

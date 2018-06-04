@@ -1,6 +1,6 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range;
+namespace UnicodeRanges\Range;
 
 class Tamil extends RangeAbstract
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Hatran;
+use UnicodeRanges\Range\Hatran;
 
 class HatranTest extends TestCase
 {
@@ -19,7 +19,7 @@ class HatranTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Hatran', $this->charRange->getName());
+		$this->assertEquals('Hatran', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class HatranTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('108E0', $range[0]);
 		$this->assertEquals('108FF', $range[1]);

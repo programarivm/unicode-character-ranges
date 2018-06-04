@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Nabataean;
+use UnicodeRanges\Range\Nabataean;
 
 class NabataeanTest extends TestCase
 {
@@ -19,7 +19,7 @@ class NabataeanTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Nabataean', $this->charRange->getName());
+		$this->assertEquals('Nabataean', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class NabataeanTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10880', $range[0]);
 		$this->assertEquals('108AF', $range[1]);

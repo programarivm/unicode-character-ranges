@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\OldTurkic;
+use UnicodeRanges\Range\OldTurkic;
 
 class OldTurkicTest extends TestCase
 {
@@ -19,7 +19,7 @@ class OldTurkicTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Old Turkic', $this->charRange->getName());
+		$this->assertEquals('Old Turkic', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class OldTurkicTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10C00', $range[0]);
 		$this->assertEquals('10C4F', $range[1]);

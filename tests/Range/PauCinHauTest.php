@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\PauCinHau;
+use UnicodeRanges\Range\PauCinHau;
 
 class PauCinHauTest extends TestCase
 {
@@ -19,7 +19,7 @@ class PauCinHauTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Pau Cin Hau', $this->charRange->getName());
+		$this->assertEquals('Pau Cin Hau', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class PauCinHauTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('11AC0', $range[0]);
 		$this->assertEquals('11AFF', $range[1]);

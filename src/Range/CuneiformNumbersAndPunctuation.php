@@ -1,6 +1,6 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range;
+namespace UnicodeRanges\Range;
 
 class CuneiformNumbersAndPunctuation extends RangeAbstract
 {

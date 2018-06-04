@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\EgyptianHieroglyphs;
+use UnicodeRanges\Range\EgyptianHieroglyphs;
 
 class EgyptianHieroglyphsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class EgyptianHieroglyphsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Egyptian Hieroglyphs', $this->charRange->getName());
+		$this->assertEquals('Egyptian Hieroglyphs', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class EgyptianHieroglyphsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('13000', $range[0]);
 		$this->assertEquals('1342F', $range[1]);

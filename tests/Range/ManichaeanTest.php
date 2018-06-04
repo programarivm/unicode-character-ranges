@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Manichaean;
+use UnicodeRanges\Range\Manichaean;
 
 class ManichaeanTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ManichaeanTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Manichaean', $this->charRange->getName());
+		$this->assertEquals('Manichaean', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ManichaeanTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10AC0', $range[0]);
 		$this->assertEquals('10AFF', $range[1]);

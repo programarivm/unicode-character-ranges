@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\VerticalForms;
+use UnicodeRanges\Range\VerticalForms;
 
 class VerticalFormsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class VerticalFormsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Vertical Forms', $this->charRange->getName());
+		$this->assertEquals('Vertical Forms', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class VerticalFormsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('FE10', $range[0]);
 		$this->assertEquals('FE1F', $range[1]);

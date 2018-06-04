@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CombiningHalfMarks;
+use UnicodeRanges\Range\CombiningHalfMarks;
 
 class CombiningHalfMarksTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CombiningHalfMarksTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Combining Half Marks', $this->charRange->getName());
+		$this->assertEquals('Combining Half Marks', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CombiningHalfMarksTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('FE20', $range[0]);
 		$this->assertEquals('FE2F', $range[1]);

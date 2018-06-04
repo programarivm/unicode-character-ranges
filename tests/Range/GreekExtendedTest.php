@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\GreekExtended;
+use UnicodeRanges\Range\GreekExtended;
 
 class GreekExtendedTest extends TestCase
 {
@@ -19,7 +19,7 @@ class GreekExtendedTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Greek Extended', $this->charRange->getName());
+		$this->assertEquals('Greek Extended', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class GreekExtendedTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1F00', $range[0]);
 		$this->assertEquals('1FFF', $range[1]);

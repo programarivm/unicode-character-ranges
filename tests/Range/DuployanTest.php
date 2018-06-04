@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Duployan;
+use UnicodeRanges\Range\Duployan;
 
 class DuployanTest extends TestCase
 {
@@ -19,7 +19,7 @@ class DuployanTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Duployan', $this->charRange->getName());
+		$this->assertEquals('Duployan', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class DuployanTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1BC00', $range[0]);
 		$this->assertEquals('1BC9F', $range[1]);

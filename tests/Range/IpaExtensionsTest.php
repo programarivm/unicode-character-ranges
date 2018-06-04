@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\IpaExtensions;
+use UnicodeRanges\Range\IpaExtensions;
 
 class IpaExtensionsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class IpaExtensionsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('IPA Extensions', $this->charRange->getName());
+		$this->assertEquals('IPA Extensions', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class IpaExtensionsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0250', $range[0]);
 		$this->assertEquals('02AF', $range[1]);

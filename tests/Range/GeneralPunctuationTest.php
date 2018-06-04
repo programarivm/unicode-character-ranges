@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\GeneralPunctuation;
+use UnicodeRanges\Range\GeneralPunctuation;
 
 class GeneralPunctuationTest extends TestCase
 {
@@ -19,7 +19,7 @@ class GeneralPunctuationTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('General Punctuation', $this->charRange->getName());
+		$this->assertEquals('General Punctuation', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class GeneralPunctuationTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2000', $range[0]);
 		$this->assertEquals('206F', $range[1]);

@@ -4,7 +4,7 @@
          stopOnFailure="false"
          stderr="true">
   <testsuites>
-    <testsuite name="UnicodeCharacterRanges tests">
+    <testsuite name="UnicodeRanges tests">
       <directory>tests</directory>
     </testsuite>
   </testsuites>

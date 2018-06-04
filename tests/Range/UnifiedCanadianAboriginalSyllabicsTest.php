@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\UnifiedCanadianAboriginalSyllabics;
+use UnicodeRanges\Range\UnifiedCanadianAboriginalSyllabics;
 
 class UnifiedCanadianAboriginalSyllabicsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class UnifiedCanadianAboriginalSyllabicsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Unified Canadian Aboriginal Syllabics', $this->charRange->getName());
+		$this->assertEquals('Unified Canadian Aboriginal Syllabics', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class UnifiedCanadianAboriginalSyllabicsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1400', $range[0]);
 		$this->assertEquals('167F', $range[1]);

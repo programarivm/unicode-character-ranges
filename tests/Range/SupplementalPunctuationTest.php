@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\SupplementalPunctuation;
+use UnicodeRanges\Range\SupplementalPunctuation;
 
 class SupplementalPunctuationTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SupplementalPunctuationTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Supplemental Punctuation', $this->charRange->getName());
+		$this->assertEquals('Supplemental Punctuation', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SupplementalPunctuationTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2E00', $range[0]);
 		$this->assertEquals('2E7F', $range[1]);

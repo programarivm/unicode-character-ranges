@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\EnclosedIdeographicSupplement;
+use UnicodeRanges\Range\EnclosedIdeographicSupplement;
 
 class EnclosedIdeographicSupplementTest extends TestCase
 {
@@ -19,7 +19,7 @@ class EnclosedIdeographicSupplementTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Enclosed Ideographic Supplement', $this->charRange->getName());
+		$this->assertEquals('Enclosed Ideographic Supplement', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class EnclosedIdeographicSupplementTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1F200', $range[0]);
 		$this->assertEquals('1F2FF', $range[1]);

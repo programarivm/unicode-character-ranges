@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Hanunoo;
+use UnicodeRanges\Range\Hanunoo;
 
 class HanunooTest extends TestCase
 {
@@ -19,7 +19,7 @@ class HanunooTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Hanunoo', $this->charRange->getName());
+		$this->assertEquals('Hanunoo', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class HanunooTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1720', $range[0]);
 		$this->assertEquals('173F', $range[1]);

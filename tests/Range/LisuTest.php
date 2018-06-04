@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Lisu;
+use UnicodeRanges\Range\Lisu;
 
 class LisuTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LisuTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Lisu', $this->charRange->getName());
+		$this->assertEquals('Lisu', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class LisuTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('A4D0', $range[0]);
 		$this->assertEquals('A4FF', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Hiragana;
+use UnicodeRanges\Range\Hiragana;
 
 class HiraganaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class HiraganaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Hiragana', $this->charRange->getName());
+		$this->assertEquals('Hiragana', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class HiraganaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('3040', $range[0]);
 		$this->assertEquals('309F', $range[1]);

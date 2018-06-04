@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\ArabicExtendedA;
+use UnicodeRanges\Range\ArabicExtendedA;
 
 class ArabicExtendedATest extends TestCase
 {
@@ -19,7 +19,7 @@ class ArabicExtendedATest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Arabic Extended-A', $this->charRange->getName());
+		$this->assertEquals('Arabic Extended-A', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ArabicExtendedATest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('08A0', $range[0]);
 		$this->assertEquals('08FF', $range[1]);

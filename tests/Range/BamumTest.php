@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Bamum;
+use UnicodeRanges\Range\Bamum;
 
 class BamumTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BamumTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Bamum', $this->charRange->getName());
+		$this->assertEquals('Bamum', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BamumTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('A6A0', $range[0]);
 		$this->assertEquals('A6FF', $range[1]);

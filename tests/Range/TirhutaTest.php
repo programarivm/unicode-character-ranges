@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Tirhuta;
+use UnicodeRanges\Range\Tirhuta;
 
 class TirhutaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class TirhutaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Tirhuta', $this->charRange->getName());
+		$this->assertEquals('Tirhuta', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class TirhutaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('11480', $range[0]);
 		$this->assertEquals('114DF', $range[1]);

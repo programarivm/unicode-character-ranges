@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\TransportAndMapSymbols;
+use UnicodeRanges\Range\TransportAndMapSymbols;
 
 class TransportAndMapSymbolsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class TransportAndMapSymbolsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Transport and Map Symbols', $this->charRange->getName());
+		$this->assertEquals('Transport and Map Symbols', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class TransportAndMapSymbolsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1F680', $range[0]);
 		$this->assertEquals('1F6FF', $range[1]);

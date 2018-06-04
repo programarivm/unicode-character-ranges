@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Khudawadi;
+use UnicodeRanges\Range\Khudawadi;
 
 class KhudawadiTest extends TestCase
 {
@@ -19,7 +19,7 @@ class KhudawadiTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Khudawadi', $this->charRange->getName());
+		$this->assertEquals('Khudawadi', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class KhudawadiTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('112B0', $range[0]);
 		$this->assertEquals('112FF', $range[1]);

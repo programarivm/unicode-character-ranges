@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\AncientGreekNumbers;
+use UnicodeRanges\Range\AncientGreekNumbers;
 
 class AncientGreekNumbersTest extends TestCase
 {
@@ -19,7 +19,7 @@ class AncientGreekNumbersTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Ancient Greek Numbers', $this->charRange->getName());
+		$this->assertEquals('Ancient Greek Numbers', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class AncientGreekNumbersTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10140', $range[0]);
 		$this->assertEquals('1018F', $range[1]);

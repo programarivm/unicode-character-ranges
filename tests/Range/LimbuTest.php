@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Limbu;
+use UnicodeRanges\Range\Limbu;
 
 class LimbuTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LimbuTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Limbu', $this->charRange->getName());
+		$this->assertEquals('Limbu', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class LimbuTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1900', $range[0]);
 		$this->assertEquals('194F', $range[1]);

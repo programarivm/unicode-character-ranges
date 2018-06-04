@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Cherokee;
+use UnicodeRanges\Range\Cherokee;
 
 class CherokeeTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CherokeeTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Cherokee', $this->charRange->getName());
+		$this->assertEquals('Cherokee', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CherokeeTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('13A0', $range[0]);
 		$this->assertEquals('13FF', $range[1]);

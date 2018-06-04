@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\MiscellaneousSymbols;
+use UnicodeRanges\Range\MiscellaneousSymbols;
 
 class MiscellaneousSymbolsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MiscellaneousSymbolsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Miscellaneous Symbols', $this->charRange->getName());
+		$this->assertEquals('Miscellaneous Symbols', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MiscellaneousSymbolsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2600', $range[0]);
 		$this->assertEquals('26FF', $range[1]);

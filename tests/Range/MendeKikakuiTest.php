@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\MendeKikakui;
+use UnicodeRanges\Range\MendeKikakui;
 
 class MendeKikakuiTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MendeKikakuiTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Mende Kikakui', $this->charRange->getName());
+		$this->assertEquals('Mende Kikakui', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MendeKikakuiTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1E800', $range[0]);
 		$this->assertEquals('1E8DF', $range[1]);

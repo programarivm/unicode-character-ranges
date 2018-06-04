@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CommonIndicNumberForms;
+use UnicodeRanges\Range\CommonIndicNumberForms;
 
 class CommonIndicNumberFormsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CommonIndicNumberFormsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Common Indic Number Forms', $this->charRange->getName());
+		$this->assertEquals('Common Indic Number Forms', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CommonIndicNumberFormsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('A830', $range[0]);
 		$this->assertEquals('A83F', $range[1]);

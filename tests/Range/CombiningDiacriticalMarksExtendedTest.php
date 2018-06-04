@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CombiningDiacriticalMarksExtended;
+use UnicodeRanges\Range\CombiningDiacriticalMarksExtended;
 
 class CombiningDiacriticalMarksExtendedTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CombiningDiacriticalMarksExtendedTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Combining Diacritical Marks Extended', $this->charRange->getName());
+		$this->assertEquals('Combining Diacritical Marks Extended', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CombiningDiacriticalMarksExtendedTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1AB0', $range[0]);
 		$this->assertEquals('1AFF', $range[1]);

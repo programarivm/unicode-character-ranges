@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\WarangCiti;
+use UnicodeRanges\Range\WarangCiti;
 
 class WarangCitiTest extends TestCase
 {
@@ -19,7 +19,7 @@ class WarangCitiTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Warang Citi', $this->charRange->getName());
+		$this->assertEquals('Warang Citi', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class WarangCitiTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('118A0', $range[0]);
 		$this->assertEquals('118FF', $range[1]);

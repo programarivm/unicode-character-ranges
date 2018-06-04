@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\YiSyllables;
+use UnicodeRanges\Range\YiSyllables;
 
 class YiSyllablesTest extends TestCase
 {
@@ -19,7 +19,7 @@ class YiSyllablesTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Yi Syllables', $this->charRange->getName());
+		$this->assertEquals('Yi Syllables', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class YiSyllablesTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('A000', $range[0]);
 		$this->assertEquals('A48F', $range[1]);

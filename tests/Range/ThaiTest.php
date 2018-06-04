@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Thai;
+use UnicodeRanges\Range\Thai;
 
 class ThaiTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ThaiTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Thai', $this->charRange->getName());
+		$this->assertEquals('Thai', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ThaiTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0E00', $range[0]);
 		$this->assertEquals('0E7F', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Batak;
+use UnicodeRanges\Range\Batak;
 
 class BatakTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BatakTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Batak', $this->charRange->getName());
+		$this->assertEquals('Batak', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BatakTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1BC0', $range[0]);
 		$this->assertEquals('1BFF', $range[1]);

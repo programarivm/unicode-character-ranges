@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\MyanmarExtendedA;
+use UnicodeRanges\Range\MyanmarExtendedA;
 
 class MyanmarExtendedATest extends TestCase
 {
@@ -19,7 +19,7 @@ class MyanmarExtendedATest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Myanmar Extended-A', $this->charRange->getName());
+		$this->assertEquals('Myanmar Extended-A', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MyanmarExtendedATest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('AA60', $range[0]);
 		$this->assertEquals('AA7F', $range[1]);

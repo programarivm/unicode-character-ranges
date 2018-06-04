@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Sundanese;
+use UnicodeRanges\Range\Sundanese;
 
 class SundaneseTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SundaneseTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Sundanese', $this->charRange->getName());
+		$this->assertEquals('Sundanese', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SundaneseTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1B80', $range[0]);
 		$this->assertEquals('1BBF', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Tibetan;
+use UnicodeRanges\Range\Tibetan;
 
 class TibetanTest extends TestCase
 {
@@ -19,7 +19,7 @@ class TibetanTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Tibetan', $this->charRange->getName());
+		$this->assertEquals('Tibetan', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class TibetanTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0F00', $range[0]);
 		$this->assertEquals('0FFF', $range[1]);

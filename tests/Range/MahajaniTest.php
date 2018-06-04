@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Mahajani;
+use UnicodeRanges\Range\Mahajani;
 
 class MahajaniTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MahajaniTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Mahajani', $this->charRange->getName());
+		$this->assertEquals('Mahajani', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MahajaniTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('11150', $range[0]);
 		$this->assertEquals('1117F', $range[1]);

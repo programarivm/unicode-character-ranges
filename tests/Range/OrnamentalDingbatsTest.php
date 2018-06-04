@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\OrnamentalDingbats;
+use UnicodeRanges\Range\OrnamentalDingbats;
 
 class OrnamentalDingbatsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class OrnamentalDingbatsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Ornamental Dingbats', $this->charRange->getName());
+		$this->assertEquals('Ornamental Dingbats', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class OrnamentalDingbatsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1F650', $range[0]);
 		$this->assertEquals('1F67F', $range[1]);

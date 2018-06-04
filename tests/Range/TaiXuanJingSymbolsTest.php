@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\TaiXuanJingSymbols;
+use UnicodeRanges\Range\TaiXuanJingSymbols;
 
 class TaiXuanJingSymbolsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class TaiXuanJingSymbolsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Tai Xuan Jing Symbols', $this->charRange->getName());
+		$this->assertEquals('Tai Xuan Jing Symbols', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class TaiXuanJingSymbolsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1D300', $range[0]);
 		$this->assertEquals('1D35F', $range[1]);

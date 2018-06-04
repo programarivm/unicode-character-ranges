@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\VedicExtensions;
+use UnicodeRanges\Range\VedicExtensions;
 
 class VedicExtensionsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class VedicExtensionsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Vedic Extensions', $this->charRange->getName());
+		$this->assertEquals('Vedic Extensions', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class VedicExtensionsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1CD0', $range[0]);
 		$this->assertEquals('1CFF', $range[1]);

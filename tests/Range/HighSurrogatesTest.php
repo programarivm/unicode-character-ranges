@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\HighSurrogates;
+use UnicodeRanges\Range\HighSurrogates;
 
 class HighSurrogatesTest extends TestCase
 {
@@ -19,7 +19,7 @@ class HighSurrogatesTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('High Surrogates', $this->charRange->getName());
+		$this->assertEquals('High Surrogates', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class HighSurrogatesTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('D800', $range[0]);
 		$this->assertEquals('DB7F', $range[1]);

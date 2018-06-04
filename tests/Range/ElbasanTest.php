@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Elbasan;
+use UnicodeRanges\Range\Elbasan;
 
 class ElbasanTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ElbasanTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Elbasan', $this->charRange->getName());
+		$this->assertEquals('Elbasan', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ElbasanTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10500', $range[0]);
 		$this->assertEquals('1052F', $range[1]);

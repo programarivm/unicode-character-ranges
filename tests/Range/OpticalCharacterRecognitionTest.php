@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\OpticalCharacterRecognition;
+use UnicodeRanges\Range\OpticalCharacterRecognition;
 
 class OpticalCharacterRecognitionTest extends TestCase
 {
@@ -19,7 +19,7 @@ class OpticalCharacterRecognitionTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Optical Character Recognition', $this->charRange->getName());
+		$this->assertEquals('Optical Character Recognition', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class OpticalCharacterRecognitionTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2440', $range[0]);
 		$this->assertEquals('245F', $range[1]);

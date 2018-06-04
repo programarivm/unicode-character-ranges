@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\EnclosedAlphanumericSupplement;
+use UnicodeRanges\Range\EnclosedAlphanumericSupplement;
 
 class EnclosedAlphanumericSupplementTest extends TestCase
 {
@@ -19,7 +19,7 @@ class EnclosedAlphanumericSupplementTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Enclosed Alphanumeric Supplement', $this->charRange->getName());
+		$this->assertEquals('Enclosed Alphanumeric Supplement', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class EnclosedAlphanumericSupplementTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1F100', $range[0]);
 		$this->assertEquals('1F1FF', $range[1]);

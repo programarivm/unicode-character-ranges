@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Cuneiform;
+use UnicodeRanges\Range\Cuneiform;
 
 class CuneiformTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CuneiformTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Cuneiform', $this->charRange->getName());
+		$this->assertEquals('Cuneiform', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CuneiformTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('12000', $range[0]);
 		$this->assertEquals('123FF', $range[1]);

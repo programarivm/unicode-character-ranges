@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\GeorgianSupplement;
+use UnicodeRanges\Range\GeorgianSupplement;
 
 class GeorgianSupplementTest extends TestCase
 {
@@ -19,7 +19,7 @@ class GeorgianSupplementTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Georgian Supplement', $this->charRange->getName());
+		$this->assertEquals('Georgian Supplement', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class GeorgianSupplementTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2D00', $range[0]);
 		$this->assertEquals('2D2F', $range[1]);

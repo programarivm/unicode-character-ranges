@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Vai;
+use UnicodeRanges\Range\Vai;
 
 class VaiTest extends TestCase
 {
@@ -19,7 +19,7 @@ class VaiTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Vai', $this->charRange->getName());
+		$this->assertEquals('Vai', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class VaiTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('A500', $range[0]);
 		$this->assertEquals('A63F', $range[1]);

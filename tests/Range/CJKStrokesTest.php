@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CJKStrokes;
+use UnicodeRanges\Range\CJKStrokes;
 
 class CJKStrokesTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CJKStrokesTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('CJK Strokes', $this->charRange->getName());
+		$this->assertEquals('CJK Strokes', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CJKStrokesTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('31C0', $range[0]);
 		$this->assertEquals('31EF', $range[1]);

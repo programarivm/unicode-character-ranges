@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Osmanya;
+use UnicodeRanges\Range\Osmanya;
 
 class OsmanyaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class OsmanyaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Osmanya', $this->charRange->getName());
+		$this->assertEquals('Osmanya', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class OsmanyaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10480', $range[0]);
 		$this->assertEquals('104AF', $range[1]);

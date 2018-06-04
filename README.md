@@ -1,19 +1,19 @@
 ## Unicode Character Ranges
 
-[![Build Status](https://travis-ci.org/programarivm/unicode-character-ranges.svg?branch=master)](https://travis-ci.org/programarivm/unicode-character-ranges)
-[![Packagist](https://img.shields.io/packagist/dt/programarivm/unicode-character-ranges.svg)](https://packagist.org/packages/programarivm/unicode-character-ranges)
+[![Build Status](https://travis-ci.org/programarivm/unicode-ranges.svg?branch=master)](https://travis-ci.org/programarivm/unicode-ranges)
+[![Packagist](https://img.shields.io/packagist/dt/programarivm/unicode-ranges.svg)](https://packagist.org/packages/programarivm/unicode-ranges)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Unicode Character Ranges](/resources/logo.jpg?raw=true)
 
 Unicode character ranges (or blocks) in a friendly object-oriented way for multiple purposes.
 
-See [Unicode character ranges](https://github.com/programarivm/unicode-character-ranges/tree/master/src).
+See [Unicode character ranges](https://github.com/programarivm/unicode-ranges/tree/master/src).
 
 ### 1. Install
 
 Via composer:
 
-    $ composer require programarivm/unicode-character-ranges
+    $ composer require programarivm/unicode-ranges
 
 ### 2. Example
 
@@ -21,9 +21,9 @@ See how [Random Unicode](https://github.com/programarivm/random-unicode) uses Un
 
 ```php
 use RandomUnicode\Randomizer;
-use UnicodeCharacterRanges\BasicLatin;
-use UnicodeCharacterRanges\Tibetan;
-use UnicodeCharacterRanges\Cherokee;
+use UnicodeRanges\BasicLatin;
+use UnicodeRanges\Tibetan;
+use UnicodeRanges\Cherokee;
 
 $char = Randomizer::char([
     new BasicLatin,

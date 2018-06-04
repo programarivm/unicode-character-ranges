@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CyrillicExtendedA;
+use UnicodeRanges\Range\CyrillicExtendedA;
 
 class CyrillicExtendedATest extends TestCase
 {
@@ -19,7 +19,7 @@ class CyrillicExtendedATest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Cyrillic Extended-A', $this->charRange->getName());
+		$this->assertEquals('Cyrillic Extended-A', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CyrillicExtendedATest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2DE0', $range[0]);
 		$this->assertEquals('2DFF', $range[1]);

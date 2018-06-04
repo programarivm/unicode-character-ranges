@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Tagalog;
+use UnicodeRanges\Range\Tagalog;
 
 class TagalogTest extends TestCase
 {
@@ -19,7 +19,7 @@ class TagalogTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Tagalog', $this->charRange->getName());
+		$this->assertEquals('Tagalog', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class TagalogTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1700', $range[0]);
 		$this->assertEquals('171F', $range[1]);

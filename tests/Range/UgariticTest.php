@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Ugaritic;
+use UnicodeRanges\Range\Ugaritic;
 
 class UgariticTest extends TestCase
 {
@@ -19,7 +19,7 @@ class UgariticTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Ugaritic', $this->charRange->getName());
+		$this->assertEquals('Ugaritic', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class UgariticTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10380', $range[0]);
 		$this->assertEquals('1039F', $range[1]);

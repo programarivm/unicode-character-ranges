@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\TaiLe;
+use UnicodeRanges\Range\TaiLe;
 
 class TaiLeTest extends TestCase
 {
@@ -19,7 +19,7 @@ class TaiLeTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Tai Le', $this->charRange->getName());
+		$this->assertEquals('Tai Le', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class TaiLeTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1950', $range[0]);
 		$this->assertEquals('197F', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\OldPersian;
+use UnicodeRanges\Range\OldPersian;
 
 class OldPersianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class OldPersianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Old Persian', $this->charRange->getName());
+		$this->assertEquals('Old Persian', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class OldPersianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('103A0', $range[0]);
 		$this->assertEquals('103DF', $range[1]);

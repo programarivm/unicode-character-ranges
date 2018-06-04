@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\ArabicMathematicalAlphabeticSymbols;
+use UnicodeRanges\Range\ArabicMathematicalAlphabeticSymbols;
 
 class ArabicMathematicalAlphabeticSymbolsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ArabicMathematicalAlphabeticSymbolsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Arabic Mathematical Alphabetic Symbols', $this->charRange->getName());
+		$this->assertEquals('Arabic Mathematical Alphabetic Symbols', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ArabicMathematicalAlphabeticSymbolsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1EE00', $range[0]);
 		$this->assertEquals('1EEFF', $range[1]);

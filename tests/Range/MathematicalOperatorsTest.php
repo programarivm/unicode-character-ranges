@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\MathematicalOperators;
+use UnicodeRanges\Range\MathematicalOperators;
 
 class MathematicalOperatorsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MathematicalOperatorsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Mathematical Operators', $this->charRange->getName());
+		$this->assertEquals('Mathematical Operators', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MathematicalOperatorsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2200', $range[0]);
 		$this->assertEquals('22FF', $range[1]);

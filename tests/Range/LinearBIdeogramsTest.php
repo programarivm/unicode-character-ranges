@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\LinearBIdeograms;
+use UnicodeRanges\Range\LinearBIdeograms;
 
 class LinearBIdeogramsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LinearBIdeogramsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Linear B Ideograms', $this->charRange->getName());
+		$this->assertEquals('Linear B Ideograms', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class LinearBIdeogramsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10080', $range[0]);
 		$this->assertEquals('100FF', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Khmer;
+use UnicodeRanges\Range\Khmer;
 
 class KhmerTest extends TestCase
 {
@@ -19,7 +19,7 @@ class KhmerTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Khmer', $this->charRange->getName());
+		$this->assertEquals('Khmer', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class KhmerTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1780', $range[0]);
 		$this->assertEquals('17FF', $range[1]);

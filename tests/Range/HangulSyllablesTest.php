@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\HangulSyllables;
+use UnicodeRanges\Range\HangulSyllables;
 
 class HangulSyllablesTest extends TestCase
 {
@@ -19,7 +19,7 @@ class HangulSyllablesTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Hangul Syllables', $this->charRange->getName());
+		$this->assertEquals('Hangul Syllables', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class HangulSyllablesTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('AC00', $range[0]);
 		$this->assertEquals('D7AF', $range[1]);

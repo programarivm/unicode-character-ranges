@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Devanagari;
+use UnicodeRanges\Range\Devanagari;
 
 class DevanagariTest extends TestCase
 {
@@ -19,7 +19,7 @@ class DevanagariTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Devanagari', $this->charRange->getName());
+		$this->assertEquals('Devanagari', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class DevanagariTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0900', $range[0]);
 		$this->assertEquals('097F', $range[1]);

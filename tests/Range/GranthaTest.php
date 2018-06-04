@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Grantha;
+use UnicodeRanges\Range\Grantha;
 
 class GranthaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class GranthaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Grantha', $this->charRange->getName());
+		$this->assertEquals('Grantha', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class GranthaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('11300', $range[0]);
 		$this->assertEquals('1137F', $range[1]);

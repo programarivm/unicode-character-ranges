@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\ControlPictures;
+use UnicodeRanges\Range\ControlPictures;
 
 class ControlPicturesTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ControlPicturesTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Control Pictures', $this->charRange->getName());
+		$this->assertEquals('Control Pictures', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ControlPicturesTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2400', $range[0]);
 		$this->assertEquals('243F', $range[1]);

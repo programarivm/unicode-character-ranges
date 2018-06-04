@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Syriac;
+use UnicodeRanges\Range\Syriac;
 
 class SyriacTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SyriacTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Syriac', $this->charRange->getName());
+		$this->assertEquals('Syriac', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SyriacTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0700', $range[0]);
 		$this->assertEquals('074F', $range[1]);

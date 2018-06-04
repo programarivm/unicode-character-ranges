@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\SupplementalPrivateUseAreaB;
+use UnicodeRanges\Range\SupplementalPrivateUseAreaB;
 
 class SupplementalPrivateUseAreaBTest extends TestCase
 {
@@ -19,7 +19,7 @@ class SupplementalPrivateUseAreaBTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Supplemental Private Use Area-B', $this->charRange->getName());
+		$this->assertEquals('Supplemental Private Use Area-B', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class SupplementalPrivateUseAreaBTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('100000', $range[0]);
 		$this->assertEquals('10FFFD', $range[1]);

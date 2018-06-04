@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\HangulJamoExtendedB;
+use UnicodeRanges\Range\HangulJamoExtendedB;
 
 class HangulJamoExtendedBTest extends TestCase
 {
@@ -19,7 +19,7 @@ class HangulJamoExtendedBTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Hangul Jamo Extended-B', $this->charRange->getName());
+		$this->assertEquals('Hangul Jamo Extended-B', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class HangulJamoExtendedBTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('D7B0', $range[0]);
 		$this->assertEquals('D7FF', $range[1]);

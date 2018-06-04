@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Lepcha;
+use UnicodeRanges\Range\Lepcha;
 
 class LepchaTest extends TestCase
 {
@@ -19,7 +19,7 @@ class LepchaTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Lepcha', $this->charRange->getName());
+		$this->assertEquals('Lepcha', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class LepchaTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1C00', $range[0]);
 		$this->assertEquals('1C4F', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Ogham;
+use UnicodeRanges\Range\Ogham;
 
 class OghamTest extends TestCase
 {
@@ -19,7 +19,7 @@ class OghamTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Ogham', $this->charRange->getName());
+		$this->assertEquals('Ogham', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class OghamTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1680', $range[0]);
 		$this->assertEquals('169F', $range[1]);

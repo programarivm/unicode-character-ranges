@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Armenian;
+use UnicodeRanges\Range\Armenian;
 
 class ArmenianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ArmenianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Armenian', $this->charRange->getName());
+		$this->assertEquals('Armenian', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ArmenianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0530', $range[0]);
 		$this->assertEquals('058F', $range[1]);

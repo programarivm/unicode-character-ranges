@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\ModifierToneLetters;
+use UnicodeRanges\Range\ModifierToneLetters;
 
 class ModifierToneLettersTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ModifierToneLettersTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Modifier Tone Letters', $this->charRange->getName());
+		$this->assertEquals('Modifier Tone Letters', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ModifierToneLettersTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('A700', $range[0]);
 		$this->assertEquals('A71F', $range[1]);

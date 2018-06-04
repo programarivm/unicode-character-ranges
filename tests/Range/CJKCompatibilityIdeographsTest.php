@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CJKCompatibilityIdeographs;
+use UnicodeRanges\Range\CJKCompatibilityIdeographs;
 
 class CJKCompatibilityIdeographsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CJKCompatibilityIdeographsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('CJK Compatibility Ideographs', $this->charRange->getName());
+		$this->assertEquals('CJK Compatibility Ideographs', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CJKCompatibilityIdeographsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('F900', $range[0]);
 		$this->assertEquals('FAFF', $range[1]);

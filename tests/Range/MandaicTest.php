@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Mandaic;
+use UnicodeRanges\Range\Mandaic;
 
 class MandaicTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MandaicTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Mandaic', $this->charRange->getName());
+		$this->assertEquals('Mandaic', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MandaicTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0840', $range[0]);
 		$this->assertEquals('085F', $range[1]);

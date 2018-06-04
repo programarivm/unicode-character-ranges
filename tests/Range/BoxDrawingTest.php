@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\BoxDrawing;
+use UnicodeRanges\Range\BoxDrawing;
 
 class BoxDrawingTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BoxDrawingTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Box Drawing', $this->charRange->getName());
+		$this->assertEquals('Box Drawing', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BoxDrawingTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2500', $range[0]);
 		$this->assertEquals('257F', $range[1]);

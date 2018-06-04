@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\GeometricShapes;
+use UnicodeRanges\Range\GeometricShapes;
 
 class GeometricShapesTest extends TestCase
 {
@@ -19,7 +19,7 @@ class GeometricShapesTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Geometric Shapes', $this->charRange->getName());
+		$this->assertEquals('Geometric Shapes', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class GeometricShapesTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('25A0', $range[0]);
 		$this->assertEquals('25FF', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Runic;
+use UnicodeRanges\Range\Runic;
 
 class RunicTest extends TestCase
 {
@@ -19,7 +19,7 @@ class RunicTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Runic', $this->charRange->getName());
+		$this->assertEquals('Runic', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class RunicTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('16A0', $range[0]);
 		$this->assertEquals('16FF', $range[1]);

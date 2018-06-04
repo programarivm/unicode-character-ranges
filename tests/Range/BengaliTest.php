@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Bengali;
+use UnicodeRanges\Range\Bengali;
 
 class BengaliTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BengaliTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Bengali', $this->charRange->getName());
+		$this->assertEquals('Bengali', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BengaliTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0980', $range[0]);
 		$this->assertEquals('09FF', $range[1]);

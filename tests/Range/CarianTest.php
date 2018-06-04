@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Carian;
+use UnicodeRanges\Range\Carian;
 
 class CarianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CarianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Carian', $this->charRange->getName());
+		$this->assertEquals('Carian', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CarianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('102A0', $range[0]);
 		$this->assertEquals('102DF', $range[1]);

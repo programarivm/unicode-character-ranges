@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\AncientSymbols;
+use UnicodeRanges\Range\AncientSymbols;
 
 class AncientSymbolsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class AncientSymbolsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Ancient Symbols', $this->charRange->getName());
+		$this->assertEquals('Ancient Symbols', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class AncientSymbolsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10190', $range[0]);
 		$this->assertEquals('101CF', $range[1]);

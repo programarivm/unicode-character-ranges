@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Miao;
+use UnicodeRanges\Range\Miao;
 
 class MiaoTest extends TestCase
 {
@@ -19,7 +19,7 @@ class MiaoTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Miao', $this->charRange->getName());
+		$this->assertEquals('Miao', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class MiaoTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('16F00', $range[0]);
 		$this->assertEquals('16F9F', $range[1]);

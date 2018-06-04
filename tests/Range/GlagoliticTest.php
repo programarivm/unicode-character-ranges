@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Glagolitic;
+use UnicodeRanges\Range\Glagolitic;
 
 class GlagoliticTest extends TestCase
 {
@@ -19,7 +19,7 @@ class GlagoliticTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Glagolitic', $this->charRange->getName());
+		$this->assertEquals('Glagolitic', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class GlagoliticTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2C00', $range[0]);
 		$this->assertEquals('2C5F', $range[1]);

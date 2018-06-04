@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Buginese;
+use UnicodeRanges\Range\Buginese;
 
 class BugineseTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BugineseTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Buginese', $this->charRange->getName());
+		$this->assertEquals('Buginese', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BugineseTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('1A00', $range[0]);
 		$this->assertEquals('1A1F', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Modi;
+use UnicodeRanges\Range\Modi;
 
 class ModiTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ModiTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Modi', $this->charRange->getName());
+		$this->assertEquals('Modi', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ModiTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('11600', $range[0]);
 		$this->assertEquals('1165F', $range[1]);

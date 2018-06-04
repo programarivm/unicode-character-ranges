@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\EnclosedAlphanumerics;
+use UnicodeRanges\Range\EnclosedAlphanumerics;
 
 class EnclosedAlphanumericsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class EnclosedAlphanumericsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Enclosed Alphanumerics', $this->charRange->getName());
+		$this->assertEquals('Enclosed Alphanumerics', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class EnclosedAlphanumericsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2460', $range[0]);
 		$this->assertEquals('24FF', $range[1]);

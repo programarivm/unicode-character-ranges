@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\CuneiformNumbersAndPunctuation;
+use UnicodeRanges\Range\CuneiformNumbersAndPunctuation;
 
 class CuneiformNumbersAndPunctuationTest extends TestCase
 {
@@ -19,7 +19,7 @@ class CuneiformNumbersAndPunctuationTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Cuneiform Numbers and Punctuation', $this->charRange->getName());
+		$this->assertEquals('Cuneiform Numbers and Punctuation', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CuneiformNumbersAndPunctuationTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('12400', $range[0]);
 		$this->assertEquals('1247F', $range[1]);

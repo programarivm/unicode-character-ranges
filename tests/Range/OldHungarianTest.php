@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\OldHungarian;
+use UnicodeRanges\Range\OldHungarian;
 
 class OldHungarianTest extends TestCase
 {
@@ -19,7 +19,7 @@ class OldHungarianTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Old Hungarian', $this->charRange->getName());
+		$this->assertEquals('Old Hungarian', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class OldHungarianTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10C80', $range[0]);
 		$this->assertEquals('10CFF', $range[1]);

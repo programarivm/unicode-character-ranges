@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\IdeographicDescriptionCharacters;
+use UnicodeRanges\Range\IdeographicDescriptionCharacters;
 
 class IdeographicDescriptionCharactersTest extends TestCase
 {
@@ -19,7 +19,7 @@ class IdeographicDescriptionCharactersTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Ideographic Description Characters', $this->charRange->getName());
+		$this->assertEquals('Ideographic Description Characters', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class IdeographicDescriptionCharactersTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('2FF0', $range[0]);
 		$this->assertEquals('2FFF', $range[1]);

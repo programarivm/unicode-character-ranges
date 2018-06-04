@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\GreekAndCoptic;
+use UnicodeRanges\Range\GreekAndCoptic;
 
 class GreekAndCopticTest extends TestCase
 {
@@ -19,7 +19,7 @@ class GreekAndCopticTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Greek and Coptic', $this->charRange->getName());
+		$this->assertEquals('Greek and Coptic', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class GreekAndCopticTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('0370', $range[0]);
 		$this->assertEquals('03FF', $range[1]);

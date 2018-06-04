@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\BassaVah;
+use UnicodeRanges\Range\BassaVah;
 
 class BassaVahTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BassaVahTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Bassa Vah', $this->charRange->getName());
+		$this->assertEquals('Bassa Vah', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class BassaVahTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('16AD0', $range[0]);
 		$this->assertEquals('16AFF', $range[1]);

@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\KayahLi;
+use UnicodeRanges\Range\KayahLi;
 
 class KayahLiTest extends TestCase
 {
@@ -19,7 +19,7 @@ class KayahLiTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Kayah Li', $this->charRange->getName());
+		$this->assertEquals('Kayah Li', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class KayahLiTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('A900', $range[0]);
 		$this->assertEquals('A92F', $range[1]);

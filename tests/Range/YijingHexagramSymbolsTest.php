@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\YijingHexagramSymbols;
+use UnicodeRanges\Range\YijingHexagramSymbols;
 
 class YijingHexagramSymbolsTest extends TestCase
 {
@@ -19,7 +19,7 @@ class YijingHexagramSymbolsTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('YijingHexagram Symbols', $this->charRange->getName());
+		$this->assertEquals('YijingHexagram Symbols', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class YijingHexagramSymbolsTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('4DC0', $range[0]);
 		$this->assertEquals('4DFF', $range[1]);

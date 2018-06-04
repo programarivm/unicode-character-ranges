@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\OldItalic;
+use UnicodeRanges\Range\OldItalic;
 
 class OldItalicTest extends TestCase
 {
@@ -19,7 +19,7 @@ class OldItalicTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Old Italic', $this->charRange->getName());
+		$this->assertEquals('Old Italic', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class OldItalicTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10300', $range[0]);
 		$this->assertEquals('1032F', $range[1]);

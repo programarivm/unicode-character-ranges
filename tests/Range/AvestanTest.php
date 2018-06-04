@@ -1,9 +1,9 @@
 <?php
 
-namespace UnicodeCharacterRanges\Range\Tests;
+namespace UnicodeRanges\Range\Tests;
 
 use PHPUnit\Framework\TestCase;
-use UnicodeCharacterRanges\Avestan;
+use UnicodeRanges\Range\Avestan;
 
 class AvestanTest extends TestCase
 {
@@ -19,7 +19,7 @@ class AvestanTest extends TestCase
 	 */
 	public function get_name()
 	{
-		$this->assertEquals('Avestan', $this->charRange->getName());
+		$this->assertEquals('Avestan', $this->charRange->name());
 	}
 
 	/**
@@ -27,7 +27,7 @@ class AvestanTest extends TestCase
 	 */
 	public function get_range()
 	{
-		$range = $this->charRange->getRange();
+		$range = $this->charRange->range();
 
 		$this->assertEquals('10B00', $range[0]);
 		$this->assertEquals('10B3F', $range[1]);
