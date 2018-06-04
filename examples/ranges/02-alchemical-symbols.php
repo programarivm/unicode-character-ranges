@@ -8,9 +8,4 @@ $alchemicalSymbols = new AlchemicalSymbols;
 
 echo "Total: {$alchemicalSymbols->count()}".PHP_EOL;
 echo "Range: {$alchemicalSymbols->range()[0]}-{$alchemicalSymbols->range()[0]}".PHP_EOL;
-echo 'Characters: ';
-$chars = $alchemicalSymbols->chars();
-foreach ($chars as $char) {
-    echo $char;
-}
-echo PHP_EOL;
+echo 'Characters: ' .  implode(' ', $alchemicalSymbols->chars()) . PHP_EOL;

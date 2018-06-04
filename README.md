@@ -5,9 +5,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Unicode Character Ranges](/resources/logo.jpg?raw=true)
 
-Unicode character ranges (or blocks) in a friendly object-oriented way for multiple purposes.
-
-See [Unicode ranges](https://github.com/programarivm/unicode-ranges/tree/master/src).
+Unicode character ranges (or blocks) in a friendly object-oriented way for multiple purposes. See [Unicode ranges](https://github.com/programarivm/unicode-ranges/tree/master/src/Range).
 
 ### 1. Install
 
@@ -17,7 +15,7 @@ Via composer:
 
 ### 2. Use
 
-#### The Ranges
+### The Ranges
 
 ```php
 use UnicodeRanges\Range\AlchemicalSymbols;
@@ -25,21 +23,21 @@ use UnicodeRanges\Range\AlchemicalSymbols;
 $alchemicalSymbols = new AlchemicalSymbols;
 ```
 
-##### count()
+#### count()
 
 Counts the number of characters in a range.
 
 ```php
 $alchemicalSymbols->count();
 ```
-##### range()
+#### range()
 
 Returns the Unicode range in hexadecimal format.
 
 ```php
 $alchemicalSymbols->range();
 ```
-##### chars()
+#### chars()
 
 Returns an array containing the chars of that range.
 
@@ -47,9 +45,9 @@ See [examples](https://github.com/programarivm/unicode-ranges/tree/master/exampl
 
 - - -
 
-#### The `Converter` class
+### The `Converter` class
 
-##### dec2unicode()
+#### dec2unicode()
 
 Converts a decimal number into its Unicode character counterpart.
 
@@ -61,9 +59,9 @@ See [examples](https://github.com/programarivm/unicode-ranges/tree/master/exampl
 
 - - -
 
-#### The `Randomizer` class
+### The `Randomizer` class
 
-##### char()
+#### char()
 
 Generates a random Unicode character given one or multiple Unicode ranges.
 

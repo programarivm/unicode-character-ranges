@@ -7,13 +7,14 @@
       "unicode",
       "utf",
       "utf8",
+      "random",
       "block",
       "range",
       "char",
       "blocks",
       "string",
       "symbol",
-      "word"
+      "converter"
   ],
   "authors": [
     {
