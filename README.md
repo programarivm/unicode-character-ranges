@@ -1,7 +1,6 @@
 ## Unicode Ranges
 
 [![Build Status](https://travis-ci.org/programarivm/unicode-ranges.svg?branch=master)](https://travis-ci.org/programarivm/unicode-ranges)
-[![Packagist](https://img.shields.io/packagist/dt/programarivm/unicode-ranges.svg)](https://packagist.org/packages/programarivm/unicode-ranges)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Unicode Character Ranges](/resources/logo.jpg?raw=true)
 
