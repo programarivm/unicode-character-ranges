@@ -17,10 +17,10 @@ class RandomizerTest extends TestCase
     public function letter()
     {
         $letter = Randomizer::letter([
-            new Cherokee(),
-            new BasicLatin(),
-            new Tibetan(),
-            new AegeanNumbers(),
+            new Cherokee,
+            new BasicLatin,
+            new Tibetan,
+            new AegeanNumbers,
         ]);
 
         $this->assertEquals(1, mb_strlen($letter));
@@ -33,10 +33,10 @@ class RandomizerTest extends TestCase
     public function number()
     {
         $number = Randomizer::number([
-            new Cherokee(),
-            new BasicLatin(),
-            new Tibetan(),
-            new AegeanNumbers(),
+            new Cherokee,
+            new BasicLatin,
+            new Tibetan,
+            new AegeanNumbers,
         ]);
 
         $this->assertEquals(1, mb_strlen($number));
@@ -49,10 +49,10 @@ class RandomizerTest extends TestCase
     public function printable_char()
     {
         $char = Randomizer::printableChar([
-            new Cherokee(),
-            new BasicLatin(),
-            new Tibetan(),
-            new AegeanNumbers(),
+            new Cherokee,
+            new BasicLatin,
+            new Tibetan,
+            new AegeanNumbers,
         ]);
 
         $this->assertEquals(1, mb_strlen($char));
@@ -65,10 +65,10 @@ class RandomizerTest extends TestCase
     public function letters()
     {
         $letters = Randomizer::letters([
-            new Cherokee(),
-            new BasicLatin(),
-            new Tibetan(),
-            new AegeanNumbers(),
+            new Cherokee,
+            new BasicLatin,
+            new Tibetan,
+            new AegeanNumbers,
         ], 5);
 
         $this->assertEquals(5, mb_strlen($letters));
@@ -81,10 +81,10 @@ class RandomizerTest extends TestCase
     public function numbers()
     {
         $numbers = Randomizer::letters([
-            new Cherokee(),
-            new BasicLatin(),
-            new Tibetan(),
-            new AegeanNumbers(),
+            new Cherokee,
+            new BasicLatin,
+            new Tibetan,
+            new AegeanNumbers,
         ], 5);
 
         $this->assertEquals(5, mb_strlen($numbers));
@@ -97,9 +97,9 @@ class RandomizerTest extends TestCase
     public function printable_chars()
     {
         $chars = Randomizer::printableChars([
-            new BasicLatin(),
-            new Tibetan(),
-            new AegeanNumbers(),
+            new BasicLatin,
+            new Tibetan,
+            new AegeanNumbers,
         ], 5);
 
         $this->assertEquals(5, mb_strlen($chars));
