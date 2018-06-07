@@ -13,4 +13,4 @@ $char = Randomizer::char([
     new Cherokee,
 ]);
 
-echo "Random Unicode char: $char" . PHP_EOL;
+echo $char . PHP_EOL;
