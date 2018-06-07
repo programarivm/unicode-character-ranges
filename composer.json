@@ -33,5 +33,10 @@
     "psr-4": {
       "UnicodeRanges\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "UnicodeRanges\\Tests\\": "tests/"
+    }
   }
 }
