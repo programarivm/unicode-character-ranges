@@ -183,7 +183,7 @@ Output:
 
 #### `numbers()`
 
-Generates random Unicode letters given one or multiple Unicode ranges.
+Generates random Unicode numbers given one or multiple Unicode ranges.
 
 ```php
 use UnicodeRanges\Randomizer;
