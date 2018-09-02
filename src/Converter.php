@@ -28,4 +28,14 @@ class Converter
 
         return $utf;
     }
+
+    public static function unicode2dec($char)
+    {
+        return unpack('V', iconv('UTF-8', 'UCS-4LE', $char))[1];
+    }
+
+    public static function unicode2hex($char)
+    {
+        return dechex(self::unicode2dec($char));
+    }
 }

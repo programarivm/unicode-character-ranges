@@ -128,4 +128,20 @@ class ConverterTest extends TestCase
     {
         $this->assertEquals('屠', Converter::dec2unicode(194679));
     }
+
+    /**
+     * @test
+     */
+    public function unicode2dec_𐆄()
+    {
+        $this->assertEquals(65924, Converter::unicode2dec('𐆄'));
+    }
+
+    /**
+     * @test
+     */
+    public function unicode2hex_𐆄()
+    {
+        $this->assertEquals(10184, Converter::unicode2hex('𐆄'));
+    }
 }
