@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class OrnamentalDingbats extends RangeAbstract
 {
 	const RANGE_NAME = 'Ornamental Dingbats';

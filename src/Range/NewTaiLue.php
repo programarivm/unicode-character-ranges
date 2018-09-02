@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class NewTaiLue extends RangeAbstract
 {
     const RANGE_NAME = 'New Tai Lue';

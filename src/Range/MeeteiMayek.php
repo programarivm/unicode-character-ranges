@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class MeeteiMayek extends RangeAbstract
 {
     const RANGE_NAME = 'Meetei Mayek';

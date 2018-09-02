@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Hebrew extends RangeAbstract
 {
     const RANGE_NAME = 'Hebrew';

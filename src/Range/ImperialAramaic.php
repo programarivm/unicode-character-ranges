@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class ImperialAramaic extends RangeAbstract
 {
 	const RANGE_NAME = 'Imperial Aramaic';

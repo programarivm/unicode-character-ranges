@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class CJKSymbolsAndPunctuation extends RangeAbstract
 {
     const RANGE_NAME = 'CJK Symbols and Punctuation';

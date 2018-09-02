@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Ogham extends RangeAbstract
 {
     const RANGE_NAME = 'Ogham';

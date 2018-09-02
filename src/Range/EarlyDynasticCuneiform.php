@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class EarlyDynasticCuneiform extends RangeAbstract
 {
 	const RANGE_NAME = 'Early Dynastic Cuneiform';

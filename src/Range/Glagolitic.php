@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Glagolitic extends RangeAbstract
 {
     const RANGE_NAME = 'Glagolitic';

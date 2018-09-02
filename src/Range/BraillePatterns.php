@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class BraillePatterns extends RangeAbstract
 {
     const RANGE_NAME = 'Braille Patterns';

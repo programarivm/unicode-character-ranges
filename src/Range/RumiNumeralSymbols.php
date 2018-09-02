@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class RumiNumeralSymbols extends RangeAbstract
 {
 	const RANGE_NAME = 'Rumi Numeral Symbols';

@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class SuperscriptsAndSubscripts extends RangeAbstract
 {
     const RANGE_NAME = 'Superscripts and Subscripts';

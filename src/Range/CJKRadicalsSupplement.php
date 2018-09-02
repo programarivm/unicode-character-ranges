@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class CJKRadicalsSupplement extends RangeAbstract
 {
     const RANGE_NAME = 'CJK Radicals Supplement';

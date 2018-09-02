@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Khojki extends RangeAbstract
 {
 	const RANGE_NAME = 'Khojki';

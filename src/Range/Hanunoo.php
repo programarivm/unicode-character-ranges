@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Hanunoo extends RangeAbstract
 {
     const RANGE_NAME = 'Hanunoo';

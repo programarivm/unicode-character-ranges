@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class MeroiticHieroglyphs extends RangeAbstract
 {
 	const RANGE_NAME = 'Meroitic Hieroglyphs';

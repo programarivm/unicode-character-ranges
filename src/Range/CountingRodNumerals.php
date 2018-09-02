@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class CountingRodNumerals extends RangeAbstract
 {
 	const RANGE_NAME = 'Counting Rod Numerals';

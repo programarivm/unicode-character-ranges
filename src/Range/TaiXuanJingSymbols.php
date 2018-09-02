@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class TaiXuanJingSymbols extends RangeAbstract
 {
 	const RANGE_NAME = 'Tai Xuan Jing Symbols';

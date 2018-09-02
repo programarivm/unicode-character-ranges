@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Javanese extends RangeAbstract
 {
     const RANGE_NAME = 'Javanese';

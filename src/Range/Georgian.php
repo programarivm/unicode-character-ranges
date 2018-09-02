@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Georgian extends RangeAbstract
 {
     const RANGE_NAME = 'Georgian';

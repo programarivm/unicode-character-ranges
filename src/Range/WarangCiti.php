@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class WarangCiti extends RangeAbstract
 {
 	const RANGE_NAME = 'Warang Citi';

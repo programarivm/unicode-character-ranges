@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Specials extends RangeAbstract
 {
     const RANGE_NAME = 'Specials';

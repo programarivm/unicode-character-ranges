@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Lydian extends RangeAbstract
 {
 	const RANGE_NAME = 'Lydian';

@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class ByzantineMusicalSymbols extends RangeAbstract
 {
 	const RANGE_NAME = 'Byzantine Musical Symbols';

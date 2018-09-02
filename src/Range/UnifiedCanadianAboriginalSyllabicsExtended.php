@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class UnifiedCanadianAboriginalSyllabicsExtended extends RangeAbstract
 {
     const RANGE_NAME = 'Unified Canadian Aboriginal Syllabics Extended';

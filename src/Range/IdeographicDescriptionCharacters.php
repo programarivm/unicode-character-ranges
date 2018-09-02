@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class IdeographicDescriptionCharacters extends RangeAbstract
 {
     const RANGE_NAME = 'Ideographic Description Characters';

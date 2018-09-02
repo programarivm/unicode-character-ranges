@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Runic extends RangeAbstract
 {
     const RANGE_NAME = 'Runic';

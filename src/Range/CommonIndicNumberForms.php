@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class CommonIndicNumberForms extends RangeAbstract
 {
     const RANGE_NAME = 'Common Indic Number Forms';

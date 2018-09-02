@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class CJKUnifiedIdeographs extends RangeAbstract
 {
     const RANGE_NAME = 'CJK Unified Ideographs';

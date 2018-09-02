@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Emoticons extends RangeAbstract
 {
 	const RANGE_NAME = 'Emoticons';

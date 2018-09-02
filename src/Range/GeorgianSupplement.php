@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class GeorgianSupplement extends RangeAbstract
 {
     const RANGE_NAME = 'Georgian Supplement';

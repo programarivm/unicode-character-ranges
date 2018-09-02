@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class LinearBIdeograms extends RangeAbstract
 {
     const RANGE_NAME = 'Linear B Ideograms';

@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Osmanya extends RangeAbstract
 {
 	const RANGE_NAME = 'Osmanya';

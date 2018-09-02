@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class TransportAndMapSymbols extends RangeAbstract
 {
 	const RANGE_NAME = 'Transport and Map Symbols';

@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class VariationSelectors extends RangeAbstract
 {
     const RANGE_NAME = 'Variation Selectors';

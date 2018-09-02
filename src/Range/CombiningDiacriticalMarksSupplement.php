@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class CombiningDiacriticalMarksSupplement extends RangeAbstract
 {
     const RANGE_NAME = 'Combining Diacritical Marks Supplement';

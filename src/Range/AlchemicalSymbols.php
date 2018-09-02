@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class AlchemicalSymbols extends RangeAbstract
 {
 	const RANGE_NAME = 'Alchemical Symbols';

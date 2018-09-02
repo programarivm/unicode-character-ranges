@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class BassaVah extends RangeAbstract
 {
 	const RANGE_NAME = 'Bassa Vah';

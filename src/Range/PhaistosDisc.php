@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class PhaistosDisc extends RangeAbstract
 {
 	const RANGE_NAME = 'Phaistos Disc';
