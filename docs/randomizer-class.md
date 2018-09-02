@@ -175,4 +175,4 @@ Output:
 
     ۱نگ𐤏ځᄳ٩ؠᄕᅂ𐤍𐤇𐤆ᅁۊᆤᇚᄒᅕᆺ
 
-See [examples](https://github.com/programarivm/unicode-ranges/tree/master/examples/randomizer).
+See more [examples](https://github.com/programarivm/unicode-ranges/blob/master/tests/RandomizerTest.php).
