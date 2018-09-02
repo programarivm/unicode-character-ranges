@@ -22,13 +22,15 @@ use UnicodeRanges\Range\AlchemicalSymbols;
 
 $alchemicalSymbols = new AlchemicalSymbols;
 
+echo "Name: {$alchemicalSymbols->name()}".PHP_EOL;
 echo "Total: {$alchemicalSymbols->count()}".PHP_EOL;
 echo "Range: {$alchemicalSymbols->range()[0]}-{$alchemicalSymbols->range()[1]}".PHP_EOL;
-echo 'Characters: ' . PHP_EOL;
+echo 'Characters: '.PHP_EOL;
 print_r($alchemicalSymbols->chars());
 ```
 Output:
 ```
+Name: Alchemical Symbols
 Total: 128
 Range: 1F700-1F77F
 Characters:
@@ -43,6 +45,14 @@ Array
     [6] => 🜆
     [7] => 🜇
     ...
+```
+
+#### `name()`
+
+Gets the name of the Unicode range.
+
+```php
+$name = $alchemicalSymbols->name();
 ```
 
 #### `count()`
