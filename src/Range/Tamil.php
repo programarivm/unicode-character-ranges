@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Tamil extends RangeAbstract
 {
     const RANGE_NAME = 'Tamil';

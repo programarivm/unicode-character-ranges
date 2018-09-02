@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class SupplementalPrivateUseAreaA extends RangeAbstract
 {
 	const RANGE_NAME = 'Supplemental Private Use Area-A';

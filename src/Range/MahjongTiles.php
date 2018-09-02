@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class MahjongTiles extends RangeAbstract
 {
 	const RANGE_NAME = 'Mahjong Tiles';

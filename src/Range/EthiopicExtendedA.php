@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class EthiopicExtendedA extends RangeAbstract
 {
     const RANGE_NAME = 'Ethiopic Extended-A';

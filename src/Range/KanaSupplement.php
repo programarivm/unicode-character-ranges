@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class KanaSupplement extends RangeAbstract
 {
 	const RANGE_NAME = 'Kana Supplement';

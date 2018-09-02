@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class InscriptionalPahlavi extends RangeAbstract
 {
 	const RANGE_NAME = 'Inscriptional Pahlavi';

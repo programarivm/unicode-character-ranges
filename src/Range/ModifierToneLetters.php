@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class ModifierToneLetters extends RangeAbstract
 {
     const RANGE_NAME = 'Modifier Tone Letters';

@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class AegeanNumbers extends RangeAbstract
 {
 	const RANGE_NAME = 'Aegean Numbers';

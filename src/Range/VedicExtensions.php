@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class VedicExtensions extends RangeAbstract
 {
     const RANGE_NAME = 'Vedic Extensions';

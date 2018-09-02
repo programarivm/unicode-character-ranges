@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class PlayingCards extends RangeAbstract
 {
 	const RANGE_NAME = 'Playing Cards';

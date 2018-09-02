@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Mandaic extends RangeAbstract
 {
     const RANGE_NAME = 'Mandaic';

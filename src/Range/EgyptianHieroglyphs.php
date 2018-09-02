@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class EgyptianHieroglyphs extends RangeAbstract
 {
 	const RANGE_NAME = 'Egyptian Hieroglyphs';

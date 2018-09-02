@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Modi extends RangeAbstract
 {
 	const RANGE_NAME = 'Modi';

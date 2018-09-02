@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class NKo extends RangeAbstract
 {
     const RANGE_NAME = 'NKo';

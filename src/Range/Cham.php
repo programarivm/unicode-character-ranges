@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Cham extends RangeAbstract
 {
     const RANGE_NAME = 'Cham';

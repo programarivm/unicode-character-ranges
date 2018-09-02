@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class SmallFormVariants extends RangeAbstract
 {
     const RANGE_NAME = 'Small Form Variants';

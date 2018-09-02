@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Miao extends RangeAbstract
 {
 	const RANGE_NAME = 'Miao';

@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class ArabicMathematicalAlphabeticSymbols extends RangeAbstract
 {
 	const RANGE_NAME = 'Arabic Mathematical Alphabetic Symbols';

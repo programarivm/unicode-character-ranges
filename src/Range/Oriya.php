@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Oriya extends RangeAbstract
 {
     const RANGE_NAME = 'Oriya';

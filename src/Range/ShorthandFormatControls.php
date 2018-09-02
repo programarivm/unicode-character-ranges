@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class ShorthandFormatControls extends RangeAbstract
 {
 	const RANGE_NAME = 'Shorthand Format Controls';

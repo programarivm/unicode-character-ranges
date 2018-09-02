@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class MyanmarExtendedA extends RangeAbstract
 {
     const RANGE_NAME = 'Myanmar Extended-A';

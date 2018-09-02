@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class SupplementalArrowsC extends RangeAbstract
 {
 	const RANGE_NAME = 'Supplemental Arrows-C';

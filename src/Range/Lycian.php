@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Lycian extends RangeAbstract
 {
 	const RANGE_NAME = 'Lycian';

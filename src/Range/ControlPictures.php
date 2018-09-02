@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class ControlPictures extends RangeAbstract
 {
     const RANGE_NAME = 'Control Pictures';

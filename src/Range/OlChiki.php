@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class OlChiki extends RangeAbstract
 {
     const RANGE_NAME = 'Ol Chiki';

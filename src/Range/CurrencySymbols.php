@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class CurrencySymbols extends RangeAbstract
 {
     const RANGE_NAME = 'Currency Symbols';

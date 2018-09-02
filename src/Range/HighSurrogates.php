@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class HighSurrogates extends RangeAbstract
 {
     const RANGE_NAME = 'High Surrogates';

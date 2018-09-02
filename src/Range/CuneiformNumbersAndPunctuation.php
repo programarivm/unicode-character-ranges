@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class CuneiformNumbersAndPunctuation extends RangeAbstract
 {
 	const RANGE_NAME = 'Cuneiform Numbers and Punctuation';

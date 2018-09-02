@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class NumberForms extends RangeAbstract
 {
     const RANGE_NAME = 'Number Forms';

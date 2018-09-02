@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class ArabicExtendedA extends RangeAbstract
 {
     const RANGE_NAME = 'Arabic Extended-A';
@@ -11,7 +13,7 @@ class ArabicExtendedA extends RangeAbstract
         $this->name = self::RANGE_NAME;
         $this->range = [
             '08A0',
-            '08FF',        
+            '08FF',
         ];
     }
 }

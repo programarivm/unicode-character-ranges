@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Takri extends RangeAbstract
 {
 	const RANGE_NAME = 'Takri';

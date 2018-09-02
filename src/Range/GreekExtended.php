@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class GreekExtended extends RangeAbstract
 {
     const RANGE_NAME = 'Greek Extended';

@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class MiscellaneousMathematicalSymbolsB extends RangeAbstract
 {
     const RANGE_NAME = 'Miscellaneous Mathematical Symbols-B';

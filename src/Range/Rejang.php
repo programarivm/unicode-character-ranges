@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Rejang extends RangeAbstract
 {
     const RANGE_NAME = 'Rejang';

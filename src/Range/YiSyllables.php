@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class YiSyllables extends RangeAbstract
 {
     const RANGE_NAME = 'Yi Syllables';

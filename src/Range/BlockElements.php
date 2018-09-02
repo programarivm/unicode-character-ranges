@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class BlockElements extends RangeAbstract
 {
     const RANGE_NAME = 'Block Elements';

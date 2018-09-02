@@ -4,9 +4,22 @@ namespace UnicodeRanges\Tests;
 
 use UnicodeRanges\Converter;
 use UnicodeRanges\Exception\CharacterLengthException;
+use UnicodeRanges\Range\BasicLatin;
+use UnicodeRanges\Range\GreekAndCoptic;
+use UnicodeRanges\Range\Cyrillic;
+use UnicodeRanges\Range\PhoneticExtensions;
+use UnicodeRanges\Range\MiscellaneousTechnical;
+use UnicodeRanges\Range\CJKRadicalsSupplement;
+use UnicodeRanges\Range\CJKUnifiedIdeographs;
+use UnicodeRanges\Range\HangulSyllables;
+use UnicodeRanges\Range\HangulJamoExtendedB;
+use UnicodeRanges\Range\AegeanNumbers;
+use UnicodeRanges\Range\Osmanya;
+use UnicodeRanges\Range\MusicalSymbols;
+use UnicodeRanges\Range\MathematicalAlphanumericSymbols;
 use PHPUnit\Framework\TestCase;
 
-class ConverterTest extends TestCase
+class sc_5b8c42faf0d59 extends TestCase
 {
     /**
      * @test
@@ -18,114 +31,118 @@ class ConverterTest extends TestCase
     }
 
     /**
+     * @dataProvider dec2unicodeData
      * @test
      */
-    public function char_926_Ξ()
+    public function dec2unicode($dec, $char)
     {
-        $this->assertEquals('Ξ', Converter::dec2unicode(926));
+        $this->assertEquals($char, Converter::dec2unicode($dec));
     }
 
     /**
+     * @dataProvider unicode2decData
      * @test
      */
-    public function char_1244_Ӝ()
+    public function unicode2dec($char, $dec)
     {
-        $this->assertEquals('Ӝ', Converter::dec2unicode(1244));
+        $this->assertEquals($dec, Converter::unicode2dec($char));
     }
 
     /**
+     * @dataProvider unicode2hexData
      * @test
      */
-    public function char_7546_ᵺ()
+    public function unicode2hex($char, $hex)
     {
-        $this->assertEquals('ᵺ', Converter::dec2unicode(7546));
+        $this->assertEquals($hex, Converter::unicode2hex($char));
     }
 
     /**
+     * @dataProvider unicode2rangeData
      * @test
      */
-    public function char_9062_⍦()
+    public function unicode2range($char, $rangeName)
     {
-        $this->assertEquals('⍦', Converter::dec2unicode(9062));
+        $this->assertEquals($rangeName, Converter::unicode2range($char)->name());
     }
 
-    /**
-     * @test
-     */
-    public function char_12004_⻤()
+    public function dec2unicodeData()
     {
-        $this->assertEquals('⻤', Converter::dec2unicode(12004));
+        return [
+            [97, 'a'],
+            [926, 'Ξ'],
+            [1244, 'Ӝ'],
+            [7546, 'ᵺ'],
+            [9062, '⍦'],
+            [12004, '⻤'],
+            [22809, '夙'],
+            [45306, '냺'],
+            [51050, '읪'],
+            [55223, 'ힷ'],
+            [65824, '𐄠'],
+            [66702, '𐒎'],
+            [119072, '𝄠'],
+            [120596, '𝜔'],
+        ];
     }
 
-    /**
-     * @test
-     */
-    public function char_22809_夙()
+    public function unicode2decData()
     {
-        $this->assertEquals('夙', Converter::dec2unicode(22809));
+        return [
+            ['a', 97],
+            ['Ξ', 926],
+            ['Ӝ', 1244],
+            ['ᵺ', 7546],
+            ['⍦', 9062],
+            ['⻤', 12004],
+            ['夙', 22809],
+            ['냺', 45306],
+            ['읪', 51050],
+            ['ힷ', 55223],
+            ['𐄠', 65824],
+            ['𐒎', 66702],
+            ['𝄠', 119072],
+            ['𝜔', 120596],
+        ];
     }
 
-    /**
-     * @test
-     */
-    public function char_45306_냺()
+    public function unicode2hexData()
     {
-        $this->assertEquals('냺', Converter::dec2unicode(45306));
+        return [
+            ['a', '61'],
+            ['Ξ', '39E'],
+            ['Ӝ', '4DC'],
+            ['ᵺ', '1D7A'],
+            ['⍦', '2366'],
+            ['⻤', '2EE4'],
+            ['夙', '5919'],
+            ['냺', 'B0FA'],
+            ['읪', 'C76A'],
+            ['ힷ', 'D7B7'],
+            ['𐄠', '10120'],
+            ['𐒎', '1048E'],
+            ['𝄠', '1D120'],
+            ['𝜔', '1D714'],
+        ];
     }
 
-    /**
-     * @test
-     */
-    public function char_51050_읪()
+    public function unicode2rangeData()
     {
-        $this->assertEquals('읪', Converter::dec2unicode(51050));
-    }
-
-    /**
-     * @test
-     */
-    public function char_55223_ힷ()
-    {
-        $this->assertEquals('ힷ', Converter::dec2unicode(55223));
-    }
-
-    /**
-     * @test
-     */
-    public function char_65824_𐄠()
-    {
-        $this->assertEquals('𐄠', Converter::dec2unicode(65824));
-    }
-
-    /**
-     * @test
-     */
-    public function char_66702_𐒎()
-    {
-        $this->assertEquals('𐒎', Converter::dec2unicode(66702));
-    }
-
-    /**
-     * @test
-     */
-    public function char_119072_𝄠()
-    {
-        $this->assertEquals('𝄠', Converter::dec2unicode(119072));
-    }
-
-    /**
-     * @test
-     */
-    public function char_120596_𝜔()
-    {
-        $this->assertEquals('𝜔', Converter::dec2unicode(120596));
-    }
-
-    /**
-     * @test
-     */
-    public function char_194679_屠()
-    {
-        $this->assertEquals('屠', Converter::dec2unicode(194679));
+        return [
+            ['a', BasicLatin::RANGE_NAME],
+            ['Ξ', GreekAndCoptic::RANGE_NAME],
+            ['Ӝ', Cyrillic::RANGE_NAME],
+            ['ᵺ', PhoneticExtensions::RANGE_NAME],
+            ['⍦', MiscellaneousTechnical::RANGE_NAME],
+            ['⻤', CJKRadicalsSupplement::RANGE_NAME],
+            ['夙', CJKUnifiedIdeographs::RANGE_NAME],
+            ['냺', HangulSyllables::RANGE_NAME],
+            ['읪', HangulSyllables::RANGE_NAME],
+            ['ힷ', HangulJamoExtendedB::RANGE_NAME],
+            ['𐄠', AegeanNumbers::RANGE_NAME],
+            ['𐒎', Osmanya::RANGE_NAME],
+            ['𝄠', MusicalSymbols::RANGE_NAME],
+            ['𝜔', MathematicalAlphanumericSymbols::RANGE_NAME],
+        ];
     }
 }

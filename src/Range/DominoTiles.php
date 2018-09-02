@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class DominoTiles extends RangeAbstract
 {
 	const RANGE_NAME = 'Domino Tiles';

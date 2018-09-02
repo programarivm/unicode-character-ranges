@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class KayahLi extends RangeAbstract
 {
     const RANGE_NAME = 'Kayah Li';

@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Hatran extends RangeAbstract
 {
 	const RANGE_NAME = 'Hatran';

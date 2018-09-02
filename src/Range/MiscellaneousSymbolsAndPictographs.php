@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class MiscellaneousSymbolsAndPictographs extends RangeAbstract
 {
 	const RANGE_NAME = 'Miscellaneous Symbols and Pictographs';

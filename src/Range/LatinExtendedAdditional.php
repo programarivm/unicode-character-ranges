@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class LatinExtendedAdditional extends RangeAbstract
 {
     const RANGE_NAME = 'Latin Extended Additional';

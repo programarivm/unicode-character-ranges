@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class OpticalCharacterRecognition extends RangeAbstract
 {
     const RANGE_NAME = 'Optical Character Recognition';

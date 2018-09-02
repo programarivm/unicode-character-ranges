@@ -2,6 +2,8 @@
 
 namespace UnicodeRanges\Range;
 
+use UnicodeRanges\RangeAbstract;
+
 class Bopomofo extends RangeAbstract
 {
     const RANGE_NAME = 'Bopomofo';
