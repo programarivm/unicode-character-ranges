@@ -1,0 +1,6 @@
+site_name: Unicode Ranges
+pages:
+  - Home: index.md
+  - Converter: converter.md
+  - Randomizer: randomizer.md
+theme: readthedocs
