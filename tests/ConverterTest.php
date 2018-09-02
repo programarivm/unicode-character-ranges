@@ -18,130 +18,97 @@ class ConverterTest extends TestCase
     }
 
     /**
+     * @dataProvider dec2unicodeData
      * @test
      */
-    public function char_926_Ξ()
+    public function dec2unicode($dec, $char)
     {
-        $this->assertEquals('Ξ', Converter::dec2unicode(926));
+        $this->assertEquals($char, Converter::dec2unicode($dec));
+    }
+
+    /**
+     * @dataProvider unicode2decData
+     * @test
+     */
+    public function unicode2dec($char, $dec)
+    {
+        $this->assertEquals($dec, Converter::unicode2dec($char));
+    }
+
+    /**
+     * @dataProvider unicode2hexData
+     * @test
+     */
+    public function unicode2hex($char, $hex)
+    {
+        $this->assertEquals($hex, Converter::unicode2hex($char));
     }
 
     /**
      * @test
      */
-    public function char_1244_Ӝ()
-    {
-        $this->assertEquals('Ӝ', Converter::dec2unicode(1244));
-    }
-
-    /**
-     * @test
-     */
-    public function char_7546_ᵺ()
-    {
-        $this->assertEquals('ᵺ', Converter::dec2unicode(7546));
-    }
-
-    /**
-     * @test
-     */
-    public function char_9062_⍦()
-    {
-        $this->assertEquals('⍦', Converter::dec2unicode(9062));
-    }
-
-    /**
-     * @test
-     */
-    public function char_12004_⻤()
-    {
-        $this->assertEquals('⻤', Converter::dec2unicode(12004));
-    }
-
-    /**
-     * @test
-     */
-    public function char_22809_夙()
-    {
-        $this->assertEquals('夙', Converter::dec2unicode(22809));
-    }
-
-    /**
-     * @test
-     */
-    public function char_45306_냺()
-    {
-        $this->assertEquals('냺', Converter::dec2unicode(45306));
-    }
-
-    /**
-     * @test
-     */
-    public function char_51050_읪()
-    {
-        $this->assertEquals('읪', Converter::dec2unicode(51050));
-    }
-
-    /**
-     * @test
-     */
-    public function char_55223_ힷ()
-    {
-        $this->assertEquals('ힷ', Converter::dec2unicode(55223));
-    }
-
-    /**
-     * @test
-     */
-    public function char_65824_𐄠()
-    {
-        $this->assertEquals('𐄠', Converter::dec2unicode(65824));
-    }
-
-    /**
-     * @test
-     */
-    public function char_66702_𐒎()
-    {
-        $this->assertEquals('𐒎', Converter::dec2unicode(66702));
-    }
-
-    /**
-     * @test
-     */
-    public function char_119072_𝄠()
-    {
-        $this->assertEquals('𝄠', Converter::dec2unicode(119072));
-    }
-
-    /**
-     * @test
-     */
-    public function char_120596_𝜔()
+    public function dec2unicode_120596()
     {
         $this->assertEquals('𝜔', Converter::dec2unicode(120596));
     }
 
-    /**
-     * @test
-     */
-    public function char_194679_屠()
+    public function dec2unicodeData()
     {
-        $this->assertEquals('屠', Converter::dec2unicode(194679));
+        return [
+            [926, 'Ξ'],
+            [1244, 'Ӝ'],
+            [7546, 'ᵺ'],
+            [9062, '⍦'],
+            [12004, '⻤'],
+            [22809, '夙'],
+            [45306, '냺'],
+            [51050, '읪'],
+            [55223, 'ힷ'],
+            [65824, '𐄠'],
+            [66702, '𐒎'],
+            [119072, '𝄠'],
+            [120596, '𝜔'],
+            [194679, '屠'],
+        ];
     }
 
-    /**
-     * @test
-     */
-    public function unicode2dec_𐆄()
+    public function unicode2decData()
     {
-        $this->assertEquals(65924, Converter::unicode2dec('𐆄'));
+        return [
+            ['Ξ', 926],
+            ['Ӝ', 1244],
+            ['ᵺ', 7546],
+            ['⍦', 9062],
+            ['⻤', 12004],
+            ['夙', 22809],
+            ['냺', 45306],
+            ['읪', 51050],
+            ['ힷ', 55223],
+            ['𐄠', 65824],
+            ['𐒎', 66702],
+            ['𝄠', 119072],
+            ['𝜔', 120596],
+            ['屠', 194679],
+        ];
     }
 
-    /**
-     * @test
-     */
-    public function unicode2hex_𐆄()
+    public function unicode2hexData()
     {
-        $this->assertEquals(10184, Converter::unicode2hex('𐆄'));
+        return [
+            ['Ξ', '39E'],
+            ['Ӝ', '4DC'],
+            ['ᵺ', '1D7A'],
+            ['⍦', '2366'],
+            ['⻤', '2EE4'],
+            ['夙', '5919'],
+            ['냺', 'B0FA'],
+            ['읪', 'C76A'],
+            ['ힷ', 'D7B7'],
+            ['𐄠', '10120'],
+            ['𐒎', '1048E'],
+            ['𝄠', '1D120'],
+            ['𝜔', '1D714'],
+            ['屠', '2F877'],
+        ];
     }
 }

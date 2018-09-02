@@ -36,6 +36,8 @@ class Converter
 
     public static function unicode2hex($char)
     {
-        return dechex(self::unicode2dec($char));
+        $hex = strtoupper(dechex(self::unicode2dec($char)));
+
+        return $hex;
     }
 }
