@@ -1,6 +1,7 @@
 ## Unicode Ranges
 
 [![Build Status](https://travis-ci.org/programarivm/unicode-ranges.svg?branch=master)](https://travis-ci.org/programarivm/unicode-ranges)
+[![Documentation Status](https://readthedocs.org/projects/unicode-ranges/badge/?version=latest)](https://unicode-ranges.readthedocs.io/en/latest/?badge=latest)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Unicode Character Ranges](/resources/logo.jpg?raw=true)
 
@@ -66,11 +67,11 @@ Returns an array containing the chars of that range.
 $chars = $alchemicalSymbols->chars();
 ```
 
-See more [examples](https://github.com/programarivm/unicode-ranges/tree/master/examples/ranges).
+See more [examples](https://github.com/programarivm/unicode-ranges/tree/master/tests/Range).
 
 ### Documentation
 
-For further information please read the [Documentation](https://pgn-chess.readthedocs.io/en/latest/).
+For further information please read the [Documentation](https://unicode-ranges.readthedocs.io/en/latest/).
 
 ### License
 
