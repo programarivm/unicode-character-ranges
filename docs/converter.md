@@ -1,4 +1,4 @@
-### `Converter` class
+### `Converter`
 
 #### `dec2unicode()`
 
