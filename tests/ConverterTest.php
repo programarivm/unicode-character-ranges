@@ -4,9 +4,22 @@ namespace UnicodeRanges\Tests;
 
 use UnicodeRanges\Converter;
 use UnicodeRanges\Exception\CharacterLengthException;
+use UnicodeRanges\Range\BasicLatin;
+use UnicodeRanges\Range\GreekAndCoptic;
+use UnicodeRanges\Range\Cyrillic;
+use UnicodeRanges\Range\PhoneticExtensions;
+use UnicodeRanges\Range\MiscellaneousTechnical;
+use UnicodeRanges\Range\CJKRadicalsSupplement;
+use UnicodeRanges\Range\CJKUnifiedIdeographs;
+use UnicodeRanges\Range\HangulSyllables;
+use UnicodeRanges\Range\HangulJamoExtendedB;
+use UnicodeRanges\Range\AegeanNumbers;
+use UnicodeRanges\Range\Osmanya;
+use UnicodeRanges\Range\MusicalSymbols;
+use UnicodeRanges\Range\MathematicalAlphanumericSymbols;
 use PHPUnit\Framework\TestCase;
 
-class ConverterTest extends TestCase
+class sc_5b8c42faf0d59 extends TestCase
 {
     /**
      * @test
@@ -45,16 +58,18 @@ class ConverterTest extends TestCase
     }
 
     /**
+     * @dataProvider unicode2rangeData
      * @test
      */
-    public function dec2unicode_120596()
+    public function unicode2range($char, $rangeName)
     {
-        $this->assertEquals('𝜔', Converter::dec2unicode(120596));
+        $this->assertEquals($rangeName, Converter::unicode2range($char)->name());
     }
 
     public function dec2unicodeData()
     {
         return [
+            [97, 'a'],
             [926, 'Ξ'],
             [1244, 'Ӝ'],
             [7546, 'ᵺ'],
@@ -68,13 +83,13 @@ class ConverterTest extends TestCase
             [66702, '𐒎'],
             [119072, '𝄠'],
             [120596, '𝜔'],
-            [194679, '屠'],
         ];
     }
 
     public function unicode2decData()
     {
         return [
+            ['a', 97],
             ['Ξ', 926],
             ['Ӝ', 1244],
             ['ᵺ', 7546],
@@ -88,13 +103,13 @@ class ConverterTest extends TestCase
             ['𐒎', 66702],
             ['𝄠', 119072],
             ['𝜔', 120596],
-            ['屠', 194679],
         ];
     }
 
     public function unicode2hexData()
     {
         return [
+            ['a', '61'],
             ['Ξ', '39E'],
             ['Ӝ', '4DC'],
             ['ᵺ', '1D7A'],
@@ -108,7 +123,26 @@ class ConverterTest extends TestCase
             ['𐒎', '1048E'],
             ['𝄠', '1D120'],
             ['𝜔', '1D714'],
-            ['屠', '2F877'],
+        ];
+    }
+
+    public function unicode2rangeData()
+    {
+        return [
+            ['a', BasicLatin::RANGE_NAME],
+            ['Ξ', GreekAndCoptic::RANGE_NAME],
+            ['Ӝ', Cyrillic::RANGE_NAME],
+            ['ᵺ', PhoneticExtensions::RANGE_NAME],
+            ['⍦', MiscellaneousTechnical::RANGE_NAME],
+            ['⻤', CJKRadicalsSupplement::RANGE_NAME],
+            ['夙', CJKUnifiedIdeographs::RANGE_NAME],
+            ['냺', HangulSyllables::RANGE_NAME],
+            ['읪', HangulSyllables::RANGE_NAME],
+            ['ힷ', HangulJamoExtendedB::RANGE_NAME],
+            ['𐄠', AegeanNumbers::RANGE_NAME],
+            ['𐒎', Osmanya::RANGE_NAME],
+            ['𝄠', MusicalSymbols::RANGE_NAME],
+            ['𝜔', MathematicalAlphanumericSymbols::RANGE_NAME],
         ];
     }
 }
