@@ -19,7 +19,7 @@ use UnicodeRanges\Range\MusicalSymbols;
 use UnicodeRanges\Range\MathematicalAlphanumericSymbols;
 use PHPUnit\Framework\TestCase;
 
-class sc_5b8c42faf0d59 extends TestCase
+class ConverterTest extends TestCase
 {
     /**
      * @test
