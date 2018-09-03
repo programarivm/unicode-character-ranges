@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Hanunoo extends RangeAbstract
+class Hanunoo extends AbstractRange
 {
     const RANGE_NAME = 'Hanunoo';
 

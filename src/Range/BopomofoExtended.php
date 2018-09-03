@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class BopomofoExtended extends RangeAbstract
+class BopomofoExtended extends AbstractRange
 {
     const RANGE_NAME = 'Bopomofo Extended';
 

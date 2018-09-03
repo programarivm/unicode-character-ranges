@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class MyanmarExtendedB extends RangeAbstract
+class MyanmarExtendedB extends AbstractRange
 {
     const RANGE_NAME = 'Myanmar Extended-B';
 

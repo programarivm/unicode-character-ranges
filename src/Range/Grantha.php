@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Grantha extends RangeAbstract
+class Grantha extends AbstractRange
 {
 	const RANGE_NAME = 'Grantha';
 

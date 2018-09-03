@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class OldPermic extends RangeAbstract
+class OldPermic extends AbstractRange
 {
 	const RANGE_NAME = 'Old Permic';
 

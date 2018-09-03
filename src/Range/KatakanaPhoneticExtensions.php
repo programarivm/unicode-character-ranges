@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class KatakanaPhoneticExtensions extends RangeAbstract
+class KatakanaPhoneticExtensions extends AbstractRange
 {
     const RANGE_NAME = 'Katakana Phonetic Extensions';
 

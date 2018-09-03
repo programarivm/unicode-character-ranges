@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Lycian extends RangeAbstract
+class Lycian extends AbstractRange
 {
 	const RANGE_NAME = 'Lycian';
 

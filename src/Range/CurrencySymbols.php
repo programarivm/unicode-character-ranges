@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CurrencySymbols extends RangeAbstract
+class CurrencySymbols extends AbstractRange
 {
     const RANGE_NAME = 'Currency Symbols';
 

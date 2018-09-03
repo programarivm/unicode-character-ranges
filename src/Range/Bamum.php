@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Bamum extends RangeAbstract
+class Bamum extends AbstractRange
 {
     const RANGE_NAME = 'Bamum';
 

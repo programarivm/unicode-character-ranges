@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Brahmi extends RangeAbstract
+class Brahmi extends AbstractRange
 {
 	const RANGE_NAME = 'Brahmi';
 

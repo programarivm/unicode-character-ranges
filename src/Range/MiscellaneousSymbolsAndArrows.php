@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class MiscellaneousSymbolsAndArrows extends RangeAbstract
+class MiscellaneousSymbolsAndArrows extends AbstractRange
 {
     const RANGE_NAME = 'Miscellaneous Symbols and Arrows';
 

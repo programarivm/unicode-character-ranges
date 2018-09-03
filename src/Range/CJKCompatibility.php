@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CJKCompatibility extends RangeAbstract
+class CJKCompatibility extends AbstractRange
 {
     const RANGE_NAME = 'CJK Compatibility';
 

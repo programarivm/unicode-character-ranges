@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Malayalam extends RangeAbstract
+class Malayalam extends AbstractRange
 {
     const RANGE_NAME = 'Malayalam';
 

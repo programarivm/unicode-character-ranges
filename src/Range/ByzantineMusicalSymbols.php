@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class ByzantineMusicalSymbols extends RangeAbstract
+class ByzantineMusicalSymbols extends AbstractRange
 {
 	const RANGE_NAME = 'Byzantine Musical Symbols';
 

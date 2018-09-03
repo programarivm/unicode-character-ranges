@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Kannada extends RangeAbstract
+class Kannada extends AbstractRange
 {
     const RANGE_NAME = 'Kannada';
 

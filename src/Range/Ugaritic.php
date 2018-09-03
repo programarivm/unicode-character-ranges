@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Ugaritic extends RangeAbstract
+class Ugaritic extends AbstractRange
 {
 	const RANGE_NAME = 'Ugaritic';
 

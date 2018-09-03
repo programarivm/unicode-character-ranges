@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CypriotSyllabary extends RangeAbstract
+class CypriotSyllabary extends AbstractRange
 {
 	const RANGE_NAME = 'Cypriot Syllabary';
 

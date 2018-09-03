@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class MusicalSymbols extends RangeAbstract
+class MusicalSymbols extends AbstractRange
 {
 	const RANGE_NAME = 'Musical Symbols';
 

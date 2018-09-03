@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Lao extends RangeAbstract
+class Lao extends AbstractRange
 {
     const RANGE_NAME = 'Lao';
 

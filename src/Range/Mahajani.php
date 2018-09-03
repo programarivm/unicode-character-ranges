@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Mahajani extends RangeAbstract
+class Mahajani extends AbstractRange
 {
 	const RANGE_NAME = 'Mahajani';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class OpticalCharacterRecognition extends RangeAbstract
+class OpticalCharacterRecognition extends AbstractRange
 {
     const RANGE_NAME = 'Optical Character Recognition';
 

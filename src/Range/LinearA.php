@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class LinearA extends RangeAbstract
+class LinearA extends AbstractRange
 {
 	const RANGE_NAME = 'Linear A';
 

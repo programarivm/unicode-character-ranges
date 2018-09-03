@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Hebrew extends RangeAbstract
+class Hebrew extends AbstractRange
 {
     const RANGE_NAME = 'Hebrew';
 

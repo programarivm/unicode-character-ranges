@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Kharoshthi extends RangeAbstract
+class Kharoshthi extends AbstractRange
 {
 	const RANGE_NAME = 'Kharoshthi';
 

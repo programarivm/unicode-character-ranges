@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Specials extends RangeAbstract
+class Specials extends AbstractRange
 {
     const RANGE_NAME = 'Specials';
 

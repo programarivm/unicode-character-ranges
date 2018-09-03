@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class YijingHexagramSymbols extends RangeAbstract
+class YijingHexagramSymbols extends AbstractRange
 {
     const RANGE_NAME = 'YijingHexagram Symbols';
 

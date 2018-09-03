@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class SundaneseSupplement extends RangeAbstract
+class SundaneseSupplement extends AbstractRange
 {
     const RANGE_NAME = 'Sundanese Supplement';
 

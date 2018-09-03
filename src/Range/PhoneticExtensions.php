@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class PhoneticExtensions extends RangeAbstract
+class PhoneticExtensions extends AbstractRange
 {
     const RANGE_NAME = 'Phonetic Extensions';
 

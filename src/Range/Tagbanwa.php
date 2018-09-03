@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Tagbanwa extends RangeAbstract
+class Tagbanwa extends AbstractRange
 {
     const RANGE_NAME = 'Tagbanwa';
 

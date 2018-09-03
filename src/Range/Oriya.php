@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Oriya extends RangeAbstract
+class Oriya extends AbstractRange
 {
     const RANGE_NAME = 'Oriya';
 

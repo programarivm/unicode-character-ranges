@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class DominoTiles extends RangeAbstract
+class DominoTiles extends AbstractRange
 {
 	const RANGE_NAME = 'Domino Tiles';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class TaiViet extends RangeAbstract
+class TaiViet extends AbstractRange
 {
     const RANGE_NAME = 'Tai Viet';
 

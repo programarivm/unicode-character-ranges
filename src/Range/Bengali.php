@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Bengali extends RangeAbstract
+class Bengali extends AbstractRange
 {
     const RANGE_NAME = 'Bengali';
 

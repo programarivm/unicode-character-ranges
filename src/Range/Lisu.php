@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Lisu extends RangeAbstract
+class Lisu extends AbstractRange
 {
     const RANGE_NAME = 'Lisu';
 

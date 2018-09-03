@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Mro extends RangeAbstract
+class Mro extends AbstractRange
 {
 	const RANGE_NAME = 'Mro';
 

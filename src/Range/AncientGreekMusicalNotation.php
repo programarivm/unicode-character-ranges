@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class AncientGreekMusicalNotation extends RangeAbstract
+class AncientGreekMusicalNotation extends AbstractRange
 {
 	const RANGE_NAME = 'Ancient Greek Musical Notation';
 

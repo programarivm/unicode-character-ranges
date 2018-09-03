@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Thaana extends RangeAbstract
+class Thaana extends AbstractRange
 {
     const RANGE_NAME = 'Thaana';
 

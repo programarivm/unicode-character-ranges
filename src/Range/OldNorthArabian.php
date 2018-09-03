@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class OldNorthArabian extends RangeAbstract
+class OldNorthArabian extends AbstractRange
 {
 	const RANGE_NAME = 'Old North Arabian';
 

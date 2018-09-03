@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class EnclosedAlphanumericSupplement extends RangeAbstract
+class EnclosedAlphanumericSupplement extends AbstractRange
 {
 	const RANGE_NAME = 'Enclosed Alphanumeric Supplement';
 

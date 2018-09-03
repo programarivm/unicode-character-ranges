@@ -4,7 +4,7 @@ namespace UnicodeRanges\Range;
 
 use UnicodeRanges\Converter;
 
-abstract class RangeAbstract
+abstract class AbstractRange
 {
 	protected $name;
 

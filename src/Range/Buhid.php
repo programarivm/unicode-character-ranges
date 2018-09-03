@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Buhid extends RangeAbstract
+class Buhid extends AbstractRange
 {
     const RANGE_NAME = 'Buhid';
 

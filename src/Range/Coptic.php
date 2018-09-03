@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Coptic extends RangeAbstract
+class Coptic extends AbstractRange
 {
     const RANGE_NAME = 'Coptic';
 

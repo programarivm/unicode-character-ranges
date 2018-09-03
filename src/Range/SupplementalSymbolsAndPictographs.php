@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class SupplementalSymbolsAndPictographs extends RangeAbstract
+class SupplementalSymbolsAndPictographs extends AbstractRange
 {
 	const RANGE_NAME = 'Supplemental Symbols and Pictographs';
 

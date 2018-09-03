@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Elbasan extends RangeAbstract
+class Elbasan extends AbstractRange
 {
 	const RANGE_NAME = 'Elbasan';
 

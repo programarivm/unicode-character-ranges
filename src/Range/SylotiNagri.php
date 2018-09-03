@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class SylotiNagri extends RangeAbstract
+class SylotiNagri extends AbstractRange
 {
     const RANGE_NAME = 'Syloti Nagri';
 

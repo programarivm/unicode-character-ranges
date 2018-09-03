@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class SupplementalMathematicalOperators extends RangeAbstract
+class SupplementalMathematicalOperators extends AbstractRange
 {
     const RANGE_NAME = 'Supplemental Mathematical Operators';
 

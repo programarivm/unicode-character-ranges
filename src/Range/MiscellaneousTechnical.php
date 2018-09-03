@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class MiscellaneousTechnical extends RangeAbstract
+class MiscellaneousTechnical extends AbstractRange
 {
     const RANGE_NAME = 'Miscellaneous Technical';
 

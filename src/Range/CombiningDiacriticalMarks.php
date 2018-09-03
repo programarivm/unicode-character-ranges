@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CombiningDiacriticalMarks extends RangeAbstract
+class CombiningDiacriticalMarks extends AbstractRange
 {
     const RANGE_NAME = 'Combining Diacritical Marks';
 

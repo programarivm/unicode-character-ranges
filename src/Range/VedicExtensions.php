@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class VedicExtensions extends RangeAbstract
+class VedicExtensions extends AbstractRange
 {
     const RANGE_NAME = 'Vedic Extensions';
 

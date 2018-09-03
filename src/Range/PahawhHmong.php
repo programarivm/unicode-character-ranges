@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class PahawhHmong extends RangeAbstract
+class PahawhHmong extends AbstractRange
 {
 	const RANGE_NAME = 'Pahawh Hmong';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class IdeographicDescriptionCharacters extends RangeAbstract
+class IdeographicDescriptionCharacters extends AbstractRange
 {
     const RANGE_NAME = 'Ideographic Description Characters';
 

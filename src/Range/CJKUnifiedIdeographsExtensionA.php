@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CJKUnifiedIdeographsExtensionA extends RangeAbstract
+class CJKUnifiedIdeographsExtensionA extends AbstractRange
 {
     const RANGE_NAME = 'CJK Unified Ideographs Extension A';
 

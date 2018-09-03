@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class HangulSyllables extends RangeAbstract
+class HangulSyllables extends AbstractRange
 {
     const RANGE_NAME = 'Hangul Syllables';
 

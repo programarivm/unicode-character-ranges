@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Vai extends RangeAbstract
+class Vai extends AbstractRange
 {
     const RANGE_NAME = 'Vai';
 

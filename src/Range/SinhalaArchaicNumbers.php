@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class SinhalaArchaicNumbers extends RangeAbstract
+class SinhalaArchaicNumbers extends AbstractRange
 {
 	const RANGE_NAME = 'Sinhala Archaic Numbers';
 

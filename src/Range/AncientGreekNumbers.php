@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class AncientGreekNumbers extends RangeAbstract
+class AncientGreekNumbers extends AbstractRange
 {
 	const RANGE_NAME = 'Ancient Greek Numbers';
 

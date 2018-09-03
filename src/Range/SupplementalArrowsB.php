@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class SupplementalArrowsB extends RangeAbstract
+class SupplementalArrowsB extends AbstractRange
 {
     const RANGE_NAME = 'Supplemental Arrows-B';
 

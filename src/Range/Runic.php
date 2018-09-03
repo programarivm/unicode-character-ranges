@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Runic extends RangeAbstract
+class Runic extends AbstractRange
 {
     const RANGE_NAME = 'Runic';
 

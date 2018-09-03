@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CommonIndicNumberForms extends RangeAbstract
+class CommonIndicNumberForms extends AbstractRange
 {
     const RANGE_NAME = 'Common Indic Number Forms';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class LatinExtendedD extends RangeAbstract
+class LatinExtendedD extends AbstractRange
 {
     const RANGE_NAME = 'Latin Extended-D';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CombiningHalfMarks extends RangeAbstract
+class CombiningHalfMarks extends AbstractRange
 {
     const RANGE_NAME = 'Combining Half Marks';
 

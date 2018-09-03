@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Deseret extends RangeAbstract
+class Deseret extends AbstractRange
 {
 	const RANGE_NAME = 'Deseret';
 

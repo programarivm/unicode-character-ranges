@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class OldTurkic extends RangeAbstract
+class OldTurkic extends AbstractRange
 {
 	const RANGE_NAME = 'Old Turkic';
 

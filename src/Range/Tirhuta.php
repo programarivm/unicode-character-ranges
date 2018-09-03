@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Tirhuta extends RangeAbstract
+class Tirhuta extends AbstractRange
 {
 	const RANGE_NAME = 'Tirhuta';
 

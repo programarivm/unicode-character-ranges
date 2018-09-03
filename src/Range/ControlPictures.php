@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class ControlPictures extends RangeAbstract
+class ControlPictures extends AbstractRange
 {
     const RANGE_NAME = 'Control Pictures';
 

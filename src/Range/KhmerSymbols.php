@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class KhmerSymbols extends RangeAbstract
+class KhmerSymbols extends AbstractRange
 {
     const RANGE_NAME = 'Khmer Symbols';
 

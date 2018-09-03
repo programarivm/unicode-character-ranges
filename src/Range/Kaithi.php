@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Kaithi extends RangeAbstract
+class Kaithi extends AbstractRange
 {
 	const RANGE_NAME = 'Kaithi';
 

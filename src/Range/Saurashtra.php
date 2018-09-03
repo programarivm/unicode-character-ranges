@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Saurashtra extends RangeAbstract
+class Saurashtra extends AbstractRange
 {
     const RANGE_NAME = 'Saurashtra';
 

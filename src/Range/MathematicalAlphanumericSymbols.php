@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class MathematicalAlphanumericSymbols extends RangeAbstract
+class MathematicalAlphanumericSymbols extends AbstractRange
 {
 	const RANGE_NAME = 'Mathematical Alphanumeric Symbols';
 

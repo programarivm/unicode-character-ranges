@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class WarangCiti extends RangeAbstract
+class WarangCiti extends AbstractRange
 {
 	const RANGE_NAME = 'Warang Citi';
 

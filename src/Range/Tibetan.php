@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Tibetan extends RangeAbstract
+class Tibetan extends AbstractRange
 {
     const RANGE_NAME = 'Tibetan';
 

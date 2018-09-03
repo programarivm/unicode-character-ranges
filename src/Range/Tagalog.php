@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Tagalog extends RangeAbstract
+class Tagalog extends AbstractRange
 {
     const RANGE_NAME = 'Tagalog';
 

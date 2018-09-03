@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class SoraSompeng extends RangeAbstract
+class SoraSompeng extends AbstractRange
 {
 	const RANGE_NAME = 'Sora Sompeng';
 

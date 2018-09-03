@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Sinhala extends RangeAbstract
+class Sinhala extends AbstractRange
 {
     const RANGE_NAME = 'Sinhala';
 

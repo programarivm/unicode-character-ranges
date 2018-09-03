@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Kanbun extends RangeAbstract
+class Kanbun extends AbstractRange
 {
     const RANGE_NAME = 'Kanbun';
 

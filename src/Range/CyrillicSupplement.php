@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CyrillicSupplement extends RangeAbstract
+class CyrillicSupplement extends AbstractRange
 {
     const RANGE_NAME = 'Cyrillic Supplement';
 

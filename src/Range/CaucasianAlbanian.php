@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CaucasianAlbanian extends RangeAbstract
+class CaucasianAlbanian extends AbstractRange
 {
 	const RANGE_NAME = 'Caucasian Albanian';
 

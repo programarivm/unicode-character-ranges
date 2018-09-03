@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class HangulJamo extends RangeAbstract
+class HangulJamo extends AbstractRange
 {
     const RANGE_NAME = 'Hangul Jamo';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class SpacingModifierLetters extends RangeAbstract
+class SpacingModifierLetters extends AbstractRange
 {
     const RANGE_NAME = 'Spacing Modifier Letters';
 

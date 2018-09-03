@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Palmyrene extends RangeAbstract
+class Palmyrene extends AbstractRange
 {
 	const RANGE_NAME = 'Palmyrene';
 

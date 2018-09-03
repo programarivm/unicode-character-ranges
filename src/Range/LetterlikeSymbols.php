@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class LetterlikeSymbols extends RangeAbstract
+class LetterlikeSymbols extends AbstractRange
 {
     const RANGE_NAME = 'Letterlike Symbols';
 

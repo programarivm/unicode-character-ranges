@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class MendeKikakui extends RangeAbstract
+class MendeKikakui extends AbstractRange
 {
 	const RANGE_NAME = 'Mende Kikakui';
 

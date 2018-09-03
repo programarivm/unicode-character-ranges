@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class TransportAndMapSymbols extends RangeAbstract
+class TransportAndMapSymbols extends AbstractRange
 {
 	const RANGE_NAME = 'Transport and Map Symbols';
 

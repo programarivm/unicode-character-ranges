@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Samaritan extends RangeAbstract
+class Samaritan extends AbstractRange
 {
     const RANGE_NAME = 'Samaritan';
 

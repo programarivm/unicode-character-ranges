@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Gujarati extends RangeAbstract
+class Gujarati extends AbstractRange
 {
     const RANGE_NAME = 'Gujarati';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Hiragana extends RangeAbstract
+class Hiragana extends AbstractRange
 {
     const RANGE_NAME = 'Hiragana';
 

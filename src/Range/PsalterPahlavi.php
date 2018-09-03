@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class PsalterPahlavi extends RangeAbstract
+class PsalterPahlavi extends AbstractRange
 {
 	const RANGE_NAME = 'Psalter Pahlavi';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class KangxiRadicals extends RangeAbstract
+class KangxiRadicals extends AbstractRange
 {
     const RANGE_NAME = 'Kangxi Radicals';
 

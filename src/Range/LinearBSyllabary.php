@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class LinearBSyllabary extends RangeAbstract
+class LinearBSyllabary extends AbstractRange
 {
     const RANGE_NAME = 'Linear B Syllabary';
 

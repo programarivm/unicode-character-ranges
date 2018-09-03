@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class LinearBIdeograms extends RangeAbstract
+class LinearBIdeograms extends AbstractRange
 {
     const RANGE_NAME = 'Linear B Ideograms';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class HalfwidthAndFullwidthForms extends RangeAbstract
+class HalfwidthAndFullwidthForms extends AbstractRange
 {
     const RANGE_NAME = 'Halfwidth and Fullwidth Forms';
 

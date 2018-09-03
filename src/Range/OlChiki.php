@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class OlChiki extends RangeAbstract
+class OlChiki extends AbstractRange
 {
     const RANGE_NAME = 'Ol Chiki';
 

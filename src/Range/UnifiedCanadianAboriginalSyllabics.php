@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class UnifiedCanadianAboriginalSyllabics extends RangeAbstract
+class UnifiedCanadianAboriginalSyllabics extends AbstractRange
 {
     const RANGE_NAME = 'Unified Canadian Aboriginal Syllabics';
 

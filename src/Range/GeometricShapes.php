@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class GeometricShapes extends RangeAbstract
+class GeometricShapes extends AbstractRange
 {
     const RANGE_NAME = 'Geometric Shapes';
 

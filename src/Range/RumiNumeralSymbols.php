@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class RumiNumeralSymbols extends RangeAbstract
+class RumiNumeralSymbols extends AbstractRange
 {
 	const RANGE_NAME = 'Rumi Numeral Symbols';
 

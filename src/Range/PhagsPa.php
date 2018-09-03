@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class PhagsPa extends RangeAbstract
+class PhagsPa extends AbstractRange
 {
     const RANGE_NAME = 'Phags-pa';
 

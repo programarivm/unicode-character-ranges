@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class YiRadicals extends RangeAbstract
+class YiRadicals extends AbstractRange
 {
     const RANGE_NAME = 'Yi Radicals';
 

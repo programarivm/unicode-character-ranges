@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Nabataean extends RangeAbstract
+class Nabataean extends AbstractRange
 {
 	const RANGE_NAME = 'Nabataean';
 

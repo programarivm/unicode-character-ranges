@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class ArabicPresentationFormsA extends RangeAbstract
+class ArabicPresentationFormsA extends AbstractRange
 {
     const RANGE_NAME = 'Arabic Presentation Forms-A';
 

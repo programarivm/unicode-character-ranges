@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Sharada extends RangeAbstract
+class Sharada extends AbstractRange
 {
 	const RANGE_NAME = 'Sharada';
 

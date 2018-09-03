@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Telugu extends RangeAbstract
+class Telugu extends AbstractRange
 {
     const RANGE_NAME = 'Telugu';
 

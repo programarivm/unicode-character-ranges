@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Cuneiform extends RangeAbstract
+class Cuneiform extends AbstractRange
 {
 	const RANGE_NAME = 'Cuneiform';
 

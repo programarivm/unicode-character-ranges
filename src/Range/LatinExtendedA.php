@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class LatinExtendedA extends RangeAbstract
+class LatinExtendedA extends AbstractRange
 {
 	const RANGE_NAME = 'Latin Extended-A';
 

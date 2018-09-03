@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Emoticons extends RangeAbstract
+class Emoticons extends AbstractRange
 {
 	const RANGE_NAME = 'Emoticons';
 

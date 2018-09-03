@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Tifinagh extends RangeAbstract
+class Tifinagh extends AbstractRange
 {
     const RANGE_NAME = 'Tifinagh';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Miao extends RangeAbstract
+class Miao extends AbstractRange
 {
 	const RANGE_NAME = 'Miao';
 

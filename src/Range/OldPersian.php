@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class OldPersian extends RangeAbstract
+class OldPersian extends AbstractRange
 {
 	const RANGE_NAME = 'Old Persian';
 

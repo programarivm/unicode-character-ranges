@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class BoxDrawing extends RangeAbstract
+class BoxDrawing extends AbstractRange
 {
     const RANGE_NAME = 'Box Drawing';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class OrnamentalDingbats extends RangeAbstract
+class OrnamentalDingbats extends AbstractRange
 {
 	const RANGE_NAME = 'Ornamental Dingbats';
 

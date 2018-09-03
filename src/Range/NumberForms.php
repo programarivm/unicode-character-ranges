@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class NumberForms extends RangeAbstract
+class NumberForms extends AbstractRange
 {
     const RANGE_NAME = 'Number Forms';
 

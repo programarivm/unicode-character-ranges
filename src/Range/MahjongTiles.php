@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class MahjongTiles extends RangeAbstract
+class MahjongTiles extends AbstractRange
 {
 	const RANGE_NAME = 'Mahjong Tiles';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Carian extends RangeAbstract
+class Carian extends AbstractRange
 {
 	const RANGE_NAME = 'Carian';
 

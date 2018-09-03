@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Multani extends RangeAbstract
+class Multani extends AbstractRange
 {
 	const RANGE_NAME = 'Multani';
 

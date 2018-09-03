@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class EthiopicSupplement extends RangeAbstract
+class EthiopicSupplement extends AbstractRange
 {
     const RANGE_NAME = 'Ethiopic Supplement';
 

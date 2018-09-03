@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Khudawadi extends RangeAbstract
+class Khudawadi extends AbstractRange
 {
 	const RANGE_NAME = 'Khudawadi';
 

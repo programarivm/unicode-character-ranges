@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Chakma extends RangeAbstract
+class Chakma extends AbstractRange
 {
 	const RANGE_NAME = 'Chakma';
 

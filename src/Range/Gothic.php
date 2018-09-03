@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Gothic extends RangeAbstract
+class Gothic extends AbstractRange
 {
 	const RANGE_NAME = 'Gothic';
 

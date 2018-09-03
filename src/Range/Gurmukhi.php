@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Gurmukhi extends RangeAbstract
+class Gurmukhi extends AbstractRange
 {
     const RANGE_NAME = 'Gurmukhi';
 

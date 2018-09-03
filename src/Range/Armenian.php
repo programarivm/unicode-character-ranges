@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Armenian extends RangeAbstract
+class Armenian extends AbstractRange
 {
     const RANGE_NAME = 'Armenian';
 

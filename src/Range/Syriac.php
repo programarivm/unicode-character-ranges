@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Syriac extends RangeAbstract
+class Syriac extends AbstractRange
 {
     const RANGE_NAME = 'Syriac';
 

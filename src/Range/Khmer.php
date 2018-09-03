@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Khmer extends RangeAbstract
+class Khmer extends AbstractRange
 {
     const RANGE_NAME = 'Khmer';
 

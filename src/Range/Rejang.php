@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Rejang extends RangeAbstract
+class Rejang extends AbstractRange
 {
     const RANGE_NAME = 'Rejang';
 

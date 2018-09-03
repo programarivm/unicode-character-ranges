@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class EnclosedCJKLettersAndMonths extends RangeAbstract
+class EnclosedCJKLettersAndMonths extends AbstractRange
 {
     const RANGE_NAME = 'Enclosed CJK Letters and Months';
 

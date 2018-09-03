@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Shavian extends RangeAbstract
+class Shavian extends AbstractRange
 {
 	const RANGE_NAME = 'Shavian';
 

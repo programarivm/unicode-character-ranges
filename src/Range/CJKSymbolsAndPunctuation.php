@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CJKSymbolsAndPunctuation extends RangeAbstract
+class CJKSymbolsAndPunctuation extends AbstractRange
 {
     const RANGE_NAME = 'CJK Symbols and Punctuation';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class MeroiticCursive extends RangeAbstract
+class MeroiticCursive extends AbstractRange
 {
 	const RANGE_NAME = 'Meroitic Cursive';
 

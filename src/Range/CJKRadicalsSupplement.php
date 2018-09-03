@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CJKRadicalsSupplement extends RangeAbstract
+class CJKRadicalsSupplement extends AbstractRange
 {
     const RANGE_NAME = 'CJK Radicals Supplement';
 

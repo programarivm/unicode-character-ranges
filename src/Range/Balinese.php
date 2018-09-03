@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Balinese extends RangeAbstract
+class Balinese extends AbstractRange
 {
     const RANGE_NAME = 'Balinese';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Buginese extends RangeAbstract
+class Buginese extends AbstractRange
 {
     const RANGE_NAME = 'Buginese';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class AncientSymbols extends RangeAbstract
+class AncientSymbols extends AbstractRange
 {
 	const RANGE_NAME = 'Ancient Symbols';
 

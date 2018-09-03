@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class PauCinHau extends RangeAbstract
+class PauCinHau extends AbstractRange
 {
 	const RANGE_NAME = 'Pau Cin Hau';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CherokeeSupplement extends RangeAbstract
+class CherokeeSupplement extends AbstractRange
 {
     const RANGE_NAME = 'Cherokee Supplement';
 

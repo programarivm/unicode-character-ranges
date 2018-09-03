@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Georgian extends RangeAbstract
+class Georgian extends AbstractRange
 {
     const RANGE_NAME = 'Georgian';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Siddham extends RangeAbstract
+class Siddham extends AbstractRange
 {
 	const RANGE_NAME = 'Siddham';
 

@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class Batak extends RangeAbstract
+class Batak extends AbstractRange
 {
     const RANGE_NAME = 'Batak';
 

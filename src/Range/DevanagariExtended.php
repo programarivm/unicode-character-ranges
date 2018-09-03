@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class DevanagariExtended extends RangeAbstract
+class DevanagariExtended extends AbstractRange
 {
     const RANGE_NAME = 'Devanagari Extended';
 

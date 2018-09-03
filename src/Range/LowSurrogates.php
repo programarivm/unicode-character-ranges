@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class LowSurrogates extends RangeAbstract
+class LowSurrogates extends AbstractRange
 {
     const RANGE_NAME = 'Low Surrogates';
 

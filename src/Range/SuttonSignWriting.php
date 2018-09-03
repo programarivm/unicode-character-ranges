@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class SuttonSignWriting extends RangeAbstract
+class SuttonSignWriting extends AbstractRange
 {
 	const RANGE_NAME = 'Sutton Sign Writing';
 

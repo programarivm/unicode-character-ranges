@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class IpaExtensions extends RangeAbstract
+class IpaExtensions extends AbstractRange
 {
     const RANGE_NAME = 'IPA Extensions';
 

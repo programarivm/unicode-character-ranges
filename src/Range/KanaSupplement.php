@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class KanaSupplement extends RangeAbstract
+class KanaSupplement extends AbstractRange
 {
 	const RANGE_NAME = 'Kana Supplement';
 

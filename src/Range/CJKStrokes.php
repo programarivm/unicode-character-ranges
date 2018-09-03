@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class CJKStrokes extends RangeAbstract
+class CJKStrokes extends AbstractRange
 {
     const RANGE_NAME = 'CJK Strokes';
 

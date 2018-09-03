@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class SupplementalPunctuation extends RangeAbstract
+class SupplementalPunctuation extends AbstractRange
 {
     const RANGE_NAME = 'Supplemental Punctuation';
 

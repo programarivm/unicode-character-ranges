@@ -2,9 +2,9 @@
 
 namespace UnicodeRanges\Range;
 
-use UnicodeRanges\RangeAbstract;
+use UnicodeRanges\AbstractRange;
 
-class OldItalic extends RangeAbstract
+class OldItalic extends AbstractRange
 {
 	const RANGE_NAME = 'Old Italic';
 
