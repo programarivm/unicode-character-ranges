@@ -1,6 +1,7 @@
 site_name: Unicode Ranges
 pages:
   - Home: index.md
+  - Unicode Ranges: unicode-ranges.md
   - Converter: converter.md
   - Randomizer: randomizer.md
 theme: readthedocs
