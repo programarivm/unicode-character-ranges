@@ -5,6 +5,7 @@
 [![Total Downloads](https://poser.pugx.org/programarivm/unicode-ranges/downloads)](https://packagist.org/packages/programarivm/unicode-ranges)
 [![Documentation Status](https://readthedocs.org/projects/unicode-ranges/badge/?version=latest)](https://unicode-ranges.readthedocs.io/en/latest/?badge=latest)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 ![Unicode Character Ranges](/resources/logo.jpg?raw=true)
 
 Unicode character ranges (or blocks) in a friendly object-oriented way for multiple purposes. See [Unicode ranges](https://github.com/programarivm/unicode-ranges/tree/master/src/Range).
@@ -51,10 +52,6 @@ Array
     ...
 ```
 
-### Documentation
-
-For further information please read the [Documentation](https://unicode-ranges.readthedocs.io/en/latest/).
-
 ### Frequency Analysis of Unicode Ranges
 
 #### [`tests/unit/UnicodeTest.php`](https://github.com/programarivm/unicode-ranges/blob/master/tests/AnalyzerTest.php)
@@ -98,6 +95,9 @@ class AnalyzerTest extends TestCase
     }
 }
 ```
+### Documentation
+
+For further information please read the [Documentation](https://unicode-ranges.readthedocs.io/en/latest/).
 
 ### License
 
