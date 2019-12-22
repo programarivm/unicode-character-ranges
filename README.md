@@ -22,6 +22,7 @@ Here is an example showing how to use `AlchemicalSymbols`.
 
 ```php
 <?php
+
 use UnicodeRanges\Range\AlchemicalSymbols;
 
 $alchemicalSymbols = new AlchemicalSymbols;
@@ -54,7 +55,7 @@ Array
 
 ### Frequency Analysis of Unicode Ranges
 
-#### [`tests/unit/UnicodeTest.php`](https://github.com/programarivm/unicode-ranges/blob/master/tests/AnalyzerTest.php)
+#### [`tests/AnalyzerTest.php`](https://github.com/programarivm/unicode-ranges/blob/master/tests/AnalyzerTest.php)
 
 ```php
 <?php
