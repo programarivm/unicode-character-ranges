@@ -79,7 +79,7 @@ class Analyzer
      * @return \UnicodeRanges\AbstractRange
      * @throws \InvalidArgumentException
      */
-	public function mostFreq(): string
+	public function mostFreq()
 	{
 		return key(array_slice($this->freq(), 0, 1));
 	}
