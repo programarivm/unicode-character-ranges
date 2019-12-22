@@ -59,7 +59,7 @@ class Analyzer
      * @return array
      * @throws \InvalidArgumentException
      */
-	public function freq(): array
+	public function freq()
 	{
 		$chars = Multibyte::strSplit($this->text);
 		foreach ($chars as $char) {
