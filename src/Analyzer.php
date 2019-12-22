@@ -59,7 +59,7 @@ class Analyzer
      * @return array
      * @throws \InvalidArgumentException
      */
-	public function freq()
+	public function freq(): array
 	{
 		$chars = Multibyte::strSplit($this->text);
 		foreach ($chars as $char) {
@@ -79,7 +79,7 @@ class Analyzer
      * @return \UnicodeRanges\AbstractRange
      * @throws \InvalidArgumentException
      */
-	public function mostFreq()
+	public function mostFreq(): string
 	{
 		return key(array_slice($this->freq(), 0, 1));
 	}
