@@ -21,13 +21,20 @@ use PHPUnit\Framework\TestCase;
 
 class ConverterTest extends TestCase
 {
+    protected static $converter;
+
+    public static function setUpBeforeClass()
+    {
+        self::$converter = new Converter();
+    }
+
     /**
      * @test
      */
     public function char_throws_character_length_exception()
     {
         $this->expectException(CharacterLengthException::class);
-        $this->assertEquals('Ξ', Converter::dec2unicode(2120926));
+        $this->assertEquals('Ξ', self::$converter->dec2unicode(2120926));
     }
 
     /**
@@ -36,7 +43,7 @@ class ConverterTest extends TestCase
      */
     public function dec2unicode($dec, $char)
     {
-        $this->assertEquals($char, Converter::dec2unicode($dec));
+        $this->assertEquals($char, self::$converter->dec2unicode($dec));
     }
 
     /**
@@ -45,7 +52,7 @@ class ConverterTest extends TestCase
      */
     public function unicode2dec($char, $dec)
     {
-        $this->assertEquals($dec, Converter::unicode2dec($char));
+        $this->assertEquals($dec, self::$converter->unicode2dec($char));
     }
 
     /**
@@ -54,7 +61,7 @@ class ConverterTest extends TestCase
      */
     public function unicode2hex($char, $hex)
     {
-        $this->assertEquals($hex, Converter::unicode2hex($char));
+        $this->assertEquals($hex, self::$converter->unicode2hex($char));
     }
 
     /**
@@ -63,7 +70,7 @@ class ConverterTest extends TestCase
      */
     public function unicode2range($char, $rangeName)
     {
-        $this->assertEquals($rangeName, Converter::unicode2range($char)->name());
+        $this->assertEquals($rangeName, self::$converter->unicode2range($char)->name());
     }
 
     public function dec2unicodeData()

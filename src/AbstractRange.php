@@ -2,8 +2,6 @@
 
 namespace UnicodeRanges;
 
-use UnicodeRanges\Converter;
-
 abstract class AbstractRange
 {
 	protected $name;
@@ -13,6 +11,13 @@ abstract class AbstractRange
 	protected $count;
 
 	protected $chars = [];
+
+	protected $converter;
+
+	public function __construct()
+	{
+		$this->converter = new Converter();
+	}
 
 	public function name()
 	{
@@ -31,12 +36,11 @@ abstract class AbstractRange
 
 	public function chars()
 	{
-		$converter = new Converter();
 		$from = hexdec($this->range[0]);
 		$to = hexdec($this->range[1]);
 
 		for ($i = $from; $i <= $to; $i++) {
-			$this->chars[] = $converter->dec2unicode($i);
+			$this->chars[] = $this->converter->dec2unicode($i);
 		}
 
 		return $this->chars;

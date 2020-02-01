@@ -2,7 +2,6 @@
 
 namespace UnicodeRanges;
 
-use UnicodeRanges\Converter;
 use UnicodeRanges\Utils\Multibyte;
 
 /**
@@ -15,6 +14,13 @@ use UnicodeRanges\Utils\Multibyte;
 class Analyzer
 {
 	const N_FREQ_UNICODE_RANGES = 10;
+
+	/**
+     * Converter.
+     *
+     * @var \UnicodeRanges\Converter
+     */
+	protected $converter;
 
 	/**
      * Text to be analyzed.
@@ -50,6 +56,7 @@ class Analyzer
      */
 	public function __construct(string $text)
 	{
+		$this->converter = new Converter();
 		$this->text = $text;
 	}
 
@@ -61,10 +68,9 @@ class Analyzer
      */
 	public function freq(): array
 	{
-		$converter = new Converter();
 		$chars = Multibyte::strSplit($this->text);
 		foreach ($chars as $char) {
-			$unicodeRange = $converter->unicode2range($char);
+			$unicodeRange = $this->converter->unicode2range($char);
 			empty($this->freq[$unicodeRange->name()])
 				? $this->freq[$unicodeRange->name()] = 1
 				: $this->freq[$unicodeRange->name()] += 1;

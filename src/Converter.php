@@ -2,11 +2,15 @@
 
 namespace UnicodeRanges;
 
-use UnicodeRanges\Ranges;
 use UnicodeRanges\Exception\CharacterLengthException;
 
 class Converter
 {
+    public function __construct()
+    {
+        $this->ranges = new Ranges();
+    }
+
     public function dec2unicode($dec)
     {
         if ($dec < 0x80) {
@@ -37,16 +41,15 @@ class Converter
 
     public function unicode2hex($char)
     {
-        $hex = strtoupper(dechex(self::unicode2dec($char)));
+        $hex = strtoupper(dechex($this->unicode2dec($char)));
 
         return $hex;
     }
 
     public function unicode2range($char)
     {
-        $dec = self::unicode2dec($char);
-        $ranges = (new Ranges)->all();
-        foreach ($ranges as $range) {
+        $dec = $this->unicode2dec($char);
+        foreach ($this->ranges->all() as $range) {
             if ($dec >= hexdec($range->range()[0]) && $dec <= hexdec($range->range()[1])) {
                 return $range;
             }
