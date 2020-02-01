@@ -12,7 +12,7 @@ class Randomizer
             hexdec($charRanges[$key]->range()[1])
         );
 
-        return Converter::dec2unicode($rand);
+        return (new Converter())->dec2unicode($rand);
     }
 
     public static function letter(array $charRanges)

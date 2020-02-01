@@ -61,9 +61,10 @@ class Analyzer
      */
 	public function freq(): array
 	{
+		$converter = new Converter();
 		$chars = Multibyte::strSplit($this->text);
 		foreach ($chars as $char) {
-			$unicodeRange = Converter::unicode2range($char);
+			$unicodeRange = $converter->unicode2range($char);
 			empty($this->freq[$unicodeRange->name()])
 				? $this->freq[$unicodeRange->name()] = 1
 				: $this->freq[$unicodeRange->name()] += 1;

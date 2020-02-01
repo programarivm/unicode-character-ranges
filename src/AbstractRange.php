@@ -31,11 +31,12 @@ abstract class AbstractRange
 
 	public function chars()
 	{
+		$converter = new Converter();
 		$from = hexdec($this->range[0]);
 		$to = hexdec($this->range[1]);
 
 		for ($i = $from; $i <= $to; $i++) {
-			$this->chars[] = Converter::dec2unicode($i);
+			$this->chars[] = $converter->dec2unicode($i);
 		}
 
 		return $this->chars;

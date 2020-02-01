@@ -7,7 +7,7 @@ use UnicodeRanges\Exception\CharacterLengthException;
 
 class Converter
 {
-    public static function dec2unicode($dec)
+    public function dec2unicode($dec)
     {
         if ($dec < 0x80) {
             $utf = chr($dec);
@@ -30,19 +30,19 @@ class Converter
         return $utf;
     }
 
-    public static function unicode2dec($char)
+    public function unicode2dec($char)
     {
         return unpack('V', iconv('UTF-8', 'UCS-4LE', $char))[1];
     }
 
-    public static function unicode2hex($char)
+    public function unicode2hex($char)
     {
         $hex = strtoupper(dechex(self::unicode2dec($char)));
 
         return $hex;
     }
 
-    public static function unicode2range($char)
+    public function unicode2range($char)
     {
         $dec = self::unicode2dec($char);
         $ranges = (new Ranges)->all();

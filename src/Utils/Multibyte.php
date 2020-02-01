@@ -34,9 +34,10 @@ class Multibyte
 
 	public static function arrSort(array $array): array
 	{
+		$converter = new Converter();
 		$items = [];
 		foreach ($array as $char) {
-			$dec = Converter::unicode2dec($char);
+			$dec = $converter->unicode2dec($char);
 			!array_key_exists($dec, $items) ? $items[$dec] = 1 : $items[$dec] += 1;
 		}
 		ksort($items);
