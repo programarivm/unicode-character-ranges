@@ -16,9 +16,9 @@ Via composer:
 
     $ composer require programarivm/unicode-ranges
 
-### Example
+### Examples
 
-Here is an example showing how to use `AlchemicalSymbols`.
+Here is an example on how to use `AlchemicalSymbols`.
 
 ```php
 <?php
@@ -53,7 +53,7 @@ Array
     ...
 ```
 
-### Frequency Analysis of Unicode Ranges
+Another example on frequency analysis of unicode ranges:
 
 #### [`tests/AnalyzerTest.php`](https://github.com/programarivm/unicode-ranges/blob/master/tests/AnalyzerTest.php)
 
