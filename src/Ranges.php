@@ -2,7 +2,7 @@
 
 namespace UnicodeRanges;
 
-class PowerRanges
+class Ranges
 {
     const RANGES_FOLDER = __DIR__ . '/Range';
 
@@ -21,7 +21,7 @@ class PowerRanges
         }
     }
 
-    public function ranges()
+    public function all()
     {
         return $this->ranges;
     }

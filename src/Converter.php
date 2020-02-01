@@ -2,7 +2,7 @@
 
 namespace UnicodeRanges;
 
-use UnicodeRanges\PowerRanges;
+use UnicodeRanges\Ranges;
 use UnicodeRanges\Exception\CharacterLengthException;
 
 class Converter
@@ -45,7 +45,7 @@ class Converter
     public static function unicode2range($char)
     {
         $dec = self::unicode2dec($char);
-        $ranges = (new PowerRanges)->ranges();
+        $ranges = (new Ranges)->all();
         foreach ($ranges as $range) {
             if ($dec >= hexdec($range->range()[0]) && $dec <= hexdec($range->range()[1])) {
                 return $range;

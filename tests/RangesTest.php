@@ -2,17 +2,17 @@
 
 namespace UnicodeRanges\Tests;
 
-use UnicodeRanges\PowerRanges;
+use UnicodeRanges\Ranges;
 use PHPUnit\Framework\TestCase;
 
-class PowerRangesTest extends TestCase
+class RangesTest extends TestCase
 {
     /**
      * @test
      */
     public function count_ranges()
     {
-        $ranges = (new PowerRanges)->ranges();
+        $ranges = (new Ranges)->all();
 
         $this->assertEquals(255, count($ranges));
     }
