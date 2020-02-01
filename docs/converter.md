@@ -10,7 +10,7 @@ Example:
 use UnicodeRanges\Converter;
 
 $dec = 926;
-$unicode = Converter::dec2unicode($dec);
+$unicode = (new Converter())->dec2unicode($dec);
 
 echo "$dec is $unicode" . PHP_EOL;
 ```
@@ -31,7 +31,7 @@ Example:
 use UnicodeRanges\Converter;
 
 $char = 'a';
-$dec = Converter::unicode2dec($char);
+$dec = (new Converter())->unicode2dec($char);
 
 echo "$char is $dec" . PHP_EOL;
 ```
@@ -52,7 +52,7 @@ Example:
 use UnicodeRanges\Converter;
 
 $char = 'a';
-$hex = Converter::unicode2hex($char);
+$hex = (new Converter())->unicode2hex($char);
 
 echo "$char is $hex" . PHP_EOL;
 ```
@@ -73,7 +73,7 @@ Example:
 use UnicodeRanges\Converter;
 
 $char = 'a';
-$range = Converter::unicode2range($char);
+$range = (new Converter())->unicode2range($char);
 
 echo "Total: {$range->count()}".PHP_EOL;
 echo "Name: {$range->name()}".PHP_EOL;
