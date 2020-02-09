@@ -4,7 +4,14 @@ namespace UnicodeRanges;
 
 class Randomizer
 {
-    public static function char(array $charRanges)
+    protected $converter;
+
+    public function __construct()
+    {
+        $this->converter = new Converter();
+    }
+
+    public function char(array $charRanges)
     {
         $key = array_rand($charRanges, 1);
         $rand = rand(
@@ -12,10 +19,10 @@ class Randomizer
             hexdec($charRanges[$key]->range()[1])
         );
 
-        return (new Converter())->dec2unicode($rand);
+        return $this->converter->dec2unicode($rand);
     }
 
-    public static function letter(array $charRanges)
+    public function letter(array $charRanges)
     {
         for ($i = 0; $i <= 50; $i++) {
             $letter = self::char($charRanges);
@@ -27,7 +34,7 @@ class Randomizer
         return false;
     }
 
-    public static function number(array $charRanges)
+    public function number(array $charRanges)
     {
         for ($i = 0; $i <= 50; $i++) {
             $number = self::char($charRanges);
@@ -39,7 +46,7 @@ class Randomizer
         return false;
     }
 
-    public static function printableChar(array $charRanges)
+    public function printableChar(array $charRanges)
     {
         for ($i = 0; $i <= 50; $i++) {
             $char = self::char($charRanges);
@@ -51,7 +58,7 @@ class Randomizer
         return false;
     }
 
-    public static function letters(array $charRanges, $length)
+    public function letters(array $charRanges, $length)
     {
         $string = '';
         for ($i = 1; $i <= $length; ++$i) {
@@ -61,7 +68,7 @@ class Randomizer
         return $string;
     }
 
-    public static function numbers(array $charRanges, $length)
+    public function numbers(array $charRanges, $length)
     {
         $string = '';
         for ($i = 1; $i <= $length; ++$i) {
@@ -71,7 +78,7 @@ class Randomizer
         return $string;
     }
 
-    public static function printableChars(array $charRanges, $length)
+    public function printableChars(array $charRanges, $length)
     {
         $string = '';
         for ($i = 1; $i <= $length; ++$i) {

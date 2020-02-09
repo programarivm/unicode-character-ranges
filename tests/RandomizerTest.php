@@ -11,12 +11,19 @@ use UnicodeRanges\Range\AegeanNumbers;
 
 class RandomizerTest extends TestCase
 {
+    protected static $randomizer;
+
+    public static function setUpBeforeClass()
+    {
+        self::$randomizer = new Randomizer();
+    }
+
     /**
      * @test
      */
     public function letter()
     {
-        $letter = Randomizer::letter([
+        $letter = self::$randomizer->letter([
             new Cherokee,
             new BasicLatin,
             new Tibetan,
@@ -32,7 +39,7 @@ class RandomizerTest extends TestCase
      */
     public function number()
     {
-        $number = Randomizer::number([
+        $number = self::$randomizer->number([
             new Cherokee,
             new BasicLatin,
             new Tibetan,
@@ -48,7 +55,7 @@ class RandomizerTest extends TestCase
      */
     public function printable_char()
     {
-        $char = Randomizer::printableChar([
+        $char = self::$randomizer->printableChar([
             new Cherokee,
             new BasicLatin,
             new Tibetan,
@@ -64,7 +71,7 @@ class RandomizerTest extends TestCase
      */
     public function letters()
     {
-        $letters = Randomizer::letters([
+        $letters = self::$randomizer->letters([
             new Cherokee,
             new BasicLatin,
             new Tibetan,
@@ -80,7 +87,7 @@ class RandomizerTest extends TestCase
      */
     public function numbers()
     {
-        $numbers = Randomizer::letters([
+        $numbers = self::$randomizer->letters([
             new Cherokee,
             new BasicLatin,
             new Tibetan,
@@ -96,7 +103,7 @@ class RandomizerTest extends TestCase
      */
     public function printable_chars()
     {
-        $chars = Randomizer::printableChars([
+        $chars = self::$randomizer->printableChars([
             new BasicLatin,
             new Tibetan,
             new AegeanNumbers,
