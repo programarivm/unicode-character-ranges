@@ -60,13 +60,14 @@ class Converter
 
     public function range2table(array $range)
 	{
+        $chars = [];
 		$from = hexdec($range[0]);
 		$to = hexdec($range[1]);
 
 		for ($i = $from; $i <= $to; $i++) {
-			$this->chars[] = Converter::dec2unicode($i);
+			$chars[] = Converter::dec2unicode($i);
 		}
 
-		return $this->chars;
+		return $chars;
 	}
 }
