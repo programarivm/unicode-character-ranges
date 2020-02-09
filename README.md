@@ -38,7 +38,7 @@ Total: 128
 Range: 1F700-1F77F
 ```
 
-#### From decimal to unicode
+#### From decimal to Unicode
 
 ```php
 <?php
@@ -58,7 +58,7 @@ Output:
 Ξ
 ```
 
-#### From unicode to decimal
+#### From Unicode to decimal
 
 ```php
 <?php
@@ -78,7 +78,7 @@ Output:
 Ξ
 ```
 
-#### From unicode to hexadecimal
+#### From Unicode to hexadecimal
 
 ```php
 <?php
@@ -98,7 +98,7 @@ Output:
 39E
 ```
 
-#### From unicode to `UnicodeRanges\Range` object
+#### From Unicode to `UnicodeRanges\Range` object
 
 ```php
 <?php
@@ -338,7 +338,7 @@ Output:
 ᄙئ𐤄ᄏجښڽᅴۈ𐤖؞كᅒڅ𐤌٩ښ𐤆ᆿآ
 ```
 
-#### Frequency analysis of unicode ranges
+#### Frequency analysis of Unicode ranges
 
 #### [`tests/AnalyzerTest.php`](https://github.com/programarivm/unicode-ranges/blob/master/tests/AnalyzerTest.php)
 
