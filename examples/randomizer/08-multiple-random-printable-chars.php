@@ -7,10 +7,12 @@ use UnicodeRanges\Range\Arabic;
 use UnicodeRanges\Range\HangulJamo;
 use UnicodeRanges\Range\Phoenician;
 
-$letter = Randomizer::letter([
+$randomizer = new Randomizer();
+
+$chars = $randomizer->printableChars([
     new Arabic,
     new HangulJamo,
     new Phoenician,
-]);
+], 20);
 
-echo $letter . PHP_EOL;
+echo $chars . PHP_EOL;

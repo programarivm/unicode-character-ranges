@@ -7,7 +7,9 @@ use UnicodeRanges\Range\Arabic;
 use UnicodeRanges\Range\HangulJamo;
 use UnicodeRanges\Range\Phoenician;
 
-$letters = Randomizer::letters([
+$randomizer = new Randomizer();
+
+$letters = $randomizer->letters([
     new Arabic,
     new HangulJamo,
     new Phoenician,

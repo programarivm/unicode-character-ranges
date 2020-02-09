@@ -5,7 +5,9 @@ require __DIR__.'/../../vendor/autoload.php';
 use UnicodeRanges\Randomizer;
 use UnicodeRanges\Range\Tibetan;
 
-$char = Randomizer::char([
+$randomizer = new Randomizer();
+
+$char = $randomizer->char([
     new Tibetan,
 ]);
 

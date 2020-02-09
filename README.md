@@ -18,7 +18,91 @@ Via composer:
 
 ### Examples
 
-Here is an example on how to use `AlchemicalSymbols`.
+#### From decimal to unicode
+
+```php
+<?php
+
+use UnicodeRanges\Converter;
+
+$converter = new Converter();
+
+$unicode = $converter->dec2unicode(926);
+
+echo $unicode . PHP_EOL;
+```
+
+Output:
+
+```
+Ξ
+```
+
+#### From unicode to decimal
+
+```php
+<?php
+
+use UnicodeRanges\Converter;
+
+$converter = new Converter();
+
+$dec = $converter->unicode2dec('Ξ');
+
+echo $dec . PHP_EOL;
+```
+
+Output:
+
+```
+Ξ
+```
+
+#### From unicode to hexadecimal
+
+```php
+<?php
+
+use UnicodeRanges\Converter;
+
+$converter = new Converter();
+
+$hex = $converter->unicode2hex('Ξ');
+
+echo $hex . PHP_EOL;
+```
+
+Output:
+
+```
+39E
+```
+
+#### From unicode to `UnicodeRanges` object
+
+```php
+<?php
+
+use UnicodeRanges\Converter;
+
+$converter = new Converter();
+
+$range = $converter->unicode2range('Ξ');
+
+echo "Name: {$range->name()}".PHP_EOL;
+echo "Total: {$range->count()}".PHP_EOL;
+echo "Range: {$range->range()[0]}-{$range->range()[1]}".PHP_EOL;
+```
+
+Output:
+
+```
+Name: Greek and Coptic
+Total: 144
+Range: 0370-03FF
+```
+
+#### How to use `AlchemicalSymbols`
 
 ```php
 <?php
@@ -53,7 +137,223 @@ Array
     ...
 ```
 
-Another example on frequency analysis of unicode ranges:
+#### A random Tibetan char
+
+```php
+<?php
+
+use UnicodeRanges\Randomizer;
+use UnicodeRanges\Range\Tibetan;
+
+$randomizer = new Randomizer();
+
+$char = $randomizer->char([
+    new Tibetan,
+]);
+
+echo $char . PHP_EOL;
+```
+
+Output:
+
+```
+༻
+```
+
+#### A random char using multiple ranges
+
+```php
+<?php
+
+use UnicodeRanges\Randomizer;
+use UnicodeRanges\Range\Arabic;
+use UnicodeRanges\Range\Balinese;
+use UnicodeRanges\Range\HangulJamo;
+use UnicodeRanges\Range\Phoenician;
+use UnicodeRanges\Range\Runic;
+
+$randomizer = new Randomizer();
+
+$char = $randomizer->char([
+    new Arabic,
+    new Balinese,
+    new HangulJamo,
+    new Phoenician,
+    new Runic
+]);
+
+echo $char . PHP_EOL;
+```
+
+Output:
+
+```
+ڗ
+```
+
+#### A random letter using multiple ranges
+
+```php
+<?php
+
+use UnicodeRanges\Randomizer;
+use UnicodeRanges\Range\Arabic;
+use UnicodeRanges\Range\HangulJamo;
+use UnicodeRanges\Range\Phoenician;
+
+$randomizer = new Randomizer();
+
+$letter = $randomizer->letter([
+    new Arabic,
+    new HangulJamo,
+    new Phoenician,
+]);
+
+echo $letter . PHP_EOL;
+```
+
+Output:
+
+```
+𐤇
+```
+
+#### A random number using multiple ranges
+
+```php
+<?php
+
+use UnicodeRanges\Randomizer;
+use UnicodeRanges\Range\Arabic;
+use UnicodeRanges\Range\HangulJamo;
+use UnicodeRanges\Range\Phoenician;
+
+$randomizer = new Randomizer();
+
+$number = $randomizer->number([
+    new Arabic,
+    new HangulJamo,
+    new Phoenician,
+]);
+
+echo $number . PHP_EOL;
+```
+
+Output:
+
+```
+۳
+```
+
+#### A printable char using multiple ranges
+
+```php
+<?php
+
+use UnicodeRanges\Randomizer;
+use UnicodeRanges\Range\Arabic;
+use UnicodeRanges\Range\HangulJamo;
+use UnicodeRanges\Range\Phoenician;
+
+$randomizer = new Randomizer();
+
+$char = $randomizer->printableChar([
+    new Arabic,
+    new HangulJamo,
+    new Phoenician,
+]);
+
+echo $char . PHP_EOL;
+```
+
+Output:
+
+```
+ڦ
+```
+
+#### Multiple random letters using multiple ranges
+
+```php
+<?php
+
+use UnicodeRanges\Randomizer;
+use UnicodeRanges\Range\Arabic;
+use UnicodeRanges\Range\HangulJamo;
+use UnicodeRanges\Range\Phoenician;
+
+$randomizer = new Randomizer();
+
+$letters = $randomizer->letters([
+    new Arabic,
+    new HangulJamo,
+    new Phoenician,
+], 20);
+
+echo $letters . PHP_EOL;
+```
+
+Output:
+
+```
+𐤊볘ᇵᅿ𐤄𐤅ᆵᄣ𐤃ۑ𐤆ᄰᆡᇐᄋہ𐤅ټ𐤊
+```
+
+#### Multiple random numbers using multiple ranges
+
+```php
+<?php
+
+use UnicodeRanges\Randomizer;
+use UnicodeRanges\Range\Arabic;
+use UnicodeRanges\Range\HangulJamo;
+use UnicodeRanges\Range\Phoenician;
+
+$randomizer = new Randomizer();
+
+$numbers = $randomizer->numbers([
+    new Arabic,
+    new HangulJamo,
+    new Phoenician,
+], 20);
+
+echo $numbers . PHP_EOL;
+```
+
+Output:
+
+```
+𐤖𐤛٢۷𐤘𐤚𐤘𐤙𐤖۸٣٥۴𐤗𐤖۹𐤛𐤘١
+```
+
+#### Multiple random printable chars using multiple ranges
+
+```php
+<?php
+
+use UnicodeRanges\Randomizer;
+use UnicodeRanges\Range\Arabic;
+use UnicodeRanges\Range\HangulJamo;
+use UnicodeRanges\Range\Phoenician;
+
+$randomizer = new Randomizer();
+
+$chars = $randomizer->printableChars([
+    new Arabic,
+    new HangulJamo,
+    new Phoenician,
+], 20);
+
+echo $chars . PHP_EOL;
+```
+
+Output:
+
+```
+ᄙئ𐤄ᄏجښڽᅴۈ𐤖؞كᅒڅ𐤌٩ښ𐤆ᆿآ
+```
+
+#### Frequency analysis of unicode ranges
 
 #### [`tests/AnalyzerTest.php`](https://github.com/programarivm/unicode-ranges/blob/master/tests/AnalyzerTest.php)
 
@@ -96,9 +396,6 @@ class AnalyzerTest extends TestCase
     }
 }
 ```
-### Documentation
-
-For further information please read the [Documentation](https://unicode-ranges.readthedocs.io/en/latest/).
 
 ### License
 
