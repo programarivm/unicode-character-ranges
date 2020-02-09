@@ -57,4 +57,16 @@ class Converter
 
         return false;
     }
+
+    public function range2table(array $range)
+	{
+		$from = hexdec($range[0]);
+		$to = hexdec($range[1]);
+
+		for ($i = $from; $i <= $to; $i++) {
+			$this->chars[] = Converter::dec2unicode($i);
+		}
+
+		return $this->chars;
+	}
 }

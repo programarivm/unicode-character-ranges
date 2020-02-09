@@ -73,6 +73,17 @@ class ConverterTest extends TestCase
         $this->assertEquals($rangeName, self::$converter->unicode2range($char)->name());
     }
 
+    /**
+     * @dataProvider range2tableData
+     * @test
+     */
+    public function range2table($range, $table)
+    {
+        // print_r(self::$converter->range2table($range)); exit;
+
+        $this->assertEquals($table, self::$converter->range2table($range));
+    }
+
     public function dec2unicodeData()
     {
         return [
@@ -151,5 +162,45 @@ class ConverterTest extends TestCase
             ['𝄠', MusicalSymbols::RANGE_NAME],
             ['𝜔', MathematicalAlphanumericSymbols::RANGE_NAME],
         ];
+    }
+
+    public function range2tableData()
+    {
+        return [
+            [['2580', '259F'], [
+                '▀',
+                '▁',
+                '▂',
+                '▃',
+                '▄',
+                '▅',
+                '▆',
+                '▇',
+                '█',
+                '▉',
+                '▊',
+                '▋',
+                '▌',
+                '▍',
+                '▎',
+                '▏',
+                '▐',
+                '░',
+                '▒',
+                '▓',
+                '▔',
+                '▕',
+                '▖',
+                '▗',
+                '▘',
+                '▙',
+                '▚',
+                '▛',
+                '▜',
+                '▝',
+                '▞',
+                '▟',
+            ],
+        ]];
     }
 }
