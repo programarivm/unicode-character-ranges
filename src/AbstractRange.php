@@ -10,15 +10,6 @@ abstract class AbstractRange
 
 	protected $count;
 
-	protected $chars = [];
-
-	protected $converter;
-
-	public function __construct()
-	{
-		$this->converter = new Converter();
-	}
-
 	public function name()
 	{
 		return $this->name;
@@ -32,17 +23,5 @@ abstract class AbstractRange
 	public function count()
 	{
 		return (hexdec($this->range[1]) - hexdec($this->range[0])) + 1;
-	}
-
-	public function chars()
-	{
-		$from = hexdec($this->range[0]);
-		$to = hexdec($this->range[1]);
-
-		for ($i = $from; $i <= $to; $i++) {
-			$this->chars[] = $this->converter->dec2unicode($i);
-		}
-
-		return $this->chars;
 	}
 }

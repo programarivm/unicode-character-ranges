@@ -18,6 +18,26 @@ Via composer:
 
 ### Examples
 
+#### Instantiate a Unicode range
+
+```php
+<?php
+
+use UnicodeRanges\Range\AlchemicalSymbols;
+
+$alchemicalSymbols = new AlchemicalSymbols;
+
+echo "Name: {$alchemicalSymbols->name()}".PHP_EOL;
+echo "Total: {$alchemicalSymbols->count()}".PHP_EOL;
+echo "Range: {$alchemicalSymbols->range()[0]}-{$alchemicalSymbols->range()[1]}".PHP_EOL;
+```
+Output:
+```
+Name: Alchemical Symbols
+Total: 128
+Range: 1F700-1F77F
+```
+
 #### From decimal to unicode
 
 ```php
@@ -78,7 +98,7 @@ Output:
 39E
 ```
 
-#### From unicode to `UnicodeRanges` object
+#### From unicode to `UnicodeRanges\Range` object
 
 ```php
 <?php
@@ -100,41 +120,6 @@ Output:
 Name: Greek and Coptic
 Total: 144
 Range: 0370-03FF
-```
-
-#### How to use `AlchemicalSymbols`
-
-```php
-<?php
-
-use UnicodeRanges\Range\AlchemicalSymbols;
-
-$alchemicalSymbols = new AlchemicalSymbols;
-
-echo "Name: {$alchemicalSymbols->name()}".PHP_EOL;
-echo "Total: {$alchemicalSymbols->count()}".PHP_EOL;
-echo "Range: {$alchemicalSymbols->range()[0]}-{$alchemicalSymbols->range()[1]}".PHP_EOL;
-echo 'Characters: '.PHP_EOL;
-
-print_r($alchemicalSymbols->chars());
-```
-Output:
-```
-Name: Alchemical Symbols
-Total: 128
-Range: 1F700-1F77F
-Characters:
-Array
-(
-    [0] => 🜀
-    [1] => 🜁
-    [2] => 🜂
-    [3] => 🜃
-    [4] => 🜄
-    [5] => 🜅
-    [6] => 🜆
-    [7] => 🜇
-    ...
 ```
 
 #### A random Tibetan char
