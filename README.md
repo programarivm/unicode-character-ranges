@@ -75,7 +75,7 @@ echo $dec . PHP_EOL;
 Output:
 
 ```
-Ξ
+926
 ```
 
 #### From Unicode to hexadecimal
