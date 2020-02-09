@@ -122,6 +122,61 @@ Total: 144
 Range: 0370-03FF
 ```
 
+#### From range to table of characters
+
+```php
+<?php
+
+use UnicodeRanges\Converter;
+
+$converter = new Converter();
+
+$table = $converter->range2table(['2580', '259F']);
+
+print_r($table);
+
+```
+
+Output:
+
+```
+Array
+(
+    [0] => ▀
+    [1] => ▁
+    [2] => ▂
+    [3] => ▃
+    [4] => ▄
+    [5] => ▅
+    [6] => ▆
+    [7] => ▇
+    [8] => █
+    [9] => ▉
+    [10] => ▊
+    [11] => ▋
+    [12] => ▌
+    [13] => ▍
+    [14] => ▎
+    [15] => ▏
+    [16] => ▐
+    [17] => ░
+    [18] => ▒
+    [19] => ▓
+    [20] => ▔
+    [21] => ▕
+    [22] => ▖
+    [23] => ▗
+    [24] => ▘
+    [25] => ▙
+    [26] => ▚
+    [27] => ▛
+    [28] => ▜
+    [29] => ▝
+    [30] => ▞
+    [31] => ▟
+)
+```
+
 #### A random Tibetan char
 
 ```php

@@ -79,8 +79,6 @@ class ConverterTest extends TestCase
      */
     public function range2table($range, $table)
     {
-        // print_r(self::$converter->range2table($range)); exit;
-
         $this->assertEquals($table, self::$converter->range2table($range));
     }
 
