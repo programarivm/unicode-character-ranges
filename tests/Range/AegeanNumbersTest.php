@@ -49,6 +49,7 @@ class AegeanNumbersTest extends TestCase
 			'mycenaean',
 			'greece',
 			'greek',
+			'dead',
 		];
 
 		$this->assertEquals([], array_diff($expected, $keywords));

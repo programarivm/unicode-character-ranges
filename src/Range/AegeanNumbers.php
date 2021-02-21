@@ -26,6 +26,7 @@ class AegeanNumbers extends AbstractRange
 			'mycenaean',
 			'greece',
 			'greek',
+			'dead',
 		];
 	}
 }
