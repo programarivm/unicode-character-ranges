@@ -11,9 +11,19 @@ class AncientSymbols extends AbstractRange
 	public function __construct()
 	{
 		$this->name = self::RANGE_NAME;
+
 		$this->range = [
 			'10190',
 			'101CF',
+		];
+
+		$this->keywords = [
+			'ancient',
+			'symbol',
+			'roman',
+			'currency',
+			'weight',
+			'measure',
 		];
 	}
 }

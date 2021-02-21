@@ -32,4 +32,23 @@ class AncientSymbolsTest extends TestCase
 		$this->assertEquals('10190', $range[0]);
 		$this->assertEquals('101CF', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'ancient',
+			'symbol',
+			'roman',
+			'currency',
+			'weight',
+			'measure',
+		];
+
+		$this->assertTrue($expected == $keywords);
+	}
 }
