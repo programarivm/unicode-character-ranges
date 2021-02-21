@@ -32,4 +32,23 @@ class AlchemicalSymbolsTest extends TestCase
 		$this->assertEquals('1F700', $range[0]);
 		$this->assertEquals('1F77F', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'alchemical',
+			'alchemy',
+			'chemical',
+			'chemistry',
+			'ancient',
+			'medieval',
+		];
+
+		$this->assertEquals([], array_diff($expected, $keywords));
+	}
 }

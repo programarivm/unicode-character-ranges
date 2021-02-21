@@ -11,9 +11,19 @@ class AlchemicalSymbols extends AbstractRange
 	public function __construct()
 	{
 		$this->name = self::RANGE_NAME;
+
 		$this->range = [
 			'1F700',
 			'1F77F',
+		];
+
+		$this->keywords = [
+			'alchemical',
+			'alchemy',
+			'chemical',
+			'chemistry',
+			'ancient',
+			'medieval',
 		];
 	}
 }
