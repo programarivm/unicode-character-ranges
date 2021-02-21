@@ -11,9 +11,17 @@ class AlphabeticPresentationForms extends AbstractRange
     public function __construct()
     {
         $this->name = self::RANGE_NAME;
+
         $this->range = [
             'FB00',
             'FB4F',
+        ];
+
+        $this->keywords = [
+            'ligature',
+            'latin',
+            'armenian',
+            'hebrew',
         ];
     }
 }

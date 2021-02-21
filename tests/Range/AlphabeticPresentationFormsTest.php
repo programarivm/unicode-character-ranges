@@ -32,4 +32,21 @@ class AlphabeticPresentationFormsTest extends TestCase
 		$this->assertEquals('FB00', $range[0]);
 		$this->assertEquals('FB4F', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'ligature',
+            'latin',
+            'armenian',
+            'hebrew',
+		];
+
+		$this->assertEquals([], array_diff($expected, $keywords));
+	}
 }
