@@ -42,6 +42,7 @@ class AlchemicalSymbolsTest extends TestCase
 
 		$expected = [
 			'alchemical',
+			'symbol',
 			'alchemy',
 			'chemical',
 			'chemistry',
