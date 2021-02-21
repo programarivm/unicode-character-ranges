@@ -11,9 +11,17 @@ class Armenian extends AbstractRange
     public function __construct()
     {
         $this->name = self::RANGE_NAME;
+
         $this->range = [
             '0530',
             '058F',
+        ];
+
+        $this->keywords = [
+            'ligature',
+            'east',
+            'west',
+            'reform',
         ];
     }
 }

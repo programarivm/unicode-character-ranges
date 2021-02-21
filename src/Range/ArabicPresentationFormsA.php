@@ -11,9 +11,19 @@ class ArabicPresentationFormsA extends AbstractRange
     public function __construct()
     {
         $this->name = self::RANGE_NAME;
+
         $this->range = [
             'FB50',
             'FDFF',
+        ];
+
+        $this->keywords = [
+            'ligature',
+            'persian',
+            'urdu',
+            'sindhi',
+            'central',
+            'asia',
         ];
     }
 }

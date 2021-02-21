@@ -11,9 +11,18 @@ class Avestan extends AbstractRange
 	public function __construct()
 	{
 		$this->name = self::RANGE_NAME;
+
 		$this->range = [
 			'10B00',
 			'10B3F',
+		];
+
+		$this->keywords = [
+			'zoroastrian',
+			'zarathustra',
+			'religion',
+			'persia',
+			'pazand',
 		];
 	}
 }

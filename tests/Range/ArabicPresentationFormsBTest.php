@@ -32,4 +32,21 @@ class ArabicPresentationFormsBTest extends TestCase
 		$this->assertEquals('FE70', $range[0]);
 		$this->assertEquals('FEFF', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'spacing',
+            'diacritic',
+            'context',
+            'letter',
+		];
+
+		$this->assertTrue($expected == $keywords);
+	}
 }

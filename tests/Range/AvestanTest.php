@@ -32,4 +32,22 @@ class AvestanTest extends TestCase
 		$this->assertEquals('10B00', $range[0]);
 		$this->assertEquals('10B3F', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'zoroastrian',
+			'zarathustra',
+			'religion',
+			'persia',
+			'pazand',
+		];
+
+		$this->assertTrue($expected == $keywords);
+	}
 }

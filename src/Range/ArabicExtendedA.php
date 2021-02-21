@@ -20,6 +20,7 @@ class ArabicExtendedA extends AbstractRange
         $this->keywords = [
             'quran',
             'koran',
+            'religion',
         ];
     }
 }

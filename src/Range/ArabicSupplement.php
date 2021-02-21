@@ -11,9 +11,19 @@ class ArabicSupplement extends AbstractRange
     public function __construct()
     {
         $this->name = self::RANGE_NAME;
+
         $this->range = [
             '0750',
             '077F',
+        ];
+
+        $this->keywords = [
+            'variant',
+            'non',
+            'pakistan',
+            'africa',
+            'persia',
+            'old',
         ];
     }
 }

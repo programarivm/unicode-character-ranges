@@ -43,6 +43,7 @@ class ArabicExtendedATest extends TestCase
 		$expected = [
             'quran',
             'koran',
+			'religion',
 		];
 
 		$this->assertTrue($expected == $keywords);

@@ -32,4 +32,21 @@ class ArmenianTest extends TestCase
 		$this->assertEquals('0530', $range[0]);
 		$this->assertEquals('058F', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'ligature',
+            'east',
+            'west',
+            'reform',
+		];
+
+		$this->assertTrue($expected == $keywords);
+	}
 }

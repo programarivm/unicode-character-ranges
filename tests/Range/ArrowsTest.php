@@ -32,4 +32,22 @@ class ArrowsTest extends TestCase
 		$this->assertEquals('2190', $range[0]);
 		$this->assertEquals('21FF', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'line',
+            'curve',
+            'semicircle',
+            'symbol',
+            'barb',
+		];
+
+		$this->assertTrue($expected == $keywords);
+	}
 }
