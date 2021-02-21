@@ -32,4 +32,21 @@ class ArabicExtendedATest extends TestCase
 		$this->assertEquals('08A0', $range[0]);
 		$this->assertEquals('08FF', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'arabic',
+            'extended',
+            'quran',
+            'koran',
+		];
+
+		$this->assertTrue($expected == $keywords);
+	}
 }
