@@ -24,6 +24,7 @@ class AncientSymbols extends AbstractRange
 			'currency',
 			'weight',
 			'measure',
+			'dead',
 		];
 	}
 }

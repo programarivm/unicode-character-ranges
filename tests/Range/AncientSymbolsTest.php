@@ -47,6 +47,7 @@ class AncientSymbolsTest extends TestCase
 			'currency',
 			'weight',
 			'measure',
+			'dead',
 		];
 
 		$this->assertTrue($expected == $keywords);
