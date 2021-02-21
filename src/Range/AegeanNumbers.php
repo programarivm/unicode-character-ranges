@@ -11,9 +11,21 @@ class AegeanNumbers extends AbstractRange
 	public function __construct()
 	{
 		$this->name = self::RANGE_NAME;
+
 		$this->range = [
 			'10100',
 			'1013F',
+		];
+
+		$this->keywords = [
+			'aegean',
+			'number',
+			'ancient',
+			'minoan',
+			'minoan',
+			'mycenaean',
+			'greece',
+			'greek',
 		];
 	}
 }
