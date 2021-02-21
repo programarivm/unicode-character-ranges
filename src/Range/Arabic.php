@@ -11,9 +11,17 @@ class Arabic extends AbstractRange
     public function __construct()
     {
         $this->name = self::RANGE_NAME;
+
         $this->range = [
             '0600',
             '06FF',
+        ];
+
+        $this->keywords = [
+            'arabic',
+            'indic',
+            'hindu',
+            'digit',
         ];
     }
 }
