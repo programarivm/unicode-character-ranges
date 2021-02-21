@@ -32,4 +32,23 @@ class AnatolianHieroglyphsTest extends TestCase
 		$this->assertEquals('14400', $range[0]);
 		$this->assertEquals('1467F', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'anatolian',
+			'hieroglyph',
+			'luwian',
+			'luwili',
+			'hittite',
+			'dead',
+		];
+
+		$this->assertEquals([], array_diff($expected, $keywords));
+	}
 }

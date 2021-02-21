@@ -11,9 +11,19 @@ class AnatolianHieroglyphs extends AbstractRange
 	public function __construct()
 	{
 		$this->name = self::RANGE_NAME;
+
 		$this->range = [
 			'14400',
 			'1467F',
+		];
+
+		$this->keywords = [
+			'anatolian',
+			'hieroglyph',
+			'luwian',
+			'luwili',
+			'hittite',
+			'dead',
 		];
 	}
 }
