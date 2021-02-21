@@ -32,4 +32,22 @@ class AncientGreekMusicalNotationTest extends TestCase
 		$this->assertEquals('1D200', $range[0]);
 		$this->assertEquals('1D24F', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'ancient',
+			'greek',
+			'music',
+			'notation',
+			'greece',
+		];
+
+		$this->assertTrue($expected == $keywords);
+	}
 }

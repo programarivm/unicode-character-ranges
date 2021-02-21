@@ -11,9 +11,18 @@ class AncientGreekMusicalNotation extends AbstractRange
 	public function __construct()
 	{
 		$this->name = self::RANGE_NAME;
+
 		$this->range = [
 			'1D200',
 			'1D24F',
+		];
+
+		$this->keywords = [
+			'ancient',
+			'greek',
+			'music',
+			'notation',
+			'greece',
 		];
 	}
 }
