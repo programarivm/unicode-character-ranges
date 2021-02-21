@@ -11,9 +11,23 @@ class AncientGreekNumbers extends AbstractRange
 	public function __construct()
 	{
 		$this->name = self::RANGE_NAME;
+
 		$this->range = [
 			'10140',
 			'1018F',
+		];
+
+		$this->keywords = [
+			'ancient',
+			'greek',
+			'greece',
+			'number',
+			'attic',
+			'numeral',
+			'herodian',
+			'acrophonic',
+			'ligature',
+			'dead',
 		];
 	}
 }
