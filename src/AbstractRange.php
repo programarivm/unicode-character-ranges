@@ -10,6 +10,8 @@ abstract class AbstractRange
 
 	protected $count;
 
+	protected $keywords;
+
 	public function name()
 	{
 		return $this->name;
@@ -23,5 +25,10 @@ abstract class AbstractRange
 	public function count()
 	{
 		return (hexdec($this->range[1]) - hexdec($this->range[0])) + 1;
+	}
+
+	public function keywords()
+	{
+		return $this->keywords;
 	}
 }
