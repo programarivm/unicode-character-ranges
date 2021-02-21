@@ -47,8 +47,9 @@ class AnatolianHieroglyphsTest extends TestCase
 			'luwili',
 			'hittite',
 			'dead',
+			'ancient',
 		];
 
-		$this->assertEquals([], array_diff($expected, $keywords));
+		$this->assertTrue($expected == $keywords);
 	}
 }

@@ -24,6 +24,7 @@ class AnatolianHieroglyphs extends AbstractRange
 			'luwili',
 			'hittite',
 			'dead',
+			'ancient',
 		];
 	}
 }
