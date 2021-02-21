@@ -3,7 +3,6 @@
 [![Latest Stable Version](https://poser.pugx.org/programarivm/unicode-ranges/v/stable)](https://packagist.org/packages/programarivm/unicode-ranges)
 [![Build Status](https://travis-ci.org/programarivm/unicode-ranges.svg?branch=master)](https://travis-ci.org/programarivm/unicode-ranges)
 [![Total Downloads](https://poser.pugx.org/programarivm/unicode-ranges/downloads)](https://packagist.org/packages/programarivm/unicode-ranges)
-[![Documentation Status](https://readthedocs.org/projects/unicode-ranges/badge/?version=latest)](https://unicode-ranges.readthedocs.io/en/latest/?badge=latest)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ![Unicode Character Ranges](/resources/logo.jpg?raw=true)
@@ -21,8 +20,6 @@ Via composer:
 #### Instantiate a Unicode range
 
 ```php
-<?php
-
 use UnicodeRanges\Range\AlchemicalSymbols;
 
 $alchemicalSymbols = new AlchemicalSymbols;
@@ -41,8 +38,6 @@ Range: 1F700-1F77F
 #### From decimal to Unicode
 
 ```php
-<?php
-
 use UnicodeRanges\Converter;
 
 $converter = new Converter();
@@ -61,8 +56,6 @@ Output:
 #### From Unicode to decimal
 
 ```php
-<?php
-
 use UnicodeRanges\Converter;
 
 $converter = new Converter();
@@ -81,8 +74,6 @@ Output:
 #### From Unicode to hexadecimal
 
 ```php
-<?php
-
 use UnicodeRanges\Converter;
 
 $converter = new Converter();
@@ -98,11 +89,27 @@ Output:
 39E
 ```
 
+#### From Unicode to character name
+
+```php
+use UnicodeRanges\Converter;
+
+$converter = new Converter();
+
+$name = $converter->unicode2name('Ξ');
+
+echo $name . PHP_EOL;
+```
+
+Output:
+
+```
+GREEK CAPITAL LETTER XI
+```
+
 #### From Unicode to `UnicodeRanges\Range` object
 
 ```php
-<?php
-
 use UnicodeRanges\Converter;
 
 $converter = new Converter();
@@ -125,8 +132,6 @@ Range: 0370-03FF
 #### From range to table of characters
 
 ```php
-<?php
-
 use UnicodeRanges\Converter;
 
 $converter = new Converter();
@@ -180,8 +185,6 @@ Array
 #### A random Tibetan char
 
 ```php
-<?php
-
 use UnicodeRanges\Randomizer;
 use UnicodeRanges\Range\Tibetan;
 
@@ -203,8 +206,6 @@ Output:
 #### A random char using multiple ranges
 
 ```php
-<?php
-
 use UnicodeRanges\Randomizer;
 use UnicodeRanges\Range\Arabic;
 use UnicodeRanges\Range\Balinese;
@@ -234,8 +235,6 @@ Output:
 #### A random letter using multiple ranges
 
 ```php
-<?php
-
 use UnicodeRanges\Randomizer;
 use UnicodeRanges\Range\Arabic;
 use UnicodeRanges\Range\HangulJamo;
@@ -261,8 +260,6 @@ Output:
 #### A random number using multiple ranges
 
 ```php
-<?php
-
 use UnicodeRanges\Randomizer;
 use UnicodeRanges\Range\Arabic;
 use UnicodeRanges\Range\HangulJamo;
@@ -288,8 +285,6 @@ Output:
 #### A printable char using multiple ranges
 
 ```php
-<?php
-
 use UnicodeRanges\Randomizer;
 use UnicodeRanges\Range\Arabic;
 use UnicodeRanges\Range\HangulJamo;
@@ -315,8 +310,6 @@ Output:
 #### Multiple random letters using multiple ranges
 
 ```php
-<?php
-
 use UnicodeRanges\Randomizer;
 use UnicodeRanges\Range\Arabic;
 use UnicodeRanges\Range\HangulJamo;
@@ -342,8 +335,6 @@ Output:
 #### Multiple random numbers using multiple ranges
 
 ```php
-<?php
-
 use UnicodeRanges\Randomizer;
 use UnicodeRanges\Range\Arabic;
 use UnicodeRanges\Range\HangulJamo;
@@ -369,8 +360,6 @@ Output:
 #### Multiple random printable chars using multiple ranges
 
 ```php
-<?php
-
 use UnicodeRanges\Randomizer;
 use UnicodeRanges\Range\Arabic;
 use UnicodeRanges\Range\HangulJamo;
@@ -398,8 +387,6 @@ Output:
 #### [`tests/AnalyzerTest.php`](https://github.com/programarivm/unicode-ranges/blob/master/tests/AnalyzerTest.php)
 
 ```php
-<?php
-
 namespace UnicodeRanges\Tests;
 
 use UnicodeRanges\Analyzer;
