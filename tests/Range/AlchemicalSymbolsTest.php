@@ -49,6 +49,6 @@ class AlchemicalSymbolsTest extends TestCase
 			'medieval',
 		];
 
-		$this->assertEquals([], array_diff($expected, $keywords));
+		$this->assertTrue($expected == $keywords);
 	}
 }

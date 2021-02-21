@@ -47,6 +47,6 @@ class AlphabeticPresentationFormsTest extends TestCase
             'hebrew',
 		];
 
-		$this->assertEquals([], array_diff($expected, $keywords));
+		$this->assertTrue($expected == $keywords);
 	}
 }

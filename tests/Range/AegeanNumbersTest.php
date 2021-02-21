@@ -52,6 +52,6 @@ class AegeanNumbersTest extends TestCase
 			'dead',
 		];
 
-		$this->assertEquals([], array_diff($expected, $keywords));
+		$this->assertTrue($expected == $keywords);
 	}
 }
