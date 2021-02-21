@@ -11,9 +11,18 @@ class Ahom extends AbstractRange
 	public function __construct()
 	{
 		$this->name = self::RANGE_NAME;
+
 		$this->range = [
 			'11700',
 			'1173F',
+		];
+
+		$this->keywords = [
+			'ahom',
+			'assam',
+			'india',
+			'himalaya',
+			'dead',
 		];
 	}
 }

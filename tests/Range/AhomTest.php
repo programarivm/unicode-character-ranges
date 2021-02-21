@@ -32,4 +32,22 @@ class AhomTest extends TestCase
 		$this->assertEquals('11700', $range[0]);
 		$this->assertEquals('1173F', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'ahom',
+			'assam',
+			'india',
+			'himalaya',
+			'dead',
+		];
+
+		$this->assertEquals([], array_diff($expected, $keywords));
+	}
 }
