@@ -32,4 +32,16 @@ class ArabicMathematicalAlphabeticSymbolsTest extends TestCase
 		$this->assertEquals('1EE00', $range[0]);
 		$this->assertEquals('1EEFF', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [];
+
+		$this->assertTrue($expected == $keywords);
+	}
 }

@@ -11,9 +11,12 @@ class ArabicMathematicalAlphabeticSymbols extends AbstractRange
 	public function __construct()
 	{
 		$this->name = self::RANGE_NAME;
+
 		$this->range = [
 			'1EE00',
 			'1EEFF',
 		];
+
+		$this->keywords = [];
 	}
 }
