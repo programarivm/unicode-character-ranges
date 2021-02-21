@@ -46,6 +46,13 @@ class Converter
         return $hex;
     }
 
+    public function unicode2name($char)
+    {
+        $name = \IntlChar::charName($char);
+
+        return $name;
+    }
+
     public function unicode2range($char)
     {
         $dec = $this->unicode2dec($char);

@@ -65,6 +65,15 @@ class ConverterTest extends TestCase
     }
 
     /**
+     * @dataProvider unicode2nameData
+     * @test
+     */
+    public function unicode2name($char, $name)
+    {
+        $this->assertEquals($name, self::$converter->unicode2name($char));
+    }
+
+    /**
      * @dataProvider unicode2rangeData
      * @test
      */
@@ -139,6 +148,26 @@ class ConverterTest extends TestCase
             ['𐒎', '1048E'],
             ['𝄠', '1D120'],
             ['𝜔', '1D714'],
+        ];
+    }
+
+    public function unicode2nameData()
+    {
+        return [
+            ['a', 'LATIN SMALL LETTER A'],
+            ['Ξ', 'GREEK CAPITAL LETTER XI'],
+            ['Ӝ', 'CYRILLIC CAPITAL LETTER ZHE WITH DIAERESIS'],
+            ['ᵺ', 'LATIN SMALL LETTER TH WITH STRIKETHROUGH'],
+            ['⍦', 'APL FUNCTIONAL SYMBOL DOWN SHOE STILE'],
+            ['⻤', 'CJK RADICAL GHOST'],
+            ['夙', 'CJK UNIFIED IDEOGRAPH-5919'],
+            ['냺', 'HANGUL SYLLABLE NYAELP'],
+            ['읪', 'HANGUL SYLLABLE YIBS'],
+            ['ힷ', 'HANGUL JUNGSEONG YU-AE'],
+            ['𐄠', 'AEGEAN NUMBER EIGHT HUNDRED'],
+            ['𐒎', 'OSMANYA LETTER QAAF'],
+            ['𝄠', 'MUSICAL SYMBOL G CLEF OTTAVA BASSA'],
+            ['𝜔', 'MATHEMATICAL ITALIC SMALL OMEGA'],
         ];
     }
 
