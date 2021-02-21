@@ -17,12 +17,6 @@ class AncientGreekMusicalNotation extends AbstractRange
 			'1D24F',
 		];
 
-		$this->keywords = [
-			'ancient',
-			'greek',
-			'music',
-			'notation',
-			'greece',
-		];
+		$this->keywords = [];
 	}
 }

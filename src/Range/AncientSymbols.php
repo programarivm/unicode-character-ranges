@@ -18,8 +18,6 @@ class AncientSymbols extends AbstractRange
 		];
 
 		$this->keywords = [
-			'ancient',
-			'symbol',
 			'roman',
 			'currency',
 			'weight',

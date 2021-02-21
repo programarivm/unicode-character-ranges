@@ -18,10 +18,6 @@ class AncientGreekNumbers extends AbstractRange
 		];
 
 		$this->keywords = [
-			'ancient',
-			'greek',
-			'greece',
-			'number',
 			'attic',
 			'numeral',
 			'herodian',

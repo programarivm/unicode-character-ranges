@@ -41,8 +41,6 @@ class AlchemicalSymbolsTest extends TestCase
 		$keywords = $this->charRange->keywords();
 
 		$expected = [
-			'alchemical',
-			'symbol',
 			'alchemy',
 			'chemical',
 			'chemistry',

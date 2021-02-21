@@ -41,10 +41,6 @@ class AncientGreekNumbersTest extends TestCase
 		$keywords = $this->charRange->keywords();
 
 		$expected = [
-			'ancient',
-			'greek',
-			'greece',
-			'number',
 			'attic',
 			'numeral',
 			'herodian',

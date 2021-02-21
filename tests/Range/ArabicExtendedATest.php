@@ -41,8 +41,6 @@ class ArabicExtendedATest extends TestCase
 		$keywords = $this->charRange->keywords();
 
 		$expected = [
-			'arabic',
-            'extended',
             'quran',
             'koran',
 		];

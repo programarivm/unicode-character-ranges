@@ -18,8 +18,6 @@ class AlchemicalSymbols extends AbstractRange
 		];
 
 		$this->keywords = [
-			'alchemical',
-			'symbol',
 			'alchemy',
 			'chemical',
 			'chemistry',

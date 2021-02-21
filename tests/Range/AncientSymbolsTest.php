@@ -41,8 +41,6 @@ class AncientSymbolsTest extends TestCase
 		$keywords = $this->charRange->keywords();
 
 		$expected = [
-			'ancient',
-			'symbol',
 			'roman',
 			'currency',
 			'weight',

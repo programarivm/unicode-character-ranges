@@ -40,13 +40,7 @@ class AncientGreekMusicalNotationTest extends TestCase
 	{
 		$keywords = $this->charRange->keywords();
 
-		$expected = [
-			'ancient',
-			'greek',
-			'music',
-			'notation',
-			'greece',
-		];
+		$expected = [];
 
 		$this->assertTrue($expected == $keywords);
 	}

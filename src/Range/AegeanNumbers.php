@@ -18,13 +18,9 @@ class AegeanNumbers extends AbstractRange
 		];
 
 		$this->keywords = [
-			'aegean',
-			'number',
 			'ancient',
 			'minoan',
-			'minoan',
 			'mycenaean',
-			'greece',
 			'greek',
 			'dead',
 		];

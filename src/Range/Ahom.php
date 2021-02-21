@@ -18,7 +18,6 @@ class Ahom extends AbstractRange
 		];
 
 		$this->keywords = [
-			'ahom',
 			'assam',
 			'india',
 			'himalaya',

@@ -41,8 +41,6 @@ class AnatolianHieroglyphsTest extends TestCase
 		$keywords = $this->charRange->keywords();
 
 		$expected = [
-			'anatolian',
-			'hieroglyph',
 			'luwian',
 			'luwili',
 			'hittite',

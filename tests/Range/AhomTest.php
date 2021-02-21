@@ -41,7 +41,6 @@ class AhomTest extends TestCase
 		$keywords = $this->charRange->keywords();
 
 		$expected = [
-			'ahom',
 			'assam',
 			'india',
 			'himalaya',

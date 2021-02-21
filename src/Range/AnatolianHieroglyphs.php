@@ -18,8 +18,6 @@ class AnatolianHieroglyphs extends AbstractRange
 		];
 
 		$this->keywords = [
-			'anatolian',
-			'hieroglyph',
 			'luwian',
 			'luwili',
 			'hittite',

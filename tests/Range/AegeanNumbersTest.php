@@ -41,13 +41,9 @@ class AegeanNumbersTest extends TestCase
 		$keywords = $this->charRange->keywords();
 
 		$expected = [
-			'aegean',
-			'number',
 			'ancient',
 			'minoan',
-			'minoan',
 			'mycenaean',
-			'greece',
 			'greek',
 			'dead',
 		];
