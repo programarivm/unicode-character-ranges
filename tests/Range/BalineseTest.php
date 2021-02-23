@@ -32,4 +32,18 @@ class BalineseTest extends TestCase
 		$this->assertEquals('1B00', $range[0]);
 		$this->assertEquals('1B7F', $range[1]);
 	}
+
+	/**
+	 * @test
+	 */
+	public function get_keywords()
+	{
+		$keywords = $this->charRange->keywords();
+
+		$expected = [
+			'indonesia',
+		];
+
+		$this->assertTrue($expected == $keywords);
+	}
 }
